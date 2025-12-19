@@ -1,0 +1,28 @@
+---
+title: Roman Law Practice
+---
+
+import { Quiz, QuizOption } from '@site/src/components/Quiz';
+
+<Quiz question="What was the legal effect of 'Capitis Diminutio Media'?">
+
+  <QuizOption label="Loss of citizenship only." isCorrect={false}>
+    It's more severe than that. According to the *Institutes of Gaius*:
+    
+    > "Middle loss of status occurs when citizenship is lost but liberty is retained."
+    
+    **Key consequences:**
+    * Loss of *ius suffragii* (voting)
+    * Loss of *ius honorum* (holding office)
+  </QuizOption>
+
+  <QuizOption label="Loss of citizenship and family rights." isCorrect={true}>
+    Exactly. As per the textbook (Para. 42):
+    
+    This involved a change in **civitas**. When a person loses their citizenship, they inevitably lose their position in the Roman family structure because the *patria potestas* is a right exclusive to Roman citizens.
+    
+    1. The person becomes a *peregrinus*.
+    2. All existing agnatic ties are severed.
+  </QuizOption>
+
+</Quiz>
