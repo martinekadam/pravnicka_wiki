@@ -1,0 +1,20 @@
+{
+  "defaultLocale": "cs",
+  "locales": [
+    "cs"
+  ],
+  "path": "i18n",
+  "currentLocale": "cs",
+  "localeConfigs": {
+    "cs": {
+      "label": "Čeština",
+      "direction": "ltr",
+      "htmlLang": "cs",
+      "calendar": "gregory",
+      "path": "cs",
+      "translate": false,
+      "url": "https://pravnicka.wiki",
+      "baseUrl": "/"
+    }
+  }
+}

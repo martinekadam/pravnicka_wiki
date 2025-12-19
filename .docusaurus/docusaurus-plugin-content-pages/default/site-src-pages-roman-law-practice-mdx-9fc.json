@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/roman-law-practice",
+  "source": "@site/src/pages/roman-law-practice.mdx",
+  "title": "Roman Law Practice",
+  "description": "It's more severe than that. According to the Institutes of Gaius:",
+  "frontMatter": {
+    "title": "Roman Law Practice"
+  },
+  "unlisted": false
+}
