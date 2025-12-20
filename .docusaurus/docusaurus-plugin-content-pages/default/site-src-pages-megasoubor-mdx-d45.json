@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/megasoubor",
+  "source": "@site/src/pages/megasoubor.mdx",
+  "description": "Instituce, s. 133: „usufruktuář nesmí věc zničit, ani měnit hospodářské určení věci a disponovat s ní … usufruktuář se musí o věc starat jako dobrý hospodář (bonus pater familias) … usufruktuář se pomocí praetorské stipulace zvané cautio ususfructuaria zavazuje, že věc bude po ukončení tohoto vztahu v pořádku vrácena“",
+  "frontMatter": {
+    "Title": "Megasoubor"
+  },
+  "unlisted": false
+}
