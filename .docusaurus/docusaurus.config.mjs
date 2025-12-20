@@ -30,8 +30,9 @@ export default {
   },
   "url": "https://pravnicka.wiki",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "trailingSlash": false,
+  "organizationName": "martinekadam",
+  "projectName": "pravnicka_wiki",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "cs",
