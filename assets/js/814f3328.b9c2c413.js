@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkpravnicka_wiki=globalThis.webpackChunkpravnicka_wiki||[]).push([[472],{5513(i){i.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"intro","permalink":"/blog/intro","unlisted":false,"date":"2025-12-22T23:41:23.873Z"}]}')}}]);
