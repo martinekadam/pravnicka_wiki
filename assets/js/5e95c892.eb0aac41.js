@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkpravnicka_wiki=globalThis.webpackChunkpravnicka_wiki||[]).push([[9647],{7121(a,e,r){r.r(e),r.d(e,{default:()=>l});r(6540);var i=r(4164),s=r(7559),c=r(5500),n=r(2831),u=r(1656),k=r(4848);function l(a){return(0,k.jsx)(c.e3,{className:(0,i.A)(s.G.wrapper.docsPages),children:(0,k.jsx)(u.A,{children:(0,n.v)(a.route.routes)})})}}}]);
