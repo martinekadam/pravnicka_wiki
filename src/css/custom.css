@@ -6,22 +6,53 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #303030;
-  --ifm-color-primary-dark: #2b2b2b;
-  --ifm-color-primary-darker: #292929;
-  --ifm-color-primary-darkest: #222222;
-  --ifm-color-primary-light: #353535;
-  --ifm-color-primary-lighter: #373737;
-  --ifm-color-primary-lightest: #3e3e3e;
+  --ifm-background-color: #fff9eb;        
+  --ifm-font-color-base: #303030;         
+  
+  --ifm-navbar-background-color: #fff9eb;
+  --ifm-footer-background-color: #fff9eb;
+  --ifm-card-background-color: #fdf2d5;  
+  
+  --ifm-color-primary: #8c6d1f;           
+  --ifm-color-primary-dark: #7e621c;
+  --ifm-color-primary-darker: #775c1a;
+  --ifm-color-primary-darkest: #624c16;
+  --ifm-color-primary-light: #9a7822;
+  --ifm-color-primary-lighter: #a17d23;
+  --ifm-color-primary-lightest: #b58d28;
+
+  --ifm-border-color: rgba(48, 48, 48, 0.1); 
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #fff9eb;
-  --ifm-color-primary-dark: #ffeaba;
-  --ifm-color-primary-darker: #ffe3a1;
-  --ifm-color-primary-darkest: #ffcd58;
-  --ifm-color-primary-light: #ffffff;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
+  --ifm-background-color: #303030;        
+  --ifm-font-color-base: #fff9eb;         
+  
+  --ifm-navbar-background-color: #303030;
+  --ifm-footer-background-color: #303030;
+  
+  --ifm-color-primary: #d4af37;           
+  
+  --ifm-border-color: rgba(255, 249, 235, 0.1); 
+
+  --ifm-card-background-color: #3e3e3e; /* A slightly lighter charcoal than the background */
+  
+  --ifm-color-emphasis-100: #3e3e3e;
+  --ifm-color-emphasis-600: #fff9eb;
+  
+  --ifm-color-content: #fff9eb;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu__link--active {
+  font-weight: bold;
+  background-color: rgba(140, 109, 31, 0.1); /* Very light gold tint */
 }
