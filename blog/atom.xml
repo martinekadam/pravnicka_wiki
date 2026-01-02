@@ -2,15 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pravnicka.wiki/blog</id>
     <title>Právnická wiki Blog</title>
-    <updated>2025-12-20T23:46:36.000Z</updated>
+    <updated>2026-01-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pravnicka.wiki/blog"/>
     <subtitle>Právnická wiki Blog</subtitle>
     <icon>https://pravnicka.wiki/img/logo-light-mode.svg</icon>
     <entry>
-        <title type="html"><![CDATA[intro]]></title>
-        <id>https://pravnicka.wiki/blog/intro</id>
-        <link href="https://pravnicka.wiki/blog/intro"/>
-        <updated>2025-12-20T23:46:36.000Z</updated>
+        <title type="html"><![CDATA[Pět důvodů, proč jsme založili Právnickou wiki.]]></title>
+        <id>https://pravnicka.wiki/blog/pet-duvodu</id>
+        <link href="https://pravnicka.wiki/blog/pet-duvodu"/>
+        <updated>2026-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is my first post on Docusaurus.]]></summary>
+        <content type="html"><![CDATA[<p>Proč stavíme wiki, když máme Google Drive?</p>
+<p>Už několik let naši kolegové a kolegyně shromažďují na Google Drivu neuvěřitelné množství studijních materiálů. Je to obdivuhodná práce, ze které všichni těžíme. Přesto při každodenním používání narážíme na limity, které nás motivovaly k pokusu o něco nového.</p>
+<p>Právnická wiki je zatím v testovacím provozu a spousta obsahu v ní ještě chybí. Přesto věříme, že tato cesta má smysl. Proč se tedy snažíme o vlastní web?</p>
+<ol>
+<li class=""><strong>Interaktivní funkce:</strong> Google Docs jsou skvělé na psaní, ale nedovolí nám vytvářet interaktivní obsah jako je náš <a href="https://pravnicka.wiki/docs/rimske-pravo/rimske-pravo-test" target="_blank" rel="noopener noreferrer" class="">test z římského práva</a>. Chceme, aby studium nebylo jen drcení souborů, ale zkoušení si znalostí.</li>
+<li class=""><strong>Přístupnost:</strong> Víme, že každý studuje jinak. Proto na wiki ladíme věci jako tmavý režim, kontrastní barvy a písmo podle preferencí uživatelů, což jsou drobnosti, které ale při dlouhých nocích nad skripty pomáhají.</li>
+<li class=""><strong>Snadnější orientace:</strong> Drive je skvělý archiv, ale občas je těžké se v té struktuře složek a kopií neztratit. Wiki se snažíme stavět tak, aby vše bylo na pár kliknutí a co nejrychlejší.</li>
+<li class=""><strong>Otevřenost a kontinuita:</strong> V minulosti vzniklo několik podobných projektů, které bohužel utichly s odchodem jejich autorů z fakulty. Naším cílem je vytvořit otevřený systém, který bude moci snadno spravovat a doplňovat kdokoliv další.</li>
+<li class=""><strong>Spolupráce a komunita:</strong> Ne každý chce při opravě chyby v textu odhalovat svůj soukromý Gmail účet. Wiki umožňuje přispívat anonymně a bezpečně. V tuto chvíli sice pouze z GitHubu, ale pracujeme na dalších možnostech.</li>
+</ol>
+<p>Líbí se vám, co děláme? Sledujte nás na <a href="https://instagram.com/pravnicka.wiki" target="_blank" rel="noopener noreferrer" class="">Instagramu</a>.<br>
+<!-- -->Chtěli byste se zapojit? Napište nám na <a href="mailto:info@pravnicka.wiki" target="_blank" rel="noopener noreferrer" class="">info@pravnicka.wiki</a>.</p>]]></content>
+        <author>
+            <name>Právnická wiki</name>
+            <email>info@pravnicka.wiki</email>
+        </author>
+        <category label="admin" term="admin"/>
+        <category label="o-projektu" term="o-projektu"/>
     </entry>
 </feed>

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpravnicka_wiki=globalThis.webpackChunkpravnicka_wiki||[]).push([[472],{5513(i){i.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"P\u011bt d\u016fvod\u016f, pro\u010d jsme zalo\u017eili Pr\xe1vnickou wiki.","permalink":"/blog/pet-duvodu","unlisted":false,"date":"2026-01-03T00:00:00.000Z"}]}')}}]);

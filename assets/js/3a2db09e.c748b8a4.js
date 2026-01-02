@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpravnicka_wiki=globalThis.webpackChunkpravnicka_wiki||[]).push([[121],{8070(a){a.exports=JSON.parse('{"tags":[{"label":"admin","permalink":"/blog/tags/admin","count":1},{"label":"o-projektu","permalink":"/blog/tags/o-projektu","count":1}]}')}}]);
