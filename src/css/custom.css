@@ -5,54 +5,76 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/* Light mode */
 :root {
-  --ifm-background-color: #fff9eb;        
-  --ifm-font-color-base: #303030;         
-  
-  --ifm-navbar-background-color: #fff9eb;
-  --ifm-footer-background-color: #fff9eb;
-  --ifm-card-background-color: #fdf2d5;  
-  
-  --ifm-color-primary: #8c6d1f;           
-  --ifm-color-primary-dark: #7e621c;
-  --ifm-color-primary-darker: #775c1a;
-  --ifm-color-primary-darkest: #624c16;
-  --ifm-color-primary-light: #9a7822;
-  --ifm-color-primary-lighter: #a17d23;
-  --ifm-color-primary-lightest: #b58d28;
+  --ifm-background-color: #fff9eb;
+  --ifm-font-color-base: #303030;
 
-  --ifm-border-color: rgba(48, 48, 48, 0.1); 
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-navbar-height: 4rem;
+
+  --ifm-color-primary: #2c0e8c;
+  --ifm-color-primary-dark: #280d7e;
+  --ifm-color-primary-darker: #250c77;
+  --ifm-color-primary-darkest: #1f0a62;
+  --ifm-color-primary-light: #300f9a;
+  --ifm-color-primary-lighter: #3310a1;
+  --ifm-color-primary-lightest: #3912b6;
+
+  --ifm-footer-background-color: #fff2d2;
+  --ifm-footer-link-color: var(--ifm-font-color-base);
+
+  --ifm-color-emphasis-100: var(--ifm-background-color);
+  --ifm-color-emphasis-200: var(--ifm-background-color);
+  --ifm-color-emphasis-300: var(--ifm-background-color);
+  --ifm-color-emphasis-400: var(--ifm-background-color);
+  --ifm-color-emphasis-500: var(--ifm-background-color);
+  --ifm-color-emphasis-600: var(--ifm-background-color);
+  --ifm-color-emphasis-700: var(--ifm-font-color-base);
+  --ifm-color-emphasis-800: var(--ifm-font-color-base);
+  --ifm-hero-text-color: var(--ifm-font-color-base);
 }
 
-[data-theme='dark'] {
-  --ifm-background-color: #303030;        
-  --ifm-font-color-base: #fff9eb;         
+/* Dark mode */
+[data-theme="dark"] {
   
-  --ifm-navbar-background-color: #303030;
-  --ifm-footer-background-color: #303030;
-  
-  --ifm-color-primary: #d4af37;           
-  
-  --ifm-border-color: rgba(255, 249, 235, 0.1); 
+  --ifm-background-color: #303030;
+  --ifm-font-color-base: #fff9eb;
 
-  --ifm-card-background-color: #3e3e3e; /* A slightly lighter charcoal than the background */
-  
-  --ifm-color-emphasis-100: #3e3e3e;
-  --ifm-color-emphasis-600: #fff9eb;
-  
-  --ifm-color-content: #fff9eb;
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-navbar-height: 4rem;
+
+  --ifm-color-primary: #e6c84d;
+  --ifm-color-primary-dark: #e2c032;
+  --ifm-color-primary-darker: #e0bc25;
+  --ifm-color-primary-darkest: #bc9d1a;
+  --ifm-color-primary-light: #ead068;
+  --ifm-color-primary-lighter: #ecd475;
+  --ifm-color-primary-lightest: #f1e19e;
+
+  --ifm-footer-background-color: #3e3e3e;
+  --ifm-footer-link-color: var(--ifm-font-color-base);
+
+  --ifm-color-emphasis-100: var(--ifm-background-color);
+  --ifm-color-emphasis-200: var(--ifm-background-color);
+  --ifm-color-emphasis-300: var(--ifm-background-color);
+  --ifm-color-emphasis-400: var(--ifm-background-color);
+  --ifm-color-emphasis-500: var(--ifm-background-color);
+  --ifm-color-emphasis-600: var(--ifm-background-color);
+  --ifm-color-emphasis-700: var(--ifm-font-color-base);
+  --ifm-color-emphasis-800: var(--ifm-font-color-base);
+  --ifm-hero-text-color: var(--ifm-font-color-base);
 }
 
-a {
-  text-decoration-thickness: 1px;
-  transition: all 0.2s ease-in-out;
+h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.menu__link--active {
-  font-weight: bold;
-  background-color: rgba(140, 109, 31, 0.1); /* Very light gold tint */
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
 }

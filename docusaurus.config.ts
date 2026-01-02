@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Právnická wiki',
   tagline: 'Otevřený zdroj informací pro studující Právnické fakulty UK.',
-  favicon: 'img/logo.svg',
+  favicon: 'img/logo-light-mode.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -65,7 +65,8 @@ const config: Config = {
       title: 'Právnická wiki',
       logo: {
         alt: 'Právnická wiki logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-light-mode.svg',
+        srcDark: 'img/logo-dark-mode.svg'
       },
       items: [
         {
@@ -83,8 +84,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Právnická wiki. Built with Docusaurus 🦖`,
+      copyright: `Právnická wiki © ${new Date().getFullYear()}. Šířeno pod licencí <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs" target="_blank" rel="noopener noreferrer" style="color: var(--ifm-footer-link-color); text-decoration: underline;">CC BY-NC-SA 4.0</a>. Built with Docusaurus 🦖`,
     },
     prism: {
       theme: prismThemes.github,

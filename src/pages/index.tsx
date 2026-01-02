@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--lg"
             to="/docs/intro">
-            Na rozcestník →
+            Na wiki →
           </Link>
         </div>
       </div>
@@ -37,8 +37,9 @@ export default function Home(): JSX.Element {
             <div className="col col--8 col--offset-2 text--center">
               <h2>O projektu</h2>
               <p>
-                Naše wiki je tu od toho, aby nahradila méně funkční alternativy sdílení informací mezi studujícími.
-                Naším cílem je poskytovat přístupný a otevřený zdroj informací o studiu, předmětech a životě na Právnické fakultě Univerzity Karlovy.  
+                Naše wiki je prostor pro efektivní sdílení informací mezi studujícími. 
+
+                Cílem je poskytovat přístupné a přesné informace jak o studiu obecně, tak o obsahu jednotlivých předmětů na Právnické fakultě Univerzity Karlovy. 
               </p>
               <hr />
               <p className="margin-top--md">

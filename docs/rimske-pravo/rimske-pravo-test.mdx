@@ -2,10 +2,42 @@
 title: Test z římského práva
 sidebar_position: 1
 ---
-import { Quiz, QuizOption } from '@site/src/components/Quiz';
+import { Quiz, QuizOption, QuizFilter } from '@site/src/components/Quiz';
 
+export const vecnaPrava = "Věcná práva"
+export const rodinaManzelstvi = "Rodina a manželství"
+export const pravniJednani = "Právní jednání"
+export const zavazkovePravo = "Závazkové právo"
+export const pramenyPrava = "Prameny římského práva"
+export const civilniProces = "Civilní proces"
+export const osobniPrava = "Osobní práva"
 
-<Quiz question={"Usufruktuář je povinen: "}>
+:::info Úvod 
+Náš interaktivní test z římského práva je upravenou verzí známého _mega souboru_. Níže si můžete vybrat, která témata chcete procvičit. Každá odpověď k otázce obsahuje také citaci z KUSU, nebo Institucí, která danou otázku vysvětluje.
+:::
+
+<QuizFilter>
+<Quiz question={"Usuář plody, které má právo nabývat, nabývá okamžikem: "} topic={vecnaPrava}>
+  <QuizOption label={"a. percepce"} isCorrect={true}>
+    Ano, usuář nabývá plody okamžikem uchopení.
+    
+    Instituce, s. 109: _„Perceptio (uchopení) - vlastnické právo vzniká teprve fyzickým dotykem plodů … tímto způsobem nabývá vlastnické právo usuář …“_
+  </QuizOption>
+  <QuizOption label={"b. separace"} isCorrect={false}>
+    Ne, usuář nabývá plody až okamžikem uchopení.
+    
+    Instituce, s. 108-109: _„Separatio (oddělení) - již oddělením od plodonosné věci se stávají vlastníky plodů vlastník plodonosné věci, držitel státní půdy (ager vectigalis), emphyteuta“_
+  </QuizOption>
+  <QuizOption label={"c. specifikace"} isCorrect={false}>
+    Ne, usus se specifikace netýká.
+
+    Instituce, s. 108: _„Specificatio (zpracování) - ke zpracování dojde, jestliže v důsledku něčí činnosti ztratí věc svou původní podstatu a změní se v jinou věc (nova spe cies), jejíž použití je odlišné od původní věci“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Usufruktuář je povinen: "} topic={vecnaPrava}>
   <QuizOption label={"a. zachovávat podstatu věci"} isCorrect={true}>
     Instituce, s. 133: _„usufruktuář nesmí věc zničit, ani měnit hospodářské určení věci a disponovat s ní … usufruktuář se musí o věc starat jako dobrý hospodář (bonus pater familias) … usufruktuář se pomocí praetorské stipulace zvané cautio ususfructuaria zavazuje, že věc bude po ukončení tohoto vztahu v pořádku vrácena“_
   </QuizOption>
@@ -30,7 +62,37 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Usufruktuář není povinen: "}>
+<Quiz question={"Aktivně legitimovaným k vindikační žalobě může být: "} topic={civilniProces}>
+  <QuizOption label={"a. nedržící kviritský vlastník"} isCorrect={true}>
+    Ano a to konkrétně k rei vindicatio. 
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
+  </QuizOption>
+  <QuizOption label={"b. nabyvatel věci mancipací od vlastníka, který o věc přišel"} isCorrect={true}>
+    Ano a to konkrétně k rei vindicatio. Mancipací se z něj stává kviritský vlastník a je proto aktivně legitimován.
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
+  </QuizOption>
+  <QuizOption label={"c. kviritský vlastník zbavený proti své vůli corporalis possessio"} isCorrect={true}>
+    Ano, kviritský vlastník zbavený proti své vůli corporalis possessio je to samé, jako nedržící kviritský vlastník. Použije rei vindicatio.
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
+  </QuizOption>
+  <QuizOption label={"d. rušený oprávněný ze služebnosti"} isCorrect={true}>
+    Ano a to konkrétně vindicatio servitutis. Otázka je trochu chyták, ptá se na vindikační žalobu obecně, nikoliv pouze na rei vindicatio. 
+
+    KUS, marg. č. 314, s. 200: _„Služebnosti byly chráněny věcnými žalobami, které měly povahu vindikace služebnosti (vindicatio servitutis, u požívacího práva se žaloba označovala jako petitio ususfructus). Projednání takovéto žaloby se podobalo sporu o vlastnické právo.“_
+
+    Instituce, s. 129: _„Vindicatio servitutis - u pozemkových služebností přísluší vlast níkovi panujícího pozemku, je účinná i proti vlastníkovi, směřuje na uznání práva služebnosti“_
+  </QuizOption>
+  <QuizOption label={"e. v držbě rušený kviritský vlastník"} isCorrect={false}>
+    Ne, pro případ rušení v držbě je zde actio negatoria, která není vindikační žalobou.
+
+    Instituce, s. 118: _„Actio negatoria (zápůrčí žaloba) slouží k ochraně vlastníka před rušením (např. usurpování si služebnosti)…“_
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Usufruktuář není povinen: "} topic={vecnaPrava}>
   <QuizOption label={"a. zachovávat podstatu věci"} isCorrect={false}>
       Usufruktuář je povinnen zachovat podstatu věci.
 
@@ -54,7 +116,32 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Usufruktuář nesmí: "}>
+<Quiz question={"Nevyvratitelnou domněnkou není: "} topic={civilniProces}>
+  <QuizOption label={"a. fictio civitatis"} isCorrect={true}>
+    Ano, fikce není domněnka . 
+
+    Instituce, s. 283: _„Praesumptio (domněnka) jsou založeny na vyvození určité skutečnosti z jiného předpokládaného faktu…“_
+
+    Instituce, s. 283: _„Fictio (fikce) jsou založeny na přimyšlení nebo odmyšlení určité skutečnost…“_
+  </QuizOption>
+  <QuizOption label={"b. domněnka darování mezi manžely"} isCorrect={true}>
+    Ano, domněnka darování mezi manžely je vyvratitelná. 
+
+    Instituce, s. 94: _„Vyvratitelná domněnka, že vše, co získala manželka, bylo darem od manžela a proto je jeho majetkem (praesumptio Muciana)“_
+  </QuizOption>
+  <QuizOption label={"c. domněnka otcovství"} isCorrect={true}>
+    Ano, domněnka otcovství je vyvratitelná.
+
+    Instituce, s. 95: _„Vyvratitelná domněnka otcovství: za takovéto dítě je považová no dítě, které se narodilo mezi 182 dnem od vzniku manželství, do 300 dne po jeho zániku.“_
+  </QuizOption>
+  <QuizOption label={"d. status civitatis"} isCorrect={true}>
+    Ano, status civitatis není nevyvratitelnou domněnkou. Je to faktický stav.
+
+    Instituce, s. 51: _„Status civitatis - příslušnost k římské obci.“_
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Usufruktuář nesmí: "} topic={vecnaPrava}>
   <QuizOption label={"a. vybírat nájemné"} isCorrect={true}>
     Usufruktuář nesmí s věcí samou disponovat, tzn. nakládat s věcí s právními důsledky.
    
@@ -73,7 +160,142 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Pokud společně dva Římané koupí pozemek, pak vzniká: "}>
+<Quiz question={"Hrubá nedbalost: "} topic={zavazkovePravo}>
+  <QuizOption label={"a. culpa lata latinsky"} isCorrect={true}>
+    Hrubá nedbalost se řekne latinsky _culpa lata_.
+
+    Instituce, s. 142: _„culpa lata (hrubá nedbalost) - blíží se úmyslu“_
+  </QuizOption>
+  <QuizOption label={"b. je širší než úmysl"} isCorrect={false}>
+    Hrubá nedbalost není širší, než úmysl. Není ani na stejné úrovni, pouze se mu blíží.
+    
+    Instituce, s. 142: _„culpa lata (hrubá nedbalost) - blíží se úmyslu“_
+  </QuizOption>
+  <QuizOption label={"c. zahrnuje více případů než úmysl"} isCorrect={false}>
+    Hrubá nedbalost není širší, než úmysl. Není ani na stejné úrovni, pouze se mu blíží.
+    
+    Instituce, s. 142: _„culpa lata (hrubá nedbalost) - blíží se úmyslu“_    
+  </QuizOption>
+  <QuizOption label={"d. lze se dohodnout, že se za ní nebude odpovídat"} isCorrect={false}>
+    Hrubou nedbalost stavíme naroveň zlému úmyslu a odpovědnost za zlý úmysl nelze vyloučit vzájemnou dohodou.
+
+    KUS, marg. č. 185, s. 112: _„Hrubá nedbalost je neopatrnost až nepochopitelná, kdy někdo udělá něco, co by nikdo jiný neudělal. Porušení vší opatrnosti je tak flagrantní, že se nabízí vysvětlení, že pachatel vzniklou škodu způsobit chtěl, že tedy nejednal nedbale, ale se zlým úmyslem. Proto se také culpa lata staví naroveň zlému úmyslu - ‚culpa lata dolo comparabitur‘.“_
+
+    Instituce, s. 142: _„za úmyslně způsobenou škodu se odpovídá vždy a nelze ji vyloučit vzájemnou dohodou (princip pactum ne dolus praestetur)“_
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Usufruktuář nabývá plody okamžikem: "} topic={vecnaPrava}>
+  <QuizOption label={"a. separace"} isCorrect={false}>
+    Ne, usufruktuář nabývá plody až okamžikem uchopení.
+    
+    Instituce, s. 108-109: _„Separatio (oddělení) - již oddělením od plodonosné věci se stávají vlastníky plodů vlastník plodonosné věci, držitel státní půdy (ager vectigalis), emphyteuta“_    
+  </QuizOption>
+  <QuizOption label={"b. specifikace"} isCorrect={false}>
+    Ne, ususfructus se specifikace netýká.
+
+    Instituce, s. 108: _„Specificatio (zpracování) - ke zpracování dojde, jestliže v důsledku něčí činnosti ztratí věc svou původní podstatu a změní se v jinou věc (nova spe cies), jejíž použití je odlišné od původní věci“_   
+  </QuizOption>
+  <QuizOption label={"c. percepce"} isCorrect={true}>
+    Ano, usufruktuář nabývá plody okamžikem uchopení.
+    
+    Instituce, s. 109: _„Perceptio (uchopení) - vlastnické právo vzniká teprve fyzickým dotykem plodů … tímto způsobem nabývá vlastnické právo usuář, usufruktuář …“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Ius honorarium není: "} topic={pramenyPrava}>
+  <QuizOption label={"a. právo úřednické"} isCorrect={false}>
+    Instituce, s. 47: _„Ius honorarium [je] honorární/úřednické právo“_
+  </QuizOption>
+  <QuizOption label={"b. právo tvořené správci provincií"} isCorrect={false}>
+    instituce, s. 47: _„vytváří ho [ius honorarium] správci provincií“_
+  </QuizOption>
+  <QuizOption label={"c. právo upravující honor"} isCorrect={true}>
+    Honor je pocta, ius honorarium se nezabývá úpravou udělování pocty. 
+    
+    Etymologicky jsou ovšem oba termíny spojené. Viz KUS, marg. č. 13, s. 7: _„Úředníky volilo lidové shromáždění (princip volitelnosti), výkon úřadu magistratury byl časově omezen, zpravidla na jeden rok (princip annuity, dočasnosti na rok), úřady se obsazovaly vždy několika kandidáty (princip kolegiality) a jejich výkon byl zásadně bezplatný, protože se pokládaly za poctu - honor (odtud honores = úřady; ius honorarium = právo, které vzniká z činnosti úředníků).“_ 
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>  
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Ususfructus je možné zřídit k: "} topic={vecnaPrava}>
+  <QuizOption label={"a. věcem movitým"} isCorrect={true}>
+    Ano, ususfructus mohl být zřízen k věcem movitým. Například ke stádu zvířat.
+
+    Instituce, s. 133: _„Předmětem [ususfructu] mohou být pouze nespotřebitelné a plodonosné věci“_
+    
+    KUS, marg. č. 309, s. 195: _„[Ususfruktuář] musil proto také např. část vytěžených plodů vynakládat na udržení věci v původním nezměněném stavu (např. doplňovat stádo z mláďat).“_
+  </QuizOption>
+  <QuizOption label={"b. pohledávkám"} isCorrect={true}>
+    Ano, ususfructus mohl být zřízen k pohledávkám. Týkal se totiž i civilních plodů.
+    
+    Instituce, s. 133: _„Předmětem [ususfructu] mohou být pouze nespotřebitelné a plodonosné věci“_
+    
+    KUS, marg. č. 309, s. 195: _„‚Civilní plody‘, tj. úroky, pobíral [ususfruktuář] po dobu trvání poží vacího práva.“_
+
+    KUS, marg. č. 309, s. 195: _„Podobně římská právní věda řešila případ, bylo-li požívací právo zřízeno k pohledávce (ususfructus nominis). Poživatel měl právo pobírat nejen úroky (‚plody‘), nýbrž i právo vybrat kapitál.“_
+  </QuizOption>
+  <QuizOption label={"c. věcem nemovitým"} isCorrect={true}>
+    Ano, ususfructus mohl být zřízen k věcem movitým. Například k zalesněnému pozemku.
+    
+    Instituce, s. 133: _„Předmětem [ususfructu] mohou být pouze nespotřebitelné a plodonosné věci“_
+    
+    KUS, marg. č. 309, s. 195: _„U požívacího práva k zalesněném pozemku byl oprávněn např. kácet pouze ty stromy, které k tomu byly určeny nebo jak to odpovídá řádnému užívání; v těchto mezích mohl odebrat např. i dříví z vývrati.“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Nedbalost normální: "} topic={zavazkovePravo}>
+<QuizOption label={"a. culpa levis latinsky"} isCorrect={true}>
+    Normální nedbalost lze ztotožnit s lehkou nedbalostí (culpa levis).
+    
+    KUS, marg. č. 185, s. 112: _„culpa levis (culpa omnis) - nedbalost normální, obyčejná“_
+</QuizOption>
+<QuizOption label={"b. běžná používá za měřítko průměrná péče starostlivého hospodáře"} isCorrect={true}>
+    Normální nedbalost je culpa levis a pro culpu levis se toto měřítko používá.
+
+    KUS, marg. č. 185, s. 112: _„culpa levis (culpa omnis) - nedbalost normální, obyčejná“_
+
+    Instituce, s. 142: _„culpa levis (lehká nedbalost) - kritériem je zachování opatrnosti pečlivého otce rodiny, tedy průměrného hospodáře“_
+    (KUS 112\)
+</QuizOption>
+<QuizOption label={"c. lehká nedbalost"} isCorrect={true}>
+    Normální nedbalost lze ztotožnit s lehkou nedbalostí (culpa levis).
+    
+    KUS, marg. č. 185, s. 112: _„culpa levis (culpa omnis) - nedbalost normální, obyčejná“_
+</QuizOption>
+</Quiz>
+
+<Quiz question={"Ususfructus k věci končí: "} topic={vecnaPrava}>
+  <QuizOption label={"a. nabytím věci novým vlastníkem"} isCorrect={false}>
+    Ne, věc, ke které se ususfructus vázal, mohla být převedena, ale na ususfructus to nemělo, dokonce nesmělo mít vliv.
+    
+    KUS, marg. č. 309, s. 196: _„[Vlastník] věcí mohl sice disponovat, ale jenom tak, aby tou dispozicí nebylo ohroženo požívací právo a jeho výkon. Vlastník tedy mohl převádět holé vlastnictví, mohl věc zastavit, zřizovat k pozemku, byl-li předmětem požívacího práva, služebnosti nebo i právo užívací.“_
+  </QuizOption>
+  <QuizOption label={"b. zánikem oprávněné právnické osoby"} isCorrect={true}>
+    Ano, ususfructus zanikal nejpozději smrtí oprávněného, nebo analogicky zánikem oprávněné právnické osoby.
+    
+    KUS, marg. č. 309, s. 196: _„Jako osobní služebnost zanikal ususfructus nejpozději smrtíoprávněného; byl-li zřízen ve prospěch právnické osoby, zanikal podlejustiniánského práva nejpozději po sto letech.“_
+  </QuizOption>
+  <QuizOption label={"c. smrtí vlastníka věci"} isCorrect={false}>
+    Ne, smrt vlastníka věci není důvodem k zániku požívacího práva k oné věci. Naopak, ususfructus má původ v jednání mortis causa, viz níže. 
+
+    Instituce, s. 133: _„Počátky jsou spojeny s narůstajícím počtem tzv. volných manželství ve 3. stol. př. n. l, a tedy s potřebou zajistit hmotně vdovu, která z tohoto důvodu nebyla členkou agnátské rodiny manžela a nemohla dědit; zůstavitel pomocí odkazu (legatum sinendi modo) ukládal dědici, aby obdařené vdově dovolil brát pravidelně plody z určité plodonosné věci“_
+  </QuizOption>
+  <QuizOption label={"d. smrtí oprávněného"} isCorrect={true}>
+    Ano, ususfructus zanikal nejpozději smrtí oprávněného.
+    
+    KUS, marg. č. 309, s. 196: _„Jako osobní služebnost zanikal ususfructus nejpozději smrtíoprávněného; byl-li zřízen ve prospěch právnické osoby, zanikal podlejustiniánského práva nejpozději po sto letech.“_
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Pokud společně dva Římané koupí pozemek, pak vzniká: "} topic={vecnaPrava}>
   <QuizOption label={"a. cominternas"} isCorrect={false}>
     Římské právo tento pojem nezná. 
   </QuizOption>
@@ -116,931 +338,1050 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   <QuizOption label={"a. kurijním"} isCorrect={false}>
     Curiátní shromáždění bylo organizováno na rodovém principu.
 
-    (KUS str. 2 uprostřed)
+    Instituce, s. 18: _„Comitia curiata [se skládá ze] 30 kurií podle příslušnosti k rodům.“_
+    
+    KUS, marg. č. 5, s. 1-2: _„stejně jako Řekům fratrie, je i Římanům známa kurie (curia), vyšší organizační jednotka, která vzniká seskupením příbuzných rodů k cílům vojenským, náboženským a všeobecně politickým. Kurii tvořilo deset rodů, z pramenů je také známo, že v čele kurie stál hodnostář, zvaný ‚curio‘.“_
   </QuizOption>
   <QuizOption label={"b. místním"} isCorrect={false}>
     Curiátní shromáždění bylo organizováno na rodovém principu.
     
-    (KUS str. 2\)
+    Instituce, s. 18: _„Comitia curiata [se skládá ze] 30 kurií podle příslušnosti k rodům.“_
+    
+    KUS, marg. č. 5, s. 1-2: _„stejně jako Řekům fratrie, je i Římanům známa kurie (curia), vyšší organizační jednotka, která vzniká seskupením příbuzných rodů k cílům vojenským, náboženským a všeobecně politickým. Kurii tvořilo deset rodů, z pramenů je také známo, že v čele kurie stál hodnostář, zvaný ‚curio‘.“_
   </QuizOption>
   <QuizOption label={"c. rodovém"} isCorrect={true}>
     Curiátní shromáždění bylo organizováno na rodovém principu.
 
-    (Instituce str. 1, 13, KUS str. 1\)
+    Instituce, s. 18: _„Comitia curiata [se skládá ze] 30 kurií podle příslušnosti k rodům.“_
+    
+    KUS, marg. č. 5, s. 1-2: _„stejně jako Řekům fratrie, je i Římanům známa kurie (curia), vyšší organizační jednotka, která vzniká seskupením příbuzných rodů k cílům vojenským, náboženským a všeobecně politickým. Kurii tvořilo deset rodů, z pramenů je také známo, že v čele kurie stál hodnostář, zvaný ‚curio‘.“_
   </QuizOption>
   <QuizOption label={"d. příbuzenském"} isCorrect={true}>
-    Curiátní shromáždění bylo organizováno na rodovém principu.
+    Curiátní shromáždění bylo organizováno na rodovém principu, tzn. také na principu příbuzenském.
 
-    (KUS str. 1\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Hrubá nedbalost \: "}>
-  <QuizOption label={"a. culpa lata latinsky"} isCorrect={true}>
-    (Instituce, str. 142\)
-  </QuizOption>
-  <QuizOption label={"b. je širší než úmysl"} isCorrect={false}>
-    (Instituce, str. 142\)
-  </QuizOption>
-  <QuizOption label={"c. zahrnuje více případů než úmysl"} isCorrect={false}>
-    (Instituce, str. 142\)
-  </QuizOption>
-  <QuizOption label={"d. lze se dohodnout, že se za ní nebude odpovídat"} isCorrect={false}>
+    Instituce, s. 18: _„Comitia curiata [se skládá ze] 30 kurií podle příslušnosti k rodům.“_
     
-  </QuizOption>
-  <QuizOption label={"a. culpa levis latinsky"} isCorrect={true}>
-    (KUS s.112)
-  </QuizOption>
-  <QuizOption label={"b. běžná používá za měřítko průměrná péče starostlivého hospodáře"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-  <QuizOption label={"c. lehká nedbalost"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-  <QuizOption label={"a. culpa in concreto latinsky"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-  <QuizOption label={"b. stará-li se někdo o svého koně velmi dobře a o vámi ustájeného koně jen průměrně, až špatně, dopouští se nedbalosti"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-  <QuizOption label={"c. je měřítkem vždy jiný člověk, a to ten, který se nedbalosti dopustil"} isCorrect={true}>
-    (KUS 112\)
+    KUS, marg. č. 5, s. 1-2: _„stejně jako Řekům fratrie, je i Římanům známa kurie (curia), vyšší organizační jednotka, která vzniká seskupením příbuzných rodů k cílům vojenským, náboženským a všeobecně politickým. Kurii tvořilo deset rodů, z pramenů je také známo, že v čele kurie stál hodnostář, zvaný ‚curio‘.“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Odpovědnost / ručení za náhodu \: "}>
-  <QuizOption label={"a. custodia latinsky"} isCorrect={true}>
-    (latinsko-český slovníček římského práva str. 56\) KUS 112
-  </QuizOption>
-  <QuizOption label={"b. odpovědnost za náhodu, ručení za náhodu KUS 112"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. měřítkem zde byl přepečlivý otec římské rodiny"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-  <QuizOption label={"d. za justiniánského práva považována za zavinění"} isCorrect={true}>
-    (KUS 112\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Justiniánská Digesta jsou kodifikací \: "}>
+<Quiz question={"Justiniánská Digesta jsou kodifikací: "}>
   <QuizOption label={"a. jurisprudence"} isCorrect={true}>
-    (KUS str. 45\)
+    Ano, Digesta jsou kodifikací jurisprudence.
+
+    KUS, marg. č. 69, str. 45: _„Nová komise stála před těžkým úkolem pořídit sbírku ‚práva starého‘ (ius), tedy vybrat ze spisů klasické jurisprudence všechno platné, živé a užitečné, vybraná místa přehledně sestavit, jednotně upravit (eventuálně i zmodernizovat) a tak zpřístupnit široké veřejnosti, právnické především.“_
   </QuizOption>
   <QuizOption label={"b. legislativy"} isCorrect={false}>
-    
+    Ne, Digesta jsou kodifikací jurisprudence.
   </QuizOption>
   <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+    Ne, Digesta jsou kodifikací jurisprudence. 
   </QuizOption>
   <QuizOption label={"d. judikatury"} isCorrect={false}>
-    
+    Ne, Digesta jsou kodifikací jurisprudence.
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Mezi části právního jednání inter vivos patří \: "}>
+<Quiz question={"Mezi části právního jednání inter vivos patří: "}>
   <QuizOption label={"a. mancipatio"} isCorrect={true}>
-    (Instituce str. 286 \+ z moodle cvičný test 2020)
+    Ano, mancipatio patří mezi právní jednání inter vivos.
+    
+    Instituce, s. 286: _„inter vivos [zahrnuje] např. contractus, mancipatio“_
   </QuizOption>
   <QuizOption label={"b. mezi živými, upravují se poměry mezi stranami po dobu jejich života"} isCorrect={true}>
-    (smlouvy (smlouva – contractus, Instituce str. 286)p
+    Ano, právní jednání inter vivos upravuje poměry mezi stranami po dobu jejich života.
+
+    Instituce, s. 286: _„inter vivos [znamená, že] právní účinky jednání mají nastat za života jednajících“_
   </QuizOption>
   <QuizOption label={"c. manumissio"} isCorrect={true}>
-    (z moodle cvičný test 2020 \+ propuštění otroka na svobodu \+ přednáška z římana 7.12. 2021 [https://youtu.be/u7FWNVybhg0?t=1180](https://youtu.be/u7FWNVybhg0?t=1180): jednání mortis causa (pokud se jedná o propuštění z testamentu)
+    Ano, manumissio (propuštění otroka na svobodu) může být jednání inter vivos, ale může být i jednáním mortis causa. 
+
+    Srovnej např.: 
+
+    Instituce, s. 67: _„manumissio censu (propuštění censem) - patron dá zapsat svého otroka mezi členy své rodiny při censu“_ – inter vivos
+
+    Instituce, s. 67: _„manumissio testamento (propuštění závětí) - pán prohlásí v závěti otroka za svobodného (libertus orcinus)“_ – mortis causa
   </QuizOption>
   <QuizOption label={"d. modus"} isCorrect={true}>
-    (instituce str. 290, KUS str. 105 \+ překlad: účelové určení – má okamžité účinky narozdíl od suspenzivní podmínky. Př. dárce či zůstavitel mohl obdařenému uložit, aby něco učinil. Tzn. dar může přijmout ihned, poté ale musí splnit danou podmínku. Závazný je modus jen tehdy, pokud je ve prospěch dárce, třetí osoby nebo veřejného zájmu. Jedná-li se o zájem obdarovaného, závazný není)
+    Ano, modus mohl být právním jednáním inter vivos, ale také právním jednáním mortis causa.
+
+    KUS, marg. č. 175, s. 105: _„Při lukrativních právních jednáních - typicky při darování, při odkazu a ústanovení dědicem a při manumissi - mohl dárce či zůstavitel obdařenému uložit, aby něco vykonal, např. aby postavil zůstaviteli náhrobek, anebo propustil otroka na svobodu, anebo aby část sumy, kterou dostal darem, použil k založení nadace.“_
+  </QuizOption>
+  <QuizOption label={"e. donatio mortis causa"} isCorrect={false}>
+    Ne, donatio mortis causa je právním jednáním mortis causa.
+
+    Instituce, s. 252: _„Donatio mortis causa (darování pro případ smrti) [je] právní jednání, v jehož důsledku dochází k převodu vlastnického práva pro případ smrti…“_
+  </QuizOption>
+  <QuizOption label={"f. condicio"} isCorrect={true}>
+    Ano, condicio může být právní jednání inter vivos. 
+
+    Instituce, s. 288: _„Condicio (podmínka) [znamená, že] účinky právního jednání se váží na to, zda nastane/nenastane budoucí nejistá událost (condicio propria).“_
+  </QuizOption>
+  <QuizOption label={"f. condicio"} isCorrect={true}>
+    Ano, condicio může být právní jednání inter vivos. 
+
+    Instituce, s. 288: _„Condicio (podmínka) [znamená, že] účinky právního jednání se váží na to, zda nastane/nenastane budoucí nejistá událost (condicio propria).“_
+  </QuizOption>
+  <QuizOption label={"g. odkaz"} isCorrect={false}>
+    Ne, odkaz je právní jednání mortis causa. 
+
+    Instituce, s. 245: _„Legatum (odkaz) [je] dispozice pro případ smrti (mortis causa“_
+  </QuizOption>
+  <QuizOption label={"h. mancipatio"} isCorrect={true}>
+    Ano, mancipatio je právní jednání inter vivos. 
+
+    Instituce, s. 112: _„Mancipatio [vyžaduje] přítomnost převodce (mancipio dans) a nabyvatele (mancipio accipiens)“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Mezi právní jednání inter vivos NEpatří \: "}>
-  <QuizOption label={"a. mortis causa"} isCorrect={true}>
-    
-  </QuizOption>
-  <QuizOption label={"b. odkaz"} isCorrect={true}>
-    (https://cs.wikipedia.org/wiki/Mortis\_causa****)
-  </QuizOption>
-  <QuizOption label={"c. donatio mortis causa"} isCorrect={true}>
-    (z moodle cvičný test 2020 \+ Darování pro případ smrti, wikipedie)
-  </QuizOption>
-  <QuizOption label={"d. mancipatio"} isCorrect={false}>
-    (z moodle cvičný test 2020 \+ způsob nabytí vlastnictví mezi živými)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Demonstratio \: "}>
+<Quiz question={"Demonstratio: "}>
   <QuizOption label={"a. je ohrazením proti nepravdivému tvrzení"} isCorrect={false}>
-    (Instituce, str. 269\)
+    Ne, demonstratio upřesňuje předmět sporu. 
+
+    Instituce, s. 269: _„Demonstratio - upřesňuje předmět sporu, vkládala se před intenci“_  
   </QuizOption>
   <QuizOption label={"b. odkazuje na tvrzení svědka"} isCorrect={false}>
-    (Instituce, str. 269\)
+    Ne, demonstratio upřesňuje předmět sporu. 
+
+    Instituce, s. 269: _„Demonstratio - upřesňuje předmět sporu, vkládala se před intenci“_    
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. rozvádí intenci"} isCorrect={false}>
+    Ne, demonstratio se vkládá před intenci, nemůže ji tudíž rozvádět.
+
+    Instituce, s. 269: _„Demonstratio - upřesňuje předmět sporu, vkládala se před intenci“_
   </QuizOption>
-  <QuizOption label={"d. rozvádí intenci"} isCorrect={true}>
-    (Instituce, str. 269\)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={true}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Dítě, které se narodilo 183\. den od zániku manželství rozvodem \: "}>
+<Quiz question={"Dítě, které se narodilo 183. den od zániku manželství rozvodem: "} topic={rodinaManzelstvi}>
   <QuizOption label={"a. je kognátem svého otce"} isCorrect={true}>
-    (Instituce str. 77: přímá linie pokrevního příbuzenství)
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
+    Ano, dítě bylo narozeno do 10 měsíců od zániku manželství, tudíž se narodilo ve vztahu uznaném právem a je pokrevně příbuzné se svým otcem. 
     
+    Instituce, s. 76: _„Cognatio (pokrevní příbuzenství) je zprostředkováno mužem i ženou.“_
+
+    Instituce, s. 95: _„Nemanželské děti (spurii/vulgo concepti) - děti narozené ze vztahu neuznaného právem mají pokrevní příbuzné pouze ze strany matky.“_
+
+    KUS, marg. č. 121, s. 73: _„za otce dítěte se pokládá manžel, když se dítě narodilo po 181. dnu od uzavření sňatku a do 10 měsíců poté, co manželství skončilo, ať smrtí manžela nebo rozvodem.“_
   </QuizOption>
+
   <QuizOption label={"c. je agnátem své matky"} isCorrect={false}>
-    (Instituce str. 76: je kognátem své matky, Instituce str. 77: agnatio může být zprostředkováno pouze mužem)
+    Ne, je „pouze“ kognátem své matky. 
+    
+    Agnátské příbuzenství je zprostředkováno otcem, kterým je v tomto případě bývalý manžel matky. Ze zadání víme, že se jedná o rozvedený pár, tudíž agnátské příbuzenství mezi otcem a matkou předpokládat nemůžeme a nemůžeme proto ani říci, že dítě je agnátem své matky.
+
+    KUS, marg. č. 121, s. 73: _„za otce dítěte se pokládá manžel, když se dítě narodilo po 181. dnu od uzavření sňatku a do 10 měsíců poté, co manželství skončilo, ať smrtí manžela nebo rozvodem.“_
+
+    Instituce, s. 77: _„Agnatio může být zprostředkováno pouze mužem“_
+
+    Instituce, s. 77: _„Agnace zahrnuje osoby, které podléhají moci jednoho otce rodiny (familia propria), do takového agnátské rodiny patří paterfamilias, jeho manželka (jestliže je podřízena jeho moci - in manu), potomci podléhající jeho moci (in patria potestate).“_
   </QuizOption>
   <QuizOption label={"d. je agnátem svého otce"} isCorrect={true}>
-    (Instituce str. 95: vyvratitelná domněnka otcovství – za takové dítě je považováno dítě, které se narodilo mezi 182 dnem od vzniku manželství, do 300 dne po jeho zániku)
+    Ano, dítě se narodilo do 10 měsíců po rozvodu, otec je tedy známý, dítě je jeho agnátem.
+    
+    KUS, marg. č. 121, s. 73: _„Za otce dítěte se pokládá manžel, když se dítě narodilo po 181. dnu od uzavření sňatku a do 10 měsíců poté, co manželství skončilo, ať smrtí manžela nebo rozvodem.“_
+
+    Instituce, s. 77: _„Agnatio může být zprostředkováno pouze mužem“_
+
+    Instituce, s. 77: _„Agnace zahrnuje osoby, které podléhají moci jednoho otce rodiny (familia propria), do takového agnátské rodiny patří paterfamilias, jeho manželka (jestliže je podřízena jeho moci - in manu), potomci podléhající jeho moci (in 
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Náležitosti vydržení \: "}>
+<Quiz question={"Relativní nedbalost: "} topic={zavazkovePravo}>
+  <QuizOption label={"a. culpa in concreto latinsky"} isCorrect={true}>
+    Relativní nedbalost se latinsky řekne culpa in concreto.
+
+    KUS, marg. č. 185, s. 112: _„culpa in concreto (clupa quam suis) - nedbalost relativní“_
+  </QuizOption>
+  <QuizOption label={"b. stará-li se někdo o svého koně velmi dobře a o vámi ustájeného koně jen průměrně, až špatně, dopouští se nedbalosti"} isCorrect={true}>
+    Relativní nedbalost se posuzuje podle pečlivosti, kterou zavázaný věnuje svým vlastním věcem.
+
+    KUS, marg. č. 185, s. 112: _„Culpa in concreto je měřítkem přísnějším. Opatrnost se totiž neměří abstraktním měřítkem starostlivého hospodáře vůbec, ale konkrétně podle dlužníka (zavázaného), o kterého se jedná. Jeho opatrnost v nakládání s cizím majetkem se posuzuje podle pečlivosti, kterou věnuje svým věcem vlastním.“_
+  </QuizOption>
+  <QuizOption label={"c. je měřítkem vždy jiný člověk, a to ten, který se nedbalosti dopustil"} isCorrect={true}>
+    Relativní nedbalost se posuzuje podle pečlivosti, kterou zavázaný věnuje svým vlastním věcem.
+
+    KUS, marg. č. 185, s. 112: _„Culpa in concreto je měřítkem přísnějším. Opatrnost se totiž neměří abstraktním měřítkem starostlivého hospodáře vůbec, ale konkrétně podle dlužníka (zavázaného), o kterého se jedná. Jeho opatrnost v nakládání s cizím majetkem se posuzuje podle pečlivosti, kterou věnuje svým věcem vlastním.“_
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Náležitosti vydržení: "} topic={vecnaPrava}>
   <QuizOption label={"a. res habilis"} isCorrect={true}>
-    
+    Instituce, s. 110: _„Res habilis (věc způsobilá k vydržení) - nelze vydržet např. věci cizinců (res hostibus), věci vyloučené z právního obchodu (res extra commercium), pruh mezi pozemky (confinium, limes - 1,5 m), věci zcizené ženou bez souhlasu poručníka, věci kradené (res furtivae) a podle lex Plautia de vi (78/63 př. n. 1.) věci získané násilím (res vi possessae), obě posledně uvedené překážky od.“_
   </QuizOption>
   <QuizOption label={"b. titulus"} isCorrect={true}>
-    
+    Instituce, s. 111: _„Titulus iustus (právní titul) - věc byla nabyta na základě titulu, který za normálních podmínek vede k nabytí vlastnického práva (např. pro donato, pro soluto, pro legato, pro derelicto)“_
   </QuizOption>
   <QuizOption label={"c. bona fides"} isCorrect={true}>
-    
+    Instituce, s. 111: _„Bona fides (dobrá víra) - vydržitel si není vědom, že držbou věci poškozuje jiného, splnění této podmínky postačovalo v okamžiku zahájení vydržení“_
   </QuizOption>
   <QuizOption label={"d. possessio"} isCorrect={true}>
-    
+    Instituce, s. 110: _„Possessio (držba) - nepřerušené fyzické ovládání věci spojené s vůlí být jejím vlastníkem.“_
   </QuizOption>
+  <QuizOption label={"d. tempus"} isCorrect={true}>
+    Podle klasického práva doba 1 roku pro movité věci a 2 let pro nemovité. Podle práva justiniánského 3 roky pro movité věci a 10 let pro věci nemovité mezi přítomnými a 20 let mezi nepřítomnými.
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Titulus iustus při vydržení je:"} topic={vecnaPrava}>
   <QuizOption label={"a. koupě"} isCorrect={true}>
-    (také sem patří prodej, zřízení věna, darování, zaplacení dluhu, smír) *(Instituce, str. 111\)
+    Ano, koupě patří mezi právní tituly,  které za normálních podmínek vedou k nabytí vlastnického práva.
+
+    Instituce, s. 111: _„Titulus iustus (právní titul) - věc byla nabyta na základě titulu, který za normálních podmínek vede k nabytí vlastnického práva (např. pro donato, pro soluto, pro legato, pro derelicto).“_
+
+    KUS, marg. č. 290, s. 176: _„Proto také případy, které se pokládaly za řádné kauzy pro vydržení, byly do značné míry totožné s kauzami při tradici: byla to tedy koupě a prodej, zřízení věna, darování, zaplacení dluhu, smír apod.“_
   </QuizOption>
   <QuizOption label={"b. rei vindicatio"} isCorrect={false}>
-    (typ žaloby)
+    Ne, reivindikace je typ žaloby na ochranu kvirického vlastníka, nikoliv právní titul, který za normálních podmínek vede k nabytí vlastnického práva.
+
+    Instituce, s. 111: _„Titulus iustus (právní titul) - věc byla nabyta na základě titulu, který za normálních podmínek vede k nabytí vlastnického práva (např. pro donato, pro soluto, pro legato, pro derelicto).“_
+
+    Instituce, s. 209: _„Rei vindicatio slouží k vydání ukradené věci [a] může ji použít pouze kviritský vlastník.“_
   </QuizOption>
   <QuizOption label={"c. směna"} isCorrect={true}>
-    (Instituce, str. 111\)
+    Ano, směna patří mezi právní tituly, které za normálních podmínek vedou k nabytí vlastnického práva.
+
+    Instituce, s. 111: _„Titulus iustus (právní titul) - věc byla nabyta na základě titulu, který za normálních podmínek vede k nabytí vlastnického práva (např. pro donato, pro soluto, pro legato, pro derelicto).“_
+
+    KUS, marg. č. 290, s. 176: _„Proto také případy, které se pokládaly za řádné kauzy pro vydržení, byly do značné míry totožné s kauzami při tradici: byla to tedy koupě a prodej, zřízení věna, darování, zaplacení dluhu, smír apod.“_
   </QuizOption>
   <QuizOption label={"d. iusta causa"} isCorrect={true}>
-    (kauza)
+    Ano, iusta causa je synonem titulus iustus. 
+
+    KUS, marg. č. 290, s. 176: _„Titulus nebo také iusta causa byl požadavek, aby držba vedoucí k vydržení, byla opřena o určitý důvod či kauzu, která měla zdůvodnit, proč držitel drží. Tímto  důvodem neboli kauzou musila být skutečnost, na základě které držitel držbu získal.“_
+  </QuizOption>
+  <QuizOption label={"e. důvod, kterým vzniká nárok na věc"} isCorrect={true}>
+    Ano, toto je víceméně definice právního titulu.
+
+    Instituce, s. 111: _„Titulus iustus (právní titul) - věc byla nabyta na základě titulu, který za normálních podmínek vede k nabytí vlastnického práva (např. pro donato, pro soluto, pro legato, pro derelicto).“_
+  </QuizOption>
+  <QuizOption label={"f. kauza, na základě které vzniká nárok na věc"} isCorrect={true}>
+    Ano, iusta causa je synonem titulus iustus. 
+
+    KUS, marg. č. 290, s. 176: _„Titulus nebo také iusta causa byl požadavek, aby držba vedoucí k vydržení, byla opřena o určitý důvod či kauzu, která měla zdůvodnit, proč držitel drží. Tímto  důvodem neboli kauzou musila být skutečnost, na základě které držitel držbu získal.“_
+  </QuizOption>
+  <QuizOption label={"g. fikce nabytí vlastnictví"} isCorrect={false}>
+    Ne, titulus iustus není fikce nabytí vlastnictví. 
+  </QuizOption>
+  <QuizOption label={"h. způsobilost subjektu vydržet věc"} isCorrect={false}>
+    Ne, titulus iustus není způsobilost subjektu vydržet věc.
+  </QuizOption>
+  <QuizOption label={"ch. spravedlivý důvod"} isCorrect={true}>
+    Ano, titulus iustus je spravedlivý důvod, jelikož je synonymem pro iusta causa.
+
+    KUS, marg. č. 290, s. 176: _„Titulus nebo také iusta causa byl požadavek, aby držba vedoucí k vydržení, byla opřena o určitý důvod či kauzu, která měla zdůvodnit, proč držitel drží. Tímto  důvodem neboli kauzou musila být skutečnost, na základě které držitel držbu získal.“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Při abstraktním způsobu nabytí vlastnictví NEzáleží na \: "}>
+<Quiz question={"Při abstraktním způsobu nabytí vlastnictví nezáleží na: "} topic={pravniJednani}>
   <QuizOption label={"a. identifikaci věci"} isCorrect={false}>
-    (z nahlížení po testu)
+    Ne, při abstraktním způsobu nabytí na identifikaci věci záleží. 
   </QuizOption>
   <QuizOption label={"b. kauze"} isCorrect={true}>
-    (z nahlížení po testu \+ [https://cs.wikipedia.org/wiki/Injurecese](https://cs.wikipedia.org/wiki/Injurecese) \+ KUS str. 171\)
+    Ano, abstraktní způsob nepřihlíží k důvodu, proč bylo právní jednání uzavřeno. 
+
+    Instituce, s. 285: _„Abstraktní [znamená, že] při zkoumání platnosti právního jednání se nepřihlíží k důvodu, proč bylo uzavřeno“_
   </QuizOption>
   <QuizOption label={"c. formě"} isCorrect={false}>
-    (z nahlížení po testu)
+    Ne, abstraktní právní jednání je zároveň formální právní jednání.
+
+    Instituce, s. 285: _„Abstraktní [právní jednání] – jedná se zároveň o formální právní jednání“_
+
+    Instituce, s. 285: _„Formální [právní jednání] – platnost právního jednání závisí na dodržení předepsané formy“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Při formálním způsobu nabytí vlastnictví \: "}>
-  <QuizOption label={"a. musí být splněna forma"} isCorrect={true}>
-    
-  </QuizOption>
-  <QuizOption label={"a. lze jím převést vlastnické právo na jakoukoliv věc"} isCorrect={true}>
-    (mancipační i nemancipační)
-  </QuizOption>
+<Quiz question={"Konkludentní jednání je jednání: "} topic={pravniJednani}>
   <QuizOption label={"a. následné"} isCorrect={false}>
-    
+    Ne, konkludentní neznamená následný. 
   </QuizOption>
   <QuizOption label={"b. záludné"} isCorrect={false}>
-    
+    Ne, konkludentní jednání není záludné.
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. faktické"} isCorrect={true}>
+    Ano, konkludentní jednání se také nazývá jednání faktické. 
+
+
+    Instituce, s. 292:_„[Neformální, nevýslovný projev vůle jednajícího můžeme nazvat] faktické (konkludentní) jednání“_
+
+    KUS, marg. č. 157, s. 92: _„Vůle může být projevena nepřímo, mlčky, tzv. konkludentním jednáním (v latině facta concludentia). Vůle sice výslovně projevena není, zjednání člověka však nesmlouvavě vyplývá, že jeho jednání je projevem určité vůle, určitého stanoviska: např. toho, kdo platí pozůstalostní dluhy anebo prodává pozůstalostní věci, považujeme za dědice, i kdyby výslovně neprohlásil, že nabízenou pozůstalost přijímá.“_ 
   </QuizOption>
-  <QuizOption label={"d. faktické"} isCorrect={true}>
-    (Instituce str. 292, [https://ppropo.mpsv.cz/I4Pravnijednanivpracovnepravnich](https://ppropo.mpsv.cz/I4Pravnijednanivpracovnepravnich) : konkludentní právní jednání je jednání, které je učiněno „mlčky“  faktickým jednáním)
+  <QuizOption label={"d. facta concludentia"} isCorrect={true}>
+    Ano, to je latinsky „konkludentní právní jednání“.
+  </QuizOption>
+  <QuizOption label={"e. podloudné"} isCorrect={true}>
+    Ne, konkludentní jednání není podloudné.
+  </QuizOption>
+  <QuizOption label={"f. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Manželství se uzavíralo \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+<Quiz question={"Manželství se uzavíralo: "} topic={rodinaManzelstvi}>
+  <QuizOption label={"a. předáním věna"} isCorrect={false}>
+    Ne, předání věna nebylo pro uzavření manželství nutné.
+
+    KUS, marg. č. 228, s. 138: _„Uzavření manželství nebylo vázáno na žádnépevnéformy, pevné formy měla však „in manum conventio“ (tj. podrobení se moci manželské) a pokud byla manus s manželstvím pravidelně spojována, jevily se její formy pochopitelně jako formy uzavření sňatku vůbec. … Pro manželství, které nebylo spojeno s manželskou mocí, platilo pouze pravidlo „Manželství nezakládá soulož, ale souhlas“. Stačiljakýkoliprojev souhlasu, pokud se objevovaly nějaké formality, nebyly podle práva nutné. Platí to zejména o oblíbeném „uvedení do manželova domu“ (deductio in domům mariti) za přítomnosti sedmi svědků.“_
   </QuizOption>
-  <QuizOption label={"b. předáním věna"} isCorrect={false}>
-    (Instituce str. 86: nevyžadovalo se provedení žádného úkonu)
+  <QuizOption label={"b. obrazným prodejem nevěsty ženichovi"} isCorrect={false}>
+    Ne, obrazný prodej nebyl pro uzavření manželství nutný.
+
+    KUS, marg. č. 228, s. 138: _„Uzavření manželství nebylo vázáno na žádné pevné formy … Pro manželství, které nebylo spojeno s manželskou mocí, platilo pouze pravidlo ‚manželství nezakládá soulož, ale souhlas‘. Stačil jakýkoli projev souhlasu, pokud se objevovaly nějaké formality, nebyly podle práva nutné.“_
   </QuizOption>
-  <QuizOption label={"c. obrazným prodejem nevěsty ženichovi"} isCorrect={false}>
-    (Instituce str. 86: nevyžadovalo se provedení žádného úkonu \+ KUS str. 138\)
+  <QuizOption label={"c. svobodným neformálním projevem vůle"} isCorrect={true}>
+    Ano, uzavření manželství vyžaduje svobodný neformální projev vůle.
+
+    KUS, marg. č. 227, s. 137: _„Snoubenci uzavírají manželství dobrovolně a žádného z nich nelze nutit, a to ani tehdy ne, když se sami při takřečených zásnubách (sponsalia) zavázali, že do manželství vstoupí.“_
+
+    KUS, marg. č. 228, s. 138: _„Uzavření manželství nebylo vázáno na žádné pevné formy … Pro manželství, které nebylo spojeno s manželskou mocí, platilo pouze pravidlo ‚manželství nezakládá soulož, ale souhlas‘. Stačil jakýkoli projev souhlasu, pokud se objevovaly nějaké formality, nebyly podle práva nutné.“_
   </QuizOption>
-  <QuizOption label={"d. svobodným neformálním projevem vůle"} isCorrect={true}>
-    (Instituce str. 86, KUS str. 137-138)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Konstitutivní rozsudek má místo \: "}>
+<Quiz question={"Konstitutivní rozsudek má místo: "} topic={pravniJednani}>
   <QuizOption label={"a. actio negatoria"} isCorrect={false}>
-    (Instituce str. 118 \+ Instituce str. 282\)
+    Ne, actio negatoria nevede ke konstitutivnímu rozsudku, ale k rozsudku deklaratornímu. Nevytváří totiž nové právo, ale chrání již existující práva vlastníka.
+
+    Instituce, s. 118: _„Actio negatoria slouží k ochraně vlastníka před rušením (např. usurpování si služebnosti).“_
+
+    KUS, marg. č. 180, s. 109: _„Bývá pravidlem, že soudní rozhodnutí má povahu deklaratorní, tj. nevytváří práva nová, ale pouze vyhlašuje (deklaruje), co právem je a co právem není.“_
+
+    Instituce, s. 282: _„[Když mají] úřední výroky a rozsudky povahu konstitutivní, vytvářejí nová práva a povinnosti.“_
   </QuizOption>
   <QuizOption label={"b. rei vindikace"} isCorrect={false}>
-    (KUS str. 182 \+ Instituce str. 282\)
+    Ne, rei vindikace nevede ke konstitutivnímu rozsudku, ale k rozsudku deklaratornímu. Nevytváří totiž nové právo, ale chrání již existující práva vlastníka.
+
+    Instituce, s. 117: _„[Při rei vindikaci se] žalobce prohlašuje za vlastníka věci a žádá její vrácení.“_
+
+    KUS, marg. č. 180, s. 109: _„Bývá pravidlem, že soudní rozhodnutí má povahu deklaratorní, tj. nevytváří práva nová, ale pouze vyhlašuje (deklaruje), co právem je a co právem není.“_
+
+    Instituce, s. 282: _„[Když mají] úřední výroky a rozsudky povahu konstitutivní, vytvářejí nová práva a povinnosti.“_
   </QuizOption>
   <QuizOption label={"c. actio communi dividundo"} isCorrect={true}>
-    (Instituce str. 109 odst. 10\) – jediná z odpovědí, u které byl v učebnici výslovně zmíněn konstitutivní rozsudek \+ Instituce str. 282****)
+    Ano, actio communi dividundo vede ke konstitutivnímu rozsudku, jelikož 
+    
+    KUS, marg. č. 180, s. 109: _„V římském právu takovou výjimku tvořily rozsudky, vyhlašované ve sporech o rozdělení společně držené věci, o rozdělení pozůstalosti mezi spoludědice a ve sporech o určení mezí sousedních pozemků. V těchto případech měl soudce pravomoc přisoudit té či oné straně právo nové a jestli té pravomoci užil, měl jeho rozsudek povahu konstitutivní a stával se právní skutečností.“_
+
+    Instituce, s. 109: _„[Originálním způsobem nabytí vlastnictví je adiudicatio (přisouzení)] iudicium legitimum - vynesením konstitutivního rozsudku, kterým je jeden z účastníků sporu určen za vlastníka věci (např. actio communi dividundo).“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Princip nulli res sua servit se vztahuje na \: "}>
+<Quiz question={"Princip nulli res sua servit se vztahuje na: "} topic={vecnaPrava}>
   <QuizOption label={"a. servitus viae"} isCorrect={true}>
-    (Instituce str. 130: služebnost cesty také zanikající na principu nulli res sua servit \+ platí na služebnosti)
+    Ano, tento princip se vztahuje na všechny služebnosti.
+
+    KUS, marg. č. , s. :_„Předmět služebnosti musí být vůči oprávněnému ze služebnosti věcí cizí, neboť nikomu, jak to římskoprávní myšlení vyjadřovalo v jednom ze svých nejznámějších pravidel, ‚nemůže sloužit jeho věc‘ (nemini res sua servit), nikdo nemůže mít služebnost k vlastní věci. Vlastník věci a ten, kdo je oprávněn ze služebnosti k této věci, jsou tedy zásadně dvě odlišné osoby. Splyne-li obojí v jediné osobě, služebnost nezbytně tímto splynutím neboli konfuzí (confusio) zaniká.“_
   </QuizOption>
   <QuizOption label={"b. ususfructus"} isCorrect={true}>
-    (KUS str. 195: služebnost zanikající na principu nulli res sua servit v případě sloučení vlastníka a oprávněné v jednu osobu \+ platí na služebnosti)
+    Ano, tento princip se vztahuje na všechny služebnosti.
+
+    KUS, marg. č. , s. :_„Předmět služebnosti musí být vůči oprávněnému ze služebnosti věcí cizí, neboť nikomu, jak to římskoprávní myšlení vyjadřovalo v jednom ze svých nejznámějších pravidel, ‚nemůže sloužit jeho věc‘ (nemini res sua servit), nikdo nemůže mít služebnost k vlastní věci. Vlastník věci a ten, kdo je oprávněn ze služebnosti k této věci, jsou tedy zásadně dvě odlišné osoby. Splyne-li obojí v jediné osobě, služebnost nezbytně tímto splynutím neboli konfuzí (confusio) zaniká.“_
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. nabývání skrze svého otroka"} isCorrect={false}>
+    Ne, princip se vztahuje ke služebnostem a zde se nejedná o služebnost.
   </QuizOption>
-  <QuizOption label={"d. nabývání skrze svého otroka"} isCorrect={false}>
-    (protože to je držba; není to služebnost)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Praktickým projevem principu nulli res sua servit je \: "}>
+<Quiz question={"Praktickým projevem principu nulli res sua servit je: "} >
   <QuizOption label={"a. confusio služebnosti"} isCorrect={true}>
-    (KUS str. 191: confusio* *– zánik, Instituce str. 129\)
+    Ano, confusio služebnosti vede k jejímu zániku.
+    
+    KUS, marg. č. 307, s. 191: _„Vlastník věci a ten, kdo je oprávněn ze služebnosti k této věci, jsou tedy zásadně dvě odlišné osoby. Splyne-li obojí v jediné osobě, služebnost nezbytně tímto splynutím neboli konfuzí (confusio) zaniká.“_
+
+    Instituce, s. 129: _„Zánik pozemkových služebností [může nastat] dojde-li ke spojení vlastnictví k pozemku služebnému a panujícímu (confusio).“_
   </QuizOption>
   <QuizOption label={"b. zánik služebnosti neužíváním"} isCorrect={false}>
-    (Instituce str. 127, 129\)
+    Ne, nevyužívání sice vede k zániku, ale není aplikací tohoto principu.
+
+    Instituce str. 129: _„Zánik pozemkových služebností [může nastat] nevykonáváním služebnosti po určitou dobu (non uso).“_
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. samostatná nezcizitelnost služebnosti"} isCorrect={false}>
+    Ne, jedná se o jinou zásadu. 
+
+    Instituce, s. 127: _„Nezcizitelnost - služebnost je pevně spojena s pozemkem a přísluší/ zatěžuje proto každého vlastníka panujícího/služebného pozemku, nelze ji převést samostatně“_
   </QuizOption>
-  <QuizOption label={"d. samostatná nezcizitelnost služebnosti"} isCorrect={false}>
-    (*Instituce str. 127 – jedná se o jinou zásadu)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Tím, kdo může použít interdictum de vi armata, ale nemůže použít interdictum de vi, je \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    (Instituce – 128\)
+<Quiz question={"Tím, kdo může použít interdictum de vi armata, ale nemůže použít interdictum de vi, je: "} topic={zavazkovePravo}>
+  <QuizOption label={"a. bezvadný držitel"} isCorrect={false}>
+    Ne, bezvadný držitel je chráněn oběma interdikty.
+
+    Instituce, s. 128: _„Interdictum unde vi směřuje proti tomu, kdo za použití násilí (beze zbraní) zbavil druhého držby nemovitosti, žadatel nesměl držbu nabýt vi, clam, precario (tj. vadně).“_
+
+    Instituce, s. 128: _Interdictum unde vi armata směřuje proti tomu, kdo za použití ozbrojeného násilí zbavil druhého držby nemovitosti, přiznává se jakémukoli držiteli.“_
   </QuizOption>
-  <QuizOption label={"b. bezvadný držitel"} isCorrect={false}>
-    (Instituce – 128\)
+  <QuizOption label={"b. držitel, který držbu získal násilím"} isCorrect={true}>
+    Ano, držitel, který držbu získal násilím, není chráněný interdictum de vi, ale může použít interdictum de vi armata.
+
+    Instituce, s. 128: _„Interdictum unde vi směřuje proti tomu, kdo za použití násilí (beze zbraní) zbavil druhého držby nemovitosti, žadatel nesměl držbu nabýt vi, clam, precario (tj. vadně).“_
+
+    Instituce, s. 128: _Interdictum unde vi armata směřuje proti tomu, kdo za použití ozbrojeného násilí zbavil druhého držby nemovitosti, přiznává se jakémukoli držiteli.“_
   </QuizOption>
-  <QuizOption label={"c. držitel, který držbu získal násilím"} isCorrect={true}>
-    (Instituce – 128\)
+  <QuizOption label={"c. oprávněný držitel"} isCorrect={false}>
+    Ne, oprávněný držitel je chráněn oběma interdikty.
+
+    Instituce, s. 128: _„Interdictum unde vi směřuje proti tomu, kdo za použití násilí (beze zbraní) zbavil druhého držby nemovitosti, žadatel nesměl držbu nabýt vi, clam, precario (tj. vadně).“_
+
+    Instituce, s. 128: _Interdictum unde vi armata směřuje proti tomu, kdo za použití ozbrojeného násilí zbavil druhého držby nemovitosti, přiznává se jakémukoli držiteli.“_
   </QuizOption>
-  <QuizOption label={"d. oprávněný držitel"} isCorrect={false}>
-    (Instituce – 128\)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Mezi soukromé sbírky římského práva patří \: "}>
+<Quiz question={"Mezi soukromé sbírky římského práva patří: "} topic={pramenyPrava}>
   <QuizOption label={"a. Codex Gregorianus"} isCorrect={true}>
-    ([http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28](http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28))
+    Ano, Codex Gregorianus byl soukromá sbírka.
+    
+    Instituce, s. 31: _„Na přelomu 3. a 4. stol. n. l. byly vydány dvě soukromé sbírky císařských nařízení … Codex Gregorianus obsahoval císařská nařízení od Hadriana do Diocletiana.“_
   </QuizOption>
   <QuizOption label={"b. Codex Theodosianus"} isCorrect={false}>
-    ([http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28](http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28))
+    Ne, Codex Theodosianus byl první oficiální sbírka římského práva (Instituce, s. 31).
   </QuizOption>
   <QuizOption label={"c. Codex Hermogenianus"} isCorrect={true}>
-    ([http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28](http://www.ius-wiki.eu/rimske-pravo/pfuk/riman/zkouska/skupina-i/otazka-28))
+    Ano, Codex Hermogenianus byl soukromá sbírka. 
+
+    Instituce, s. 31: _„Na přelomu 3. a 4. stol. n. l. byly vydány dvě soukromé sbírky císařských nařízení … Codex Hermogenianus byl pokračováním předešlého kodexu a zahrnoval císařské konstituce z let 291-294 n. l.“_
+  </QuizOption>
+  <QuizOption label={"d. Codex Iustinianus"} isCorrect={false}>
+    Ne, Codex Iustinianus byl oficiální sbírka (Instituce, s. 34).
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Strom rostoucí na zahradě je její: "} topic={vecnaPrava}>
+  <QuizOption label={"a. pars rei"} isCorrect={true}>
+    Ano, strom rostoucí na zahradě je její součást (pars).
+
+    Instituce, s. 102: _„Pars/portio (součást věci) [jsou] relativně samostatné věci, které však vždy sdílejí osud hlavní věci a jsou jeho nezbytnou součástí, např. hromada hnoje na pozemku, ovoce na stromech, domácí otroci, podpěry vinných keřů, nádrže.“_
+  </QuizOption>
+  <QuizOption label={"b. příslušenství"} isCorrect={false}>
+    Ne, strom není příslušenství zahrady. 
+
+    KUS, marg. č. 142, s. 103: _„Zvláštní zásady jsou rovněž platné pro tzv. pertinenci neboli příslušenství. To jsou sice věci samostatné, ale nemají samostatnost hospodářskou, protože jsou určeny k užívání věcí jiných, říkáme věcí hlavních: tedy klíč ke skříni, poklop na studni, obal na knihu atd.-“_
+  </QuizOption>
+  <QuizOption label={"c. součást"} isCorrect={true}>
+    Ano, strom se zapuštěnými kořeny je součástí pozemku, na kterém roste. 
+
+    Instituce, s. 107: _„Spojení věci movité a nemovité - vše, co se pevně a trvale spojí (zákla dy, zakořeněním) s pozemkem, se stává jeho součástí a nabývá k tomu vlastnické právo vlastník pozemku v důsledku zásady superficies solo cedit (povrch ustupuje pozemku).“_
+
+    Instituce, s. 107: _„Implantatio (zasazení) - zasazené rostliny se stávají součástí pozemku v okamžiku zakořenění.“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Mezi soukromé sbírky římského práva NEpatří \: "}>
-  <QuizOption label={"a. Codex Iustinianus"} isCorrect={true}>
-    (instituce str. 34\)
-  </QuizOption>
-  <QuizOption label={"b. Codex Theodosianus"} isCorrect={true}>
-    (Instituce str. 31\)
-  </QuizOption>
-  <QuizOption label={"c. Codex Hermogenianus"} isCorrect={false}>
-    (Instituce str. 31\)
-  </QuizOption>
-  <QuizOption label={"d. Codex Gregorianus"} isCorrect={false}>
-    (Instituce str. 31\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Strom rostoucí na zahradě je její \: "}>
-  <QuizOption label={"a. pars rei"} isCorrect={true}>
-    (část věci, [https://cs.wikipedia.org/wiki/Superficies\_solo\_cedit](https://cs.wikipedia.org/wiki/Superficies_solo_cedit))
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. příslušenství"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. součást"} isCorrect={true}>
-    ([https://cs.wikipedia.org/wiki/Superficies\_solo\_cedit](https://cs.wikipedia.org/wiki/Superficies_solo_cedit)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Keř rostoucí na zahradě je její \: "}>
-  <QuizOption label={"a. Součást"} isCorrect={true}>
-    (fotky z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"b. Příslušenství"} isCorrect={false}>
-    (fotky z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"c. Pars rei"} isCorrect={true}>
-    (fotky z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"d. Ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
+<Quiz question={"Výsměšná podmínka: "} topic={pravniJednani}>
   <QuizOption label={"a. má znevážit jednajícího"} isCorrect={true}>
-    (KUS str. 102\)
+    Ano, výsměšná podmínka má znevážit jednajícího, kterému je uložena.
+    
+    KUS, marg. č. 170, s. 102: _„Podmínky výsměšné (condiciones derisoriae) podmiňovaly účinnost jednání akcí, která měla jednajícího zesměšnit nebo zostudit… “_
   </QuizOption>
   <QuizOption label={"b. je contra bonos mores"} isCorrect={true}>
-    (právní úkon, který odporuje dobrým mravům) *(KUS str. 102****)
+    Ano, výsměšnou podmínku lze považovat za podmínku proti dobrým mravům (KUS, s. 101-102).
   </QuizOption>
   <QuizOption label={"c. není neplatná"} isCorrect={true}>
-    (nenarušuje platnost jednání ale účinnost, KUS str. 102\)
+    Ano, výsměšná podmínka není neplatná, tzn. je platná. Pouze 
+
+    KUS, marg. č. 170, s. 102: _„Třeba zdůraznit, že vadné podmínky, jež jsme právě uvedli, neměly vliv na platnost, ale pouze na účinnost právníchjednání.“_
   </QuizOption>
   <QuizOption label={"d. může být kauzální"} isCorrect={false}>
-    (*KUS str. 102\)
+    Ne, výsměšné podmínky nemohou být kauzální. Srovnej:
+
+    KUS, marg. č. 170, s. 102: _„Podmínky výsměšné (condiciones derisoriae) podmiňovaly účinnost jednání akcí, která měla jednajícího zesměšnit nebo zostudit…“_
+
+    KUS, marg. č. 170, s. 102: _„Kazuální podmínky jsou ty, kde záleží na náhodě a vůle či moc oprávněného význam nemají (např. vrátí-li se loď z Asie do Brundisia)…“_
+  </QuizOption>
+  <QuizOption label={"e. vadná podmínka"} isCorrect={true}>
+    Ano, vadná podmínka je nadřazený pojem k výsměšné podmínce (KUS, s. 101-102).
+  </QuizOption>
+  <QuizOption label={"f. nemožná podmínka"} isCorrect={false}>
+    Ne, výsměšné a nemožné podmínky jsou dvě různé kategorie (KUS, s. 101-102).
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Confinium je \: "}>
+<Quiz question={"Confinium je: "} topic={vecnaPrava}>
   <QuizOption label={"a. volný průchod mezi budovami"} isCorrect={false}>
-    (tj. ambitus – 2.10. – ius wiki \+ https://quizlet.com/585197547/riman-otazky-flash-cards/)
+    Ne, volný pruh mezi budovami je ambitus (Instituce, s. 104).
   </QuizOption>
   <QuizOption label={"b. nevydržitelná část pozemku"} isCorrect={true}>
-    ([http://www.ius-wiki.eu/rimske-pravo/slovnicek/confinium](http://www.ius-wiki.eu/rimske-pravo/slovnicek/confinium)), Instituce str. 110
-  </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. mez"} isCorrect={true}>
-    ([*http://www.ius-wiki.eu/rimske-pravo/slovnicek/confinium*](http://www.ius-wiki.eu/rimske-pravo/slovnicek/confinium)*)
-  </QuizOption>
-</Quiz>
+    Ano, confinium je nevydržitelná část pozemku.
 
-<Quiz question={"Confinium NENÍ \: "}>
-</Quiz>
+    Instituce, s. 110: _„Nelze vydržet např. věci cizinců (res hostibus), věci vyloučené z právního obchodu (res extra commercium), pruh mezi pozemky (confinium, limes - 1,5 m)…“_
+  </QuizOption>
+  <QuizOption label={"c. mez"} isCorrect={true}>
+    Ano, confinium je mez.
 
-<Quiz question={"\: "}>
-  <QuizOption label={"a. volný průchod mezi budovami"} isCorrect={true}>
-    (ambitus)
-  </QuizOption>
-  <QuizOption label={"b. vyloučeno z vydržení"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. mez"} isCorrect={false}>
-    
+    KUS, marg. č. 270, s. : _„… confinium [je] mezní prostor mezi pozemky…“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"a. +"} isCorrect={false}>
-    (Instituce – 274\)
-  </QuizOption>
-  <QuizOption label={"b. domněnka darování mezi manžely"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. domněnka otcovství"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. status civitatis"} isCorrect={false}>
-    (KUS str. 69\)
-  </QuizOption>
-  <QuizOption label={"a. fictio civitatis"} isCorrect={true}>
-    (jde o fikci, ne o domněnku; nicméně fikce jsou vždy nevyvratitelné, Instituce str. 259\)
-  </QuizOption>
-  <QuizOption label={"b. domněnka darování mezi manžely"} isCorrect={true}>
-    (vyvratitelná domněnka, Instituce str. 94\)
-  </QuizOption>
-  <QuizOption label={"c. domněnka otcovství"} isCorrect={true}>
-    (vyvratitelná domněnka, Instituce str. 259\)
-  </QuizOption>
-  <QuizOption label={"d. status civitatis"} isCorrect={true}>
-    (KUS str. 69\)
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Aktivně legitimovaným k rei vindicatio je \: "}>
+<Quiz question={"Aktivně legitimovaným k rei vindicatio je: "} topic={civilniProces}>
   <QuizOption label={"a. nedržící kviritský vlastník"} isCorrect={true}>
-    (Konzultace \+ 2.7. Rei vindicatio – ius wiki)
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
   </QuizOption>
   <QuizOption label={"b. nabyvatel věci mancipací od vlastníka, který o věc přišel"} isCorrect={true}>
-    (Konzultace \+ 2.7. Rei vindicatio – ius wiki)
+    Ano, pokud nabyl věc mancipací, je kviritský vlastník a pokud ji nemá v držení, může použít rei vindicatio. 
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
   </QuizOption>
   <QuizOption label={"c. kviritský vlastník zbavený proti své vůli corporalis possessio"} isCorrect={true}>
-    (Konzultace \+ 2.7. Rei vindicatio – ius wiki)
+    Ano, kviritský vlastník zbavený proti své vůli corporalis possessio je to samé, jako nedržící kviritský vlastník. 
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
   </QuizOption>
   <QuizOption label={"d. rušený oprávněný ze služebnosti"} isCorrect={false}>
-    
+    Ne, rei vindicatio může použít pouze kviritský vlastník.
+
+    Instituce, s. 209: _„Rei vindicatio – může ji použít pouze kviritský vlastník…“_
+  </QuizOption>
+  <QuizOption label={"e. v držbě rušený kviritský vlastník"} isCorrect={false}>
+    Ne, rei vindicatio může použít pouze nedržící kviritský vlastník. Pro případ rušení je zde actio negatoria.
+
+    Instituce, s. 118: _„Actio negatoria (zápůrčí žaloba) slouží k ochraně vlastníka před rušením (např. usurpování si služebnosti)…“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Aktivně legitimovaným k vindikační žalobě může být \: "}>
-  <QuizOption label={"a. nedržící kviritský vlastník"} isCorrect={true}>
-    (KUS str. 182\)
+<Quiz question={"Nevyvratitelnou domněnkou je: "} topic={civilniProces}>
+  <QuizOption label={"a. domněnka darování mezi manžely"} isCorrect={false}>
+    Ne, domněnka darování mezi manžely je vyvratitelná. 
+
+    Instituce, s. 94: _„Vyvratitelná domněnka, že vše, co získala manželka, bylo darem od manžela a proto je jeho majetkem (praesumptio Muciana)“_
   </QuizOption>
-  <QuizOption label={"b. nabyvatel věci mancipací od vlastníka, který o věc přišel"} isCorrect={true}>
-    (kviritský vlastník, Instituce 113\)
+  <QuizOption label={"b. domněnka otcovství"} isCorrect={false}>
+    Ne, domněnka otcovství je vyvratitelná.
+
+    Instituce, s. 95: _„Vyvratitelná domněnka otcovství: za takovéto dítě je považová no dítě, které se narodilo mezi 182 dnem od vzniku manželství, do 300 dne po jeho zániku.“_
   </QuizOption>
-  <QuizOption label={"c. kviritský vlastník zbavený proti své vůli corporalis possessio"} isCorrect={true}>
-    (Instituce 117\)
+  <QuizOption label={"c. status civitatis"} isCorrect={false}>
+    Ne, status civitatis není nevyvratitelnou domněnkou. Je to faktický stav. Neplést s fictio civitatis.
+
+    Instituce, s. 51: _„Status civitatis - příslušnost k římské obci.“_
   </QuizOption>
-  <QuizOption label={"d. rušený oprávněný ze služebnosti"} isCorrect={true}>
-    
+  <QuizOption label={"d. Mater semper certa est"} isCorrect={true}>
+    Ano, to je nevyvratitelná domněnka. 
+
+    KUS, marg. č. 121, s. 73: _„Dojde-li ke sporu, musí se pokrevní příbuzenství dokazovat jako každájiná pro právo významná skutečnost. Důkaz nebyl obtížný, pokud šlo o matku, odedávna také platila v římském právu zásada „mater semper čerta esť (matkaje vždy jistá).“_
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Aktivně legitimovaným k rei vindicatio NENÍ \: "}>
+<Quiz question={"Aktivně legitimovaným k rei vindicatio není: "} topic={civilniProces}>
   <QuizOption label={"a. rušený oprávněný ze služebnosti"} isCorrect={true}>
-    (Instituce 129 – vindicatio servitutis)
+    Ano, oprávněný ze služebnosti by mohl použít vindicatio servitutis, ale nikoliv rei vindicatio. 
+
+    KUS, marg. č. 314, s. 200: _„Služebnosti byly chráněny věcnými žalobami, které měly povahu vindikace služebnosti (vindicatio servitutis, u požívacího práva se žaloba označovala jako petitio ususfructus). Projednání takovéto žaloby se podobalo sporu o vlastnické právo.“_
+
+    Instituce, s. 129: _„Vindicatio servitutis - u pozemkových služebností přísluší vlast níkovi panujícího pozemku, je účinná i proti vlastníkovi, směřuje na uznání práva služebnosti“_
   </QuizOption>
   <QuizOption label={"b. v držbě rušený kviritský vlastník"} isCorrect={true}>
-    (Instituce 125 – interdictum retinendae possessionis) když se ruší držba, tak se používá vindikace ne?
+    Ano, pro případ rušení v držbě je zde actio negatoria, která není to samé jako rei vindicatio.
+
+    Instituce, s. 118: _„Actio negatoria (zápůrčí žaloba) slouží k ochraně vlastníka před rušením (např. usurpování si služebnosti)…“_
   </QuizOption>
   <QuizOption label={"c. nabyvatel věci mancipací od vlastníka, který o věc přišel"} isCorrect={false}>
-    
+    Ne, pokud nabyl věc mancipací, je kviritský vlastník a pokud ji nemá v držení, může použít rei vindicatio. 
+
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
   </QuizOption>
   <QuizOption label={"d. nedržící kviritský vlastník"} isCorrect={false}>
-    (KUS str. 182\)
+    Instituce, s. 117: _„Rei vindicatio – podat žalobu může (aktivní legitimace) nedržící kviritský vlastník…“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Aktivně legitimovaným k vindikační žalobě NEmůže být \: "}>
-  <QuizOption label={"a. rušený oprávněný ze služebnosti"} isCorrect={false}>
-    (Instituce 129 – actio negatoria servitutis)
-  </QuizOption>
-  <QuizOption label={"b. v držbě rušený kviritský vlastník"} isCorrect={true}>
-    (Instituce 125 – interdictum retinendae possessionis , actio negatoria)
-  </QuizOption>
-  <QuizOption label={"c. nabyvatel věci mancipací od vlastníka, který o věc přišel"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. nedržící kviritský vlastník"} isCorrect={false}>
-    (KUS str. 182\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Restitutio in integrum se povolovalo z důvodu \: "}>
+<Quiz question={"Restitutio in integrum se povolovalo z důvodu: "}>
   <QuizOption label={"a. podvodu"} isCorrect={true}>
-    ([https://cs.wikipedia.org/wiki/Restitutio\_in\_integrum](https://cs.wikipedia.org/wiki/Restitutio_in_integrum))
+    Ano, konkrétně restitutio in integrum ob dolum (Instituce, s. 213-214). 
   </QuizOption>
   <QuizOption label={"b. omluvitelné nepřítomnosti"} isCorrect={true}>
-    ([Restitutio in integrum – Wikipedie](https://cs.wikipedia.org/wiki/Restitutio_in_integrum)) (KUS str. 128-129)
+    Ano, omluvitelná nepřítomnost byla jednou z možných podmínek.
+    
+    KUS, marg. č., s 128: _„In integrum restitutio - navrácení do předešlého stavu  Navrácení do předešlého stavu byl mimořádný prostředek pomoci proti někte rým příkrostem civilního práva. … Obecně platnou podmínkou restituce in integrum bylo, že někdo po právu utrpěl škodu a tuto škodu běžnými prostředky nemohl odvrátit buď vůbec, anebo alespoň ne nějak uspokojivě. … Vznik škody musely omlouvat závažné okolnosti, dílem výslovně, dílem vše obecně v ediktu vytčené. Výslovně se uváděly: 1) nezletilost, 2) nepřítomnost a 3) capitis deminutio.“_
   </QuizOption>
   <QuizOption label={"c. nezletilosti"} isCorrect={true}>
-    ([https://cs.wikipedia.org/wiki/Restitutio\_in\_integrum](https://cs.wikipedia.org/wiki/Restitutio_in_integrum)) (Instituce str. 221), KUS str. 128
+    Ano, nezletilost byla jednou z možných podmínek.
+    
+    KUS, marg. č., s 128: _„In integrum restitutio - navrácení do předešlého stavu  Navrácení do předešlého stavu byl mimořádný prostředek pomoci proti někte rým příkrostem civilního práva. … Obecně platnou podmínkou restituce in integrum bylo, že někdo po právu utrpěl škodu a tuto škodu běžnými prostředky nemohl odvrátit buď vůbec, anebo alespoň ne nějak uspokojivě. … Vznik škody musely omlouvat závažné okolnosti, dílem výslovně, dílem vše obecně v ediktu vytčené. Výslovně se uváděly: 1) nezletilost, 2) nepřítomnost a 3) capitis deminutio.“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Ve způsobilosti k právnímu jednání (svéprávnosti) je omezen/a: \: "}>
-  <QuizOption label={"a. 50letá šílená herečka"} isCorrect={true}>
-    (Instituce 53–58)
+<Quiz question={"Ve způsobilosti k právnímu jednání (svéprávnosti) je omezen*a: "} topic={osobniPrava}>
+  <QuizOption label={"a. 50 letá šílená herečka"} isCorrect={true}>
+    Ano a to z důvodu genderu, duševního zdraví i povolání (Instituce s. 53-58).
   </QuizOption>
   <QuizOption label={"b. 30letá žena sui iuris"} isCorrect={true}>
-    (Instituce 53–58)
+    Ano a to z důvodu genderu (Instituce s. 53-58).
   </QuizOption>
   <QuizOption label={"c. dívka ve věku 13 let"} isCorrect={true}>
-    (Instituce 53–58)
+    Ano a to z důvodu genderu a věku (Instituce s. 53-58).
   </QuizOption>
   <QuizOption label={"d. gladiátor ve věku 30 let"} isCorrect={true}>
-    (Instituce 53–58)
+    Ano a to z důvodu povolání (Instituce s. 53-58).
+  </QuizOption>
+  <QuizOption label={"e. 50letý duševně nemocný senátor"} isCorrect={true}>
+    Ano a to z důvodu duševního zdraví (Instituce s. 53-58).
+  </QuizOption>
+  <QuizOption label={"f. šestiletý manželský syn"} isCorrect={true}>
+    Ano a to z důvodu věku (Instituce s. 53-58).
+  </QuizOption>
+  <QuizOption label={"f. nenarozené dítě "} isCorrect={true}>
+    Ano a to z důvodu věku (Instituce s. 53-58).
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Ve způsobilosti k právnímu jednání (svéprávnosti) NENÍ omezen/a: \: "}>
-  <QuizOption label={"a. 50letá šílená herečka"} isCorrect={false}>
-    (duševní nemoc, pohlaví a nečestnost, Instituce str. 54-55)
-  </QuizOption>
-  <QuizOption label={"b. 30letá žena sui iuris"} isCorrect={false}>
-    (ženské pohlaví, Instituce str. 54\)
-  </QuizOption>
-  <QuizOption label={"c. dívka ve věku 13 let"} isCorrect={false}>
-    (ženské pohlaví, Instituce str. 54\)
-  </QuizOption>
-  <QuizOption label={"d. gladiátor ve věku 30 let"} isCorrect={false}>
-    (nečestnost, Instituce str. 55\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Na fázi in iure a apud iudicem se dělí řízení \: "}>
+<Quiz question={"Na fázi in iure a apud iudicem se dělí řízení: "} topic={civilniProces}>
   <QuizOption label={"a. formulové"} isCorrect={true}>
-    (Instituce 260, 266 \+ z nahlížení po testu)
+    Instituce, s. 260-261: _„Stadia řízení v legisakčním a formulovém procesu [jsou] in iure a apud iudicem.“_
   </QuizOption>
   <QuizOption label={"b. legisakční"} isCorrect={true}>
-    (Instituce 271+ z nahlížení po testu)
+    Instituce, s. 260-261: _„Stadia řízení v legisakčním a formulovém procesu [jsou] in iure a apud iudicem.“_
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    (systém a instituce, 260 \+ 266 a 271 a 277\)
+  <QuizOption label={"c. kogniční"} isCorrect={false}>
+    Instituce, s. 277: _„Pro cognitio extra ordinem jsou charakteristické následující znaky: o jednota procesního řízení (mizí fáze in iure a apud iudicem), celé se odehrává před soudcem (iudex datus)“_
   </QuizOption>
-  <QuizOption label={"d. kogniční"} isCorrect={false}>
-    (Instituce 277 \+ z nahlížení po testu)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
+
 </Quiz>
 
-<Quiz question={"Jestliže je vindikace actio arbitraria, pak to znamená, že \: "}>
+<Quiz question={"Jestliže je vindikace actio arbitraria, pak to znamená, že: "} topic={civilniProces}>
   <QuizOption label={"a. že má vlastník povinnost dokázat své vlastnictví"} isCorrect={false}>
-    
+    Ne, actio arbitraria neznamená, že má vlastník povinnost dokázat své vlastnictví.
   </QuizOption>
   <QuizOption label={"b. zde není defensní povinnost"} isCorrect={false}>
-    
+    Ne, actio arbitraria neznamená, že neexistuje defenzní povinnost. 
   </QuizOption>
   <QuizOption label={"c. že bude žalovaný před vynesením peněžitého rozsudku vyzván k vydání věci"} isCorrect={true}>
-    (KUS str. 98\)
+    Instituce, s. 214: _„Actio arbitraria - praetor musí vyzvat žalovaného, aby dobrovolně vydal vše, co z takovéhoto jednání nabyl.“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Otrok \: "}>
+<Quiz question={"Odpovědnost/ručení za náhodu: "} topic={zavazkovePravo}>
+  <QuizOption label={"a. custodia latinsky"} isCorrect={true}>
+    Custodia znamená ručení za náhodu.
+
+    KUS, marg. č. 185, s. 112: _„Custodia znamenala v klasickém právu ručení za náhodu: šlo v podstatě o ručení za nezaviněné bezpráví, které postihovalo majitele živností, poskytujících ubytování anebo bylo důsledkem některých smluv (commodatum, locatio conductio operis).“_
+  </QuizOption>
+  <QuizOption label={"b. porušení péče, kterou věnujeme svým vlastním věcem"} isCorrect={false}>
+    Porušení péče, kterou věnujeme svým vlastním věcem, se nazývala culpa in concreto/diligentia quam in suis.
+
+    Instituce, s. 142: _„culpa in concreto/diligentia quam in suis - kritériem odpověd nosti je chování ke svým vlastním věcem (spoludědici, společ níci, depositum)“_
+  </QuizOption>
+  <QuizOption label={"c. měřítkem zde byl přepečlivý otec římské rodiny"} isCorrect={true}>
+    Ano, měřítkem byl opravdu přepečlivý otec římské rodiny.
+
+    KUS, marg. č. 185, s. 112: _„Custodia znamenala v klasickém právu ručení za náhodu: šlo v podstatě o ručení za nezaviněné bezpráví, které postihovalo majitele živností, poskytujících ubytování anebo bylo důsledkem některých smluv (commodatum, locatio conductio operis).“_
+  </QuizOption>
+  <QuizOption label={"d. za justiniánského práva považována za zavinění"} isCorrect={true}>
+    Ano, za justiniánského práva byla považována za druh zavinění. 
+
+    KUS, marg. č. 185, s. 112: _„V justiniánském právu byla ‚custodia‘ zařazena do stupnice zavinění a chápána jako porušenípéče, kterou svým věcem věnuje ‚diligentissimus pater familias‘ - přepečlivý otec rodiny. O tom však pojednáme podrobněji při výkladu o právu obligačním.“_
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Otrok: "} topic={osobniPrava}>
   <QuizOption label={"a. je věcí mancipační"} isCorrect={true}>
-    (2.1. – Res – ius wiki)
+    Ano, otrok je věcí mancipační (Instituce, s. 99). 
   </QuizOption>
   <QuizOption label={"b. je objektem práv"} isCorrect={true}>
-    (1.42. – Servi – ius wiki)
+    KUS, marg. č. 103, s. 63: _„Podle pojetí klasického práva římského nebyl otrok subjektem, ale pouze objektem práv.“_
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  <QuizOption label={"c. propuštěním podle ius civile se stává římským občanem"} isCorrect={true}>
+    Instituce, s. 67: _„[Při propuštění] podle civilního práva otrok získává římské občanství…“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
     
-  </QuizOption>
-  <QuizOption label={"d. propuštěním podle ius civile se stává římským občanem"} isCorrect={true}>
-    (Konzultace – nabývá možnost jednat v soukromém právu – pro nás podstatné \+ Manumissio 1.43. – ius wiki)
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Vedoucí kompilační komise justiniánských Digest se jmenoval \: "}>
+<Quiz question={"Vedoucí kompilační komise justiniánských Digest se jmenoval: "} topic={pramenyPrava}>
   <QuizOption label={"a. Tertullianus"} isCorrect={false}>
-    
   </QuizOption>
   <QuizOption label={"b. Theophilus"} isCorrect={false}>
-    
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. Tribonianus"} isCorrect={true}>
+    KUS, marg. č. 69, s. 44-45: _„Digesta seu Pandectae … když roku [císař Iustinian] 530 zřizoval novou kodifikační komisi, postavil Triboniána do jejího čela a dal mu plnou moc vybrat si všechny členy ostatní.“_
   </QuizOption>
-  <QuizOption label={"d. Tribonianus"} isCorrect={true}>
-    (1.22. – Digesta – ius wiki \+ Instituce)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Jak se nazýval způsob zřízení moci nad manželkou? \: "}>
+<Quiz question={"Jak se nazýval způsob zřízení moci nad manželkou?: "} topic={rodinaManzelstvi}>
   <QuizOption label={"a. usus"} isCorrect={true}>
-    (Instituce str. 83\)
+    Instituce, s. 83: _„Vznik manželské moci: … usus – vydržení manželské moci po jednom roce soužití manželů, tato lhůta se přetrhla, jestliže manželka opustila na tři noci dům svého muže (trinoctii usurpatio) a v důsledku toho zůstala agnátkou ve své původní rodině…“_
   </QuizOption>
   <QuizOption label={"b. legitimatio"} isCorrect={false}>
-    (Instituce str. 83\)
+    Ne, legitimatio je přijetí do rodiny. 
+
+    Instituce, s. 95: _„Nemanželské dítě může získat postavení manželského dítěte zejmé na přijetím do rodiny (legitimatio)…“_
   </QuizOption>
   <QuizOption label={"c. confarreatio"} isCorrect={true}>
-    (Instituce str. 83\)
+    Instituce, s. 83: _„Vznik manželské moci: confarreatio - náboženský obřad za přítomnosti Juppiterova obětníka (flamen Dialis), pontifika maxima a deseti svědků, byl oběto ván koláč ze špaldové mouky (panisfarreus)…“_
   </QuizOption>
   <QuizOption label={"d. coemptio nebo koempce"} isCorrect={true}>
-    (Instituce str. 83 obrazná koupě ženy pomocí mancipace manželem)
+    Instituce, s. 83: _„Vznik manželské moci: … coemptio – obrazná koupě ženy pomocí mancipace manželem, nebo jeho otcem…“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Vindikovat (požadovat navrácení) je možno \: "}>
+<Quiz question={"Vindikovat (požadovat navrácení) je možno: "} topic={vecnaPrava}>
   <QuizOption label={"a. pohledávku"} isCorrect={false}>
-    
+    Ne, vindikovat pohledávku nelze. Na vymožení pohledávky jsou jiné prostředky.
   </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"b. stádo"} isCorrect={true}>
+    Ano, ke stádu může být kviritské vlastnictví a může být ukradeno, tudíž může být použita reivindikace. 
   </QuizOption>
-  <QuizOption label={"c. stádo"} isCorrect={true}>
-    
+  <QuizOption label={"c. požívací právo"} isCorrect={true}>
+    Ano, požívací právo je ususfructus a ten lze vindikovat skrze vindicatio ususfructus (Instituce, s. 133).
   </QuizOption>
-  <QuizOption label={"d. požívací právo"} isCorrect={true}>
-    (instituce 133\)
+  <QuizOption label={"d. právo cesty"} isCorrect={true}>
+    Ano, právo cesty patří mezi venkovské pozemkové služebnosti a lze ho chránit skrze vindicatio servitutis. 
+
+    Instituce, s. 129: _„Vindicatio servitutis - u pozemkových služebností přísluší vlast níkovi panujícího pozemku, je účinná i proti vlastníkovi, směřuje na uznání práva služebnosti…“_
+  </QuizOption>
+  <QuizOption label={"e. ztracenou hůl od nálezce"} isCorrect={true}>
+    Ano, kviritský vlastník může reivindikací žádat ztracenou hůl od nálezce, stejně jako od kohokoliv jiného, kdo mu brání v jejím držení.
+  </QuizOption>
+  <QuizOption label={"f. smečku psů"} isCorrect={true}>
+    Ano, kviritský vlastník může smečku psů žádat ztracenou hůl od nálezce, stejně jako od kohokoliv jiného, kdo mu brání v jejím držení.
+  </QuizOption>
+  <QuizOption label={"g. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Codex Theodosianus byl vyhlášen v roce \: "}>
+<Quiz question={"Codex Theodosianus byl vyhlášen v roce: "} topic={pramenyPrava}>
   <QuizOption label={"a. 426 n. l."} isCorrect={false}>
-    
   </QuizOption>
   <QuizOption label={"b. 438 n. l."} isCorrect={true}>
-    (z nahlížení po testu)
+    Instituce, s. 31: _„Codex Theodosianus – sbírka císařských nařízení z roku 438 n. l. sestavená na příkaz východořímského císaře Theodosia II.“_
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. 436 n. l."} isCorrect={false}>
   </QuizOption>
-  <QuizOption label={"d. 436 n. l."} isCorrect={false}>
-    
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
+</Quiz>
+
+<Quiz question={"Jestliže vykonávám na svém pozemku ius utendi, pak tam: "} topic={vecnaPrava}>
   <QuizOption label={"a. chodím v trávě"} isCorrect={true}>
-    (Instituce str. 103: ius utendi)
+    Ano, tím svůj pozemek užívám. 
+
+    Instituce, s. 103: _„Ius utendi (právo užívat věc) - jakýmkoli způsobem, který nezasahuje do oprávnění jiných vlastníků, a to až do jejího zničení (ius abutendi).“_
   </QuizOption>
   <QuizOption label={"b. chodím po trávě"} isCorrect={true}>
-    (Instituce str. 103: ius utendi)
+    Ano, tím svůj pozemek užívám. 
+
+    Instituce, s. 103: _„Ius utendi (právo užívat věc) - jakýmkoli způsobem, který nezasahuje do oprávnění jiných vlastníků, a to až do jejího zničení (ius abutendi).“_
   </QuizOption>
   <QuizOption label={"c. chodím pro trávu na prodej"} isCorrect={false}>
-    (Instituce str. 103: ius fruendi)
+    Ne, tím uplatňuji ius fruendi, právo požívat věc. 
+
+    Instituce, s. 103: _„Ius fruendi (právo požívat věc) - brát z ní plody, vlastník se stává vlast níkem plodů věci, k níž má vlastnické právo, již jejich oddělením (separatio) od plodonosné věci.“_
   </QuizOption>
-  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"d. ležím v trávě"} isCorrect={false}>
+    Ano, tím svůj pozemek užívám. 
+
+    Instituce, s. 103: _„Ius utendi (právo užívat věc) - jakýmkoli způsobem, který nezasahuje do oprávnění jiných vlastníků, a to až do jejího zničení (ius abutendi).“_
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Mezi pohnutky právního jednání patří \: "}>
+<Quiz question={"Mezi pohnutky právního jednání patří: "} topic={pravniJednani}>
   <QuizOption label={"a. podvod"} isCorrect={true}>
-    (KUS str. 98\)
+    Ano, podvod (dolus) podle patří mezi pohnutky právního jednání (KUS, marg. č. 163-166, s. 116-118).
   </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"b. omyl"} isCorrect={false}>
+    Ne, omyl je nevědomá vada vůle, nikoliv pohnutka. 
+
+    Instituce, s. : _„Pohnutky právního jednání [jsou] důvody vedoucí subjekt k tomu, proč uzavírá právní jednání.“_
+
+    Instituce, s. 294: _„Nevědomé vady vůle: omyl (error) - mylná představa o skutečnosti, v zásadě nezpůsobuje neplatnost právního jednání“_
   </QuizOption>
-  <QuizOption label={"c. omyl"} isCorrect={false}>
-    (Instituce str. 294: nevědomá vada vůle)
+  <QuizOption label={"c. nepřítomnost"} isCorrect={false}>
+    Ne, nepřítomnost není pohnutka právního jednání. 
+
+    Instituce, s. : _„Pohnutky právního jednání [jsou] důvody vedoucí subjekt k tomu, proč uzavírá právní jednání.“_
   </QuizOption>
-  <QuizOption label={"d. nepřítomnost"} isCorrect={false}>
-    (Instituce str. 275: důvod pro restitutio in integrum)
+  <QuizOption label={"d. násilí a strach"} isCorrect={false}>
+    Ano, násilí a strach (vis ac metus) jsou pohnutkami právního jednání (KUS, marg. č. 163-166, s. 116-118).
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Všeobecné, přímé, faktické panství nad věcí je \: "}>
+<Quiz question={"Všeobecné, přímé, faktické panství nad věcí je: "} topic={vecnaPrava}>
   <QuizOption label={"a. dominium"} isCorrect={false}>
-    (fotky z nahlížení po testu)
+    Ne, dominium je obecně pojem pro vlastnictví. Někdo může být vlastníkem, aniž by měl faktické panství nad věcí (např. pokud je mu zcizena).
   </QuizOption>
   <QuizOption label={"b. proprietas"} isCorrect={false}>
-    (fotky z nahlížení po testu)
+    Ne, dominium je obecně pojem pro vlastnictví. Někdo může být vlastníkem, aniž by měl faktické panství nad věcí (např. pokud je mu zcizena).
   </QuizOption>
   <QuizOption label={"c. possessio naturalis"} isCorrect={false}>
-    (fotky z nahlížení po testu)
+    Ne, possessio naturalis je pouze detence a definice se k ní nehodí. 
+
+    KUS, marg. č. 275, s. 163: _„Detence je tedy stav fyzického působení na věc, které vykonává ten, kdo má věc sice u sebe, nikoli však pro sebe. Je to tedy především člověk, který na věc fyzicky působí na základě obligačního vztahu mezi ním a držtitelem a který bude také povinen, jakmile dotčený vztah pomine, věc držiteli vrátit.“_
+  </QuizOption>
+  <QuizOption label={"d. possessio"} isCorrect={true}>
+    Ano, KUS držbu definuje jako všeobecné a faktické panství nad věcí. 
+
+    KUS, marg. č. 273, s. 161: _„Držba - latinsky possessio - je faktická všeobecná moc nad věcí (hmotnou). Na rozdíl od vlastnictví, které je právním panstvím, je držba panstvím faktickým.“_
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Pokud potřebujeme odvést vodu z mého pozemku, zřídíme přes sousedův pozemek: "} topic={vecnaPrava}>
+  <QuizOption label={"a. servitus aquae ductus"} isCorrect={false}>
+    Ne, to je opačný případ, kdy odvádím vodu z cizího pozemku na svůj pozemek. 
+
+    Instituce, s. 130: _„[Servitus] aquaeductus (vodovod) - vlastník panujícího pozemku může na služebném pozemku postavit konstrukci sloužící k odvodu vody ze služebného, nebo i jiného pozemku“_
+  </QuizOption>
+  <QuizOption label={"b. servitus cloacae immitendae"} isCorrect={true}>
+    Ano, to je případ, kdy odvádím vodu ze svého pozemku na pozemek cizí.
+
+    Instituce, s. 131: _„[Servitus] cloacae immitendae - právo odvádět odpadní vody do stoky na sousedním pozemku, nebo přes něj.“_
+  </QuizOption>
+  <QuizOption label={"c. servitus aquae immitendae"} isCorrect={true}>
+    Ano, to je případ, kdy odvádím vodu ze svého pozemku na pozemek cizí.
+
+    Instituce, s. 130: _„[Servitus] aquae immitendae (svod vody) - vlastník panujícího pozemku může svádět dešťovou vodu na služebný pozemek.“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Jestliže někdo vykonává na mém pozemku domnělou služebnost, mohu se bránit pomocí: "} topic={civilniProces}>
+  <QuizOption label={"a. actio confessoria"} isCorrect={false}>
+    Ne, actio confessoria servitutis (též vindicatio servitutis) směřuje k uznání práva služebnosti.
+
+    Instituce, s. 129: _„U pozemkových služebností [actio confessoria] přísluší vlastníkovi panujícího pozemku, je účinná i proti vlastníkovi, směřuje na uznání práva služebnosti.“_
+  </QuizOption>
+  <QuizOption label={"b. actio finium regundorum"} isCorrect={false}>
+    Instituce, s. 118: _„Actio finium regundorum (mezní žaloba) – jejím cílem je upravit hranice mezi sousedními pozemky.“_
+  </QuizOption>
+  <QuizOption label={"c. actio negatoria servitutis"} isCorrect={true}>
+    Instituce, s. 129: _„Actio negatoria servitutis - vlastník pozemku se jí brání proti rušení ze strany osoby, která tvrdí, že je oprávněna vykonávat služebnost.“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Následná platnost právního jednání může nastat v důsledku: "} topic={pravniJednani}>
+  <QuizOption label={"a. konvalescence"} isCorrect={true}>
+    Instituce, s. 298: _„Podle praetorského práva mohlo ke zhojení neplatnosti právního jednání dojít na základě: konvalidace (convalidatio, convalescentio) - právní jednání neplatí z důvodu existence nějaké překážky, poté co odpadne, začne právní jednání automaticky platit.“_
+  </QuizOption>
+  <QuizOption label={"b. konkluze"} isCorrect={false}>
+    Ne, konkluze souvisí s konkludentním právním jednáním. 
+
+    KUS, marg. č. 157, s. 92-93: _„Vůle může být projevena nepřímo, mlčky, tzv. konkludentním jednáním (v latině facta concludentia). Vůle sice výslovně projevena není, zjednání člověka však nesmlouvavě vyplývá, že jeho jednání je projevem určité vůle, určitého stanoviska: např. toho, kdo platí pozůstalostní dluhy anebo prodává pozůstalostní věci, považujeme za dědice, i kdyby výslovně neprohlásil, že nabízenou pozůstalost přijímá.“_
+  </QuizOption>
+  <QuizOption label={"c. konverze"} isCorrect={true}>
+    Instituce, s. 299: _„Konverze - právní jednáníje neplatné, neboť nesplňuje náležitos ti typu právního jednání, které strany chtěly uzavřít, nicméně splňuje všechny náležitosti jiného právního jednání naplňující ho cíle stran, které pak platí místo původně uzavíraného“_
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
     
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Pokud potřebujeme odvést vodu z mého pozemku, zřídíme přes sousedův pozemek \: "}>
-  <QuizOption label={"a. "} isCorrect={false}>
-    
+<Quiz question={"K actio Publiciana in rem je aktivně legitimován ten, kdo: "} topic={civilniProces}>
+  <QuizOption label={"a. je tzv. bonitární vlastník"} isCorrect={true}>
+    Ano, bonitární/praetorské vlastnictví je touto žalobou chráněno.
+
+    Instituce, s. 121: _„Ochrana tzv. praetorského vlastnictv [byla například] actio Publiciana in rem, [která] příslušela nabyvateli věci proti osobám, které mu ji odňaly.“_
   </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"b. se stane kviritským vlastníkem po uplynutí vydržecí doby"} isCorrect={true}>
+    Ano, jelikož ten, kdo se stane kviritským vlastníkem po uplynutí vydržecí doby, je bonitární vlastník. 
+
+    Instituce, s. 121: _„Obraty in bonis habere (mít v majetku)/bonis esse (být v majetku) jsou označeními pro vztah k věci, než dojde k nabytí civilního vlastnictví k dané věci pomocí vydržení.“_
+
+    Instituce, s. 121: _„Ochrana tzv. praetorského vlastnictv [byla například] actio Publiciana in rem, [která] příslušela nabyvateli věci proti osobám, které mu ji odňaly.“_
   </QuizOption>
-  <QuizOption label={"c. servitus aquae ductus \- ne slouží k odvodu ze služebného na panující, nikoliv naopak Instituce str. 130 \tak to tam není, xd"} isCorrect={false}>
-    
+  <QuizOption label={"c. se domnívá, že je kviritský vlastník"} isCorrect={false}>
+    Ne, kdyby se domníval, že je kviritským vlastníkem, použije rei vindicatio. 
   </QuizOption>
-  <QuizOption label={"d. servitus cloacae immitendae"} isCorrect={true}>
-    (*instituce str. 131*)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Jestliže někdo vykonává na mém pozemku domnělou služebnost, mohu se bránit pomocí \: "}>
-  <QuizOption label={"a. actio confessoria"} isCorrect={false}>
-    (též vindicatio servitutis \-\> směřuje k uznání práva služebnosti)
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. actio finiorum regundorum"} isCorrect={false}>
-    (žaloba na určování hranic pozemku)
-  </QuizOption>
-  <QuizOption label={"d. actio negatoria servitutis"} isCorrect={true}>
-    (instituce 129\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Následná platnost právního jednání může nastat v důsledku \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. konvalescence"} isCorrect={true}>
-    (konvalidace) (Instituce str. 298 \- právní jednání neplatí z důvodu existence nějaké překážky, poté co odpadne, začne právní jednání automaticky platit)
-  </QuizOption>
-  <QuizOption label={"c. konkluze"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. konverze"} isCorrect={true}>
-    (Instituce str. 299\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"K actio Publiciana in rem je aktivně legitimován ten, kdo \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. je tzv. bonitární vlastník"} isCorrect={true}>
-    (*z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"c. se stane kviritským vlastníkem po uplynutí vydržecí doby"} isCorrect={true}>
-    (*z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"d. se domnívá, že je kviritský vlastník"} isCorrect={false}>
-    
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"K Actio Publiciana in rem NENÍ aktivně legitimován ten, kdo \: "}>
-  <QuizOption label={"a. Není aktivně legitimován k exceptio rei venditae ac traditae"} isCorrect={true}>
-    (= kviritský vlastník \-\> má k dispozici vindikační žalobu, nikoliv Actio Publiciana in rem \+ z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"b. Je tzv. bonitární vlastník"} isCorrect={false}>
-    (KUS str. 160: je aktivně legitimován \+ z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"c. Se stane kviritským vlastníkem po uplynutí vydržecí doby, KUS str. 160: je aktivně legitimován \+ z nahlížení po testu)"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. Ani jedna z nabízených možností"} isCorrect={false}>
-    
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Kognátsky příbuzní ve čtvrtém stupni nejste s \: "}>
+<Quiz question={"Kognátsky příbuzní ve čtvrtém stupni nejste s: "} topic={rodinaManzelstvi}>
   <QuizOption label={"a. se svým bratrancem"} isCorrect={false}>
-    (4. stupeň)
+    Ne, se svým bratrancem jsme příbuzní*příbuzné ve čtvrtém stupni.
   </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"b. dcerou sestry své matky"} isCorrect={false}>
+    Ne, dcera sestry mé matky je má sestřenice a se sestřenicí jsme příbuzní*příbuzné ve čtvrtém stupni.
   </QuizOption>
-  <QuizOption label={"c. dcerou sestry své matky"} isCorrect={false}>
-    (4. stupeň \- moje sestřenice)
+  <QuizOption label={"c. se svou neteří"} isCorrect={true}>
+    Ano, se svou neteří jsme příbuzní*příbuzné ve třetím stupni.
   </QuizOption>
-  <QuizOption label={"d. se svou neteří"} isCorrect={true}>
-    (3. stupeň)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Soudní vyhlášky vydávali (edicta) \: "}>
+<Quiz question={"Soudní vyhlášky (edicta) vydávali: "} topic={pramenyPrava}>
   <QuizOption label={"a. konsulové"} isCorrect={false}>
-    (Instituce str. 27 \+ Instituce str. 16 \+ z nahlížení po testu)
+    Konsulové nevydávali soudní vyhlášky (Instituce, s. 27 a s. 47).
   </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"b. správci provincií"} isCorrect={true}>
+    Ano, správci provincií mohli vydávat edicta (Instituce, s. 27 a s. 47).
   </QuizOption>
-  <QuizOption label={"c. správci provincií"} isCorrect={true}>
-    (Instituce str. 27 \+ Instituce str. 20 \+ z nahlížení po testu)
+  <QuizOption label={"c. plebejští aedilové"} isCorrect={false}>
+    Ne, plebejští aedilové nevydávali edicta (Instituce, s. 27 a s. 47).
   </QuizOption>
-  <QuizOption label={"d. plebejští aedilové"} isCorrect={false}>
-    (Instituce str. 27 \+ Instituce str. 16 \+ z nahlížení po testu)
+  <QuizOption label={"d. kurulští aedilové"} isCorrect={false}>
+    Ano, kurulští aedilové vydávali edicta, ačkoliv nebyli magistrati cum imperio (Instituce, s. 27 a s. 47).
   </QuizOption>
-</Quiz>
-
-<Quiz question={"Soudní vyhlášky NEvydávali \: "}>
-  <QuizOption label={"a. konsulové"} isCorrect={true}>
-    (Instituce str. 27\)
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. správci provincií"} isCorrect={false}>
-    (Instituce str. 27\)
-  </QuizOption>
-  <QuizOption label={"d. plebejští aedilové"} isCorrect={true}>
-    (Instituce str. 27\)
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Právo magistrátů vydávat vyhlášky \: "}>
+<Quiz question={"Právo magistrátů vydávat vyhlášky: "} topic={pramenyPrava}>
   <QuizOption label={"a. iubere"} isCorrect={false}>
-    (latinsky pojem pro hlasování římského lidu)
+    Ne, sloveso iubere znamená přijmout zákon, nebo také velet.
   </QuizOption>
   <QuizOption label={"b. ius edicendi"} isCorrect={true}>
-    (Instituce 15\)
+    Instituce, s. 15: _„Ius edicendi - právo vydávat závazná nařízení, nejdůležitější byly soudní vyhlášky.“_
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Tutor dativus bude dohlížet na právní jednání \: "}>
+<Quiz question={"Tutor dativus bude dohlížet na právní jednání: "} topic={osobniPrava}>
   <QuizOption label={"a. nemocného"} isCorrect={false}>
-    (nejspíše cura, Instituce str. 62\)
+    Ne, tutor dativus je poručník ustanovený úředníkem. Nemocný by měl curatora, nikoliv tutora (Instituce, s. 63-64).
   </QuizOption>
   <QuizOption label={"b. nedospělého"} isCorrect={true}>
-    (Instituce str. 59\)
+    Ano, nedospělí mohli mít tutora, tudíž mohli mít i tutora ustanoveného uředníkem (Instituce, s. 58-59).
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. nezletilého"} isCorrect={false}>
+    Ne, tutor dativus je poručník ustanovený úředníkem. Nezletilý by měl curatora, nikoliv tutora (Instituce, s. 63-64).
   </QuizOption>
-  <QuizOption label={"d. nezletilého"} isCorrect={false}>
-    (cura minorum, Instituce str. 63\)
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Držitel ve zlé víře nabývá plody okamžikem \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={true}>
-    (KUS str. 182\)
-  </QuizOption>
-  <QuizOption label={"b. akcesse"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. separace"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. percepce"} isCorrect={false}>
-    
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Ius civile je \: "}>
+<Quiz question={"Držitel ve zlé víře nabývá plody okamžikem: "} topic={vecnaPrava}>
+  <QuizOption label={"a. akcesse"} isCorrect={false}>
+  </QuizOption>
+  <QuizOption label={"b. separace"} isCorrect={false}>
+  </QuizOption>
+  <QuizOption label={"c. percepce"} isCorrect={false}>
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={true}>
+    Držitel ve zlé víře nemůže plody držené věci nabývat (KUS, marg. č. 296, s. 182).
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Ius civile je: "} topic={pramenyPrava}>
   <QuizOption label={"a. právo občanů"} isCorrect={true}>
-    
+    Instituce, s. 47: _„Ius civile – civilní právo, normy zavazující pouze římské občany.“_
   </QuizOption>
   <QuizOption label={"b. právo civilistů"} isCorrect={false}>
-    
   </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"c. právo občanské"} isCorrect={false}>
+    Občanským právem rozumíme jedno z moderních právních odvětví. Odpověď je chyták.
   </QuizOption>
-  <QuizOption label={"d. právo občanské"} isCorrect={false}>
-    (úvodní přednáška \+
-  </QuizOption>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. mancipaci"} isCorrect={true}>
-    (Instituce str. 84 \+ KUS str. 198\)
-  </QuizOption>
-  <QuizOption label={"c. adiudikaci"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. in iure cessi"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. mancipaci"} isCorrect={false}>
-    (KUS str. 170 \- přítomný libripens, který držel v ruce váhy \+ KUS str. 198 \+ z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"c. adiudikaci"} isCorrect={true}>
-    (KUS str. 175 \- nabytí soudním výrokem \+ z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"d. in iure cessi"} isCorrect={true}>
-    (KUS str. 172 \- před magistrátem, nabyvatel uchopil věc a pronesl vindikační formuli)
-  </QuizOption>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. soukromé korporace"} isCorrect={true}>
-    (KUS str. 81\)
-  </QuizOption>
-  <QuizOption label={"c. nadace"} isCorrect={false}>
-    (KUS str. 81: právní subjektivita se u nich váže na majetek, který ji tvoří, ne na osoby)
-  </QuizOption>
-  <QuizOption label={"d. iudicium domesticum"} isCorrect={false}>
-    (Instituce str. 82: poradní orgán, nevztahuje se k otázce)
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Dolus *úmysl, podvod* \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+<Quiz question={"Pokud se hovoří o převodu per aes et libram: "} topic={pravniJednani}>
+  <QuizOption label={"a. mancipaci"} isCorrect={true}>
+    Instituce, s. 286: _„Gesta per aes et libram - předmět právního jednání byl vyměněn za určité množství mědi, která byla odvažována na bronzových vahách, [patří sem] mancipatio - cílem je převod vlastnického práva.“_
   </QuizOption>
-  <QuizOption label={"b. nelze vyloučit"} isCorrect={true}>
-    (z mého nahlížení \+ KUS str. 111\)
+  <QuizOption label={"b. adiudikaci"} isCorrect={false}>
+    Ne, adiudicatio je přisouzení úředníkem (Instituce, s. 109).
   </QuizOption>
-  <QuizOption label={"c. neomlouvá"} isCorrect={true}>
-    (KUS str. 111\)
+  <QuizOption label={"c. in iure cessi"} isCorrect={false}>
+    Ne, in iure cessio není jedním z gest per aes et libram (Instituce, s. 286).
   </QuizOption>
-  <QuizOption label={"d. odpovídá se za něj pouze v některých případech"} isCorrect={false}>
-    (z mého nahlížení \+ KUS str. 111\) \-\> odpovídá se za něj vždy
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Naplavením \- \: "}>
+<Quiz question={"Zásada tres faciunt collegium se vztahuje na: "} topic={civilniProces}>
+  <QuizOption label={"a. soukromé korporace"} isCorrect={true}>
+    KUS, marg. č. 136, s. 81: _„Omezení spolčovací svobody provedla ‚lex Iulia de collegiis‘: ke vzniku spolku postačují tři lidé (třes faciunt collegium), k jeho trvání stačíjediný zbývající člen.“_
+  </QuizOption>
+  <QuizOption label={"b. nadace"} isCorrect={false}>
+    Ne, nadace k založení nepotřebovaly určitý počet osob. 
+
+    KUS, marg. č. 137, s. 82: _„Nadace byly podrobeny církevnímu dozoru a zřizovaly se sepsáním listiny, ve které byl stanoven účel nadace, formy její správy a způsoby užívání nadace. Nadace nabývala právní subjektivitu biskupským schválením.“_
+  </QuizOption>
+  <QuizOption label={"c. iudicium domesticum"} isCorrect={false}>
+    Ne, iudicium domesticum bylo poradní orgán patera familias (Instituce, s. 82).
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Dolus: "} topic={pravniJednani}>
+  <QuizOption label={"a. nelze vyloučit"} isCorrect={true}>
+    KUS, marg. č. 184, s. 111: _„Pachatel za dolus odpovídá vždycky, zásadně není možné tuto odpovědnost smluvně vyloučit.“_
+  </QuizOption>
+  <QuizOption label={"b. neomlouvá"} isCorrect={true}>
+    KUS, marg. č. 184, s. 111: _„Pachatel za dolus odpovídá vždycky, zásadně není možné tuto odpovědnost smluvně vyloučit.“_
+  </QuizOption>
+  <QuizOption label={"c. odpovídá se za něj pouze v některých případech"} isCorrect={false}>
+    KUS, marg. č. 184, s. 111: _„Pachatel za dolus odpovídá vždycky, zásadně není možné tuto odpovědnost smluvně vyloučit.“_
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
+  </QuizOption>
+</Quiz>
+
+<Quiz question={"Naplavením: "} topic={vecnaPrava}>
   <QuizOption label={"a. dojde k uplatnění zásady superficies solo cedit"} isCorrect={false}>
-    (ne, jiné druhy, Instituce str. 107-108)
+    (Ne, tato zásada s naplavením nesouvisí. 
   </QuizOption>
   <QuizOption label={"b. je možné ztratit vlastnictví"} isCorrect={true}>
-    (Instituce str. 107-108 \= nános z řeky veřejné, opravdu ztráta vlastnictví? to sedí spíš na avulsio…)
+    Ano, ke ztrátě vlastnictví dojde skrze stržení, avulsio, a následné naplavení stržené části na cizí pozemek, alluvio (Instituce, s. 107, KUS, marg. č. 293, s. 181).
   </QuizOption>
   <QuizOption label={"c. je možné získat vlastnictví"} isCorrect={true}>
-    (Instituce str. 107-108)
+    Ano, dojde k přírůstku pozemku vlivem náplavy, to znamená, že vlastník pozemku získá vlastnictví k té nové naplavené části (Instituce, s. 107-108).
   </QuizOption>
-  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+  <QuizOption label={"d. vzniká věc"} isCorrect={false}>
+    Ne, nevzniká věc, nýbrž se spojily dvě nemovité věci.
+  </QuizOption>
+  <QuizOption label={"e. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Za bonitárního vlastníka věci jsou označováni ti, kteří mají k ochraně k disposici \: "}>
+<Quiz question={"Za bonitárního vlastníka věci jsou označováni ti, kteří mají k ochraně k disposici: "} topic={vecnaPrava}>
   <QuizOption label={"a. actio Publiciana in rem a exceptio rei venditae ac traditae"} isCorrect={true}>
-    (KUS str. 159, 160\)
+    Ano, viz Instituce, s. 121 a KUS, marg. č. 268-269, s. 159-160.
   </QuizOption>
   <QuizOption label={"b. actio Publiciana in rem použitelnou proti rei vindicatio"} isCorrect={false}>
-    (z moodle cvičný test 2020 \+ KUS str. 159: proti rei vindicatio je použitelná exceptio rei venditae ac traditae)
+    Ne, jedná se o chyták, actio Publiciana in rem příslušela nabyvateli věci proti osobám, které mu ji odňaly. Proti reivindikaci sloužila exceptio rei venditae ac traditae (Instituce, s. 121).
   </QuizOption>
   <QuizOption label={"c. actio negatoria a actio Publiciana in rem"} isCorrect={false}>
-    (z moodle cvičný test 2020 \+ https://wiki.iurium.cz/w/Vlastnické\_žaloby\_v\_římském\_právu: actio negatoria má k dispozici jen kviritský vlastník)
+    Ne, actio negatoria má k dispozici jen kviritský vlastník (Instituce, s. 117-118).
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Litiskontestace \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
+<Quiz question={"Litiskontestace: "} topic={civilniProces}>
+  <QuizOption label={"a. dává stranám možnost odvolat se k císaři"} isCorrect={false}>
+    Ne, litiskontestace nesouvisí s právem na odvolání.
   </QuizOption>
-  <QuizOption label={"b. dává stranám možnost odvolat se k císaři"} isCorrect={false}>
-    (litiskontestace nesouvisí s odvoláním)
-  </QuizOption>
-  <QuizOption label={"c. způsobí nutnou novaci"} isCorrect={true}>
+  <QuizOption label={"b. způsobí nutnou novaci"} isCorrect={true}>
     (Instituce str. 261: původní obligace zaniká a přenáší se do práva procesního \-\> vzniká spor****)
   </QuizOption>
-  <QuizOption label={"d. dělí řízení na fázi in iure a apud iudicem"} isCorrect={true}>
+  <QuizOption label={"c. dělí řízení na fázi in iure a apud iudicem"} isCorrect={true}>
     (Instituce str. 262\)
+  </QuizOption>
+  <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
   </QuizOption>
 </Quiz>
 
@@ -1071,21 +1412,6 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
   <QuizOption label={"d. ani jedna z nabízených odpovědí"} isCorrect={false}>
     
-  </QuizOption>
-</Quiz>
-
-<Quiz question={"Ususfructus k věci končí \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. nabytím věci novým vlastníkem"} isCorrect={false}>
-    (KUS str. 196 \+ fotky z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"c. zánikem oprávněné právnické osoby"} isCorrect={false}>
-    (KUS str. 196 \+ fotky z nahlížení po testu)
-  </QuizOption>
-  <QuizOption label={"d. smrtí vlastníka věci"} isCorrect={false}>
-    (KUS str. 196 \+ fotky z nahlížení po testu)
   </QuizOption>
 </Quiz>
 
@@ -1392,35 +1718,7 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Usufruktuář nabývá plody okamžikem \: "}>
-  <QuizOption label={"a. separace"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. specifikace"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. percepce"} isCorrect={false}>
-    (sklizní/uchopením)
-  </QuizOption>
-</Quiz>
 
-<Quiz question={"Ius honorarium není \: "}>
-  <QuizOption label={"a. právo úřednické"} isCorrect={false}>
-    (ano, je)
-  </QuizOption>
-  <QuizOption label={"b. právo tvořené správci provincií"} isCorrect={false}>
-    (instituce 47\) \- Jasně říkají, že ius honorarium tvoří i správci provincií
-  </QuizOption>
-  <QuizOption label={"c. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"d. právo upravující honor"} isCorrect={false}>
-    (udělování poct)
-  </QuizOption>
-</Quiz>
 
 <Quiz question={"Formule \: "}>
   <QuizOption label={"a. je na závěr stadia in iure vytvářena stranami sporu \- Viz instituce str. 283\."} isCorrect={false}>
@@ -4068,20 +4366,6 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Ususfructus je možné zřídit k \: "}>
-  <QuizOption label={"a. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"b. věcem movitým"} isCorrect={true}>
-    (fotky z nahlížení po testu \+ KUS str.195)
-  </QuizOption>
-  <QuizOption label={"c. pohledávkám"} isCorrect={true}>
-    (fotky z nahlížení po testu \+ KUS str.195)
-  </QuizOption>
-  <QuizOption label={"d. věcem nemovitým"} isCorrect={true}>
-    (fotky z nahlížení po testu \+ KUS str.195)
-  </QuizOption>
-</Quiz>
 
 <Quiz question={"Pokud potřebujeme odvést vodu z mého pozemku, zřídíme přes sousedův pozemek \: "}>
   <QuizOption label={"a. servitus aquae pluviae"} isCorrect={false}>
@@ -6174,20 +6458,7 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
   </QuizOption>
 </Quiz>
 
-<Quiz question={"Usuář plody, které má právo nabývat, nabývá okamžikem \: "}>
-  <QuizOption label={"a. percepce"} isCorrect={true}>
-    (Instituce str. 109, uchopení)
-  </QuizOption>
-  <QuizOption label={"b. ani jedna z nabízených odpovědí"} isCorrect={false}>
-    
-  </QuizOption>
-  <QuizOption label={"c. separace"} isCorrect={false}>
-    (Instituce o pár řádků výš než percepce, taxativně vyjmenováno)
-  </QuizOption>
-  <QuizOption label={"d. specifikace"} isCorrect={false}>
-    (je zpracování, latinsky specificatio, ke zpracování dojde, jestliže v důsledku něčí činnosti ztratí věc svou původní podstatu a změní se v jinou věc)
-  </QuizOption>
-</Quiz>
+
 
 <Quiz question={"Jestliže vykonávám na svém pozemku ius fruendi, pak tam \: "}>
   <QuizOption label={"a. chodím v trávě"} isCorrect={false}>
@@ -6698,3 +6969,4 @@ import { Quiz, QuizOption } from '@site/src/components/Quiz';
     
   </QuizOption>
 </Quiz>
+</QuizFilter>

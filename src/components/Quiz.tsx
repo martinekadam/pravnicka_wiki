@@ -1,12 +1,23 @@
-import React, { useState, ReactNode } from 'react';
+import React, { useState, ReactNode, isValidElement } from 'react';
 
-// Define the "Rules" for the Main Quiz wrapper
 interface QuizProps {
   question: string;
+  topic?: string;
   children: ReactNode;
+  quizNumber?: number;    
+  highlightMode?: boolean; 
 }
 
-export function Quiz({ question, children }: QuizProps): JSX.Element {
+export function Quiz({ question, children, quizNumber, highlightMode }: QuizProps): JSX.Element {
+  const childrenArray = React.Children.toArray(children);
+  
+  const correctCount = childrenArray.reduce((acc, child) => {
+    if (isValidElement(child) && child.props.isCorrect === true) {
+      return acc + 1;
+    }
+    return acc;
+  }, 0);
+
   return (
     <div style={{
       border: '1px solid var(--ifm-color-emphasis-300)',
@@ -15,23 +26,50 @@ export function Quiz({ question, children }: QuizProps): JSX.Element {
       backgroundColor: 'var(--ifm-background-surface-color)',
       marginBottom: '2rem',
     }}>
-      <h2 style={{ marginTop: 0, fontSize: '1.5rem' }}>{question}</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <h2 style={{ marginTop: 0, fontSize: '1.5rem' }}>
+          {quizNumber && <span style={{ opacity: 0.5, marginRight: '10px' }}>#{quizNumber}</span>}
+          {question}
+        </h2>
+        
+        <span style={{
+          fontSize: '0.8rem',
+          backgroundColor: 'var(--ifm-color-emphasis-200)',
+          padding: '4px 8px',
+          borderRadius: '12px',
+          whiteSpace: 'nowrap'
+        }}>
+          Správných odpovědí: {correctCount}
+        </span>
+      </div>
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        {children}
+        {childrenArray.map(child => {
+          if (isValidElement(child)) {
+            return React.cloneElement(child, { 
+              ...child.props, 
+              forceHighlight: highlightMode 
+            });
+          }
+          return child;
+        })}
       </div>
     </div>
   );
-}
+} 
 
-// Define the "Rules" for the individual options
 interface QuizOptionProps {
   label: string;
   isCorrect: boolean;
   children: ReactNode;
+  forceHighlight?: boolean; 
 }
 
-export function QuizOption({ label, isCorrect, children }: QuizOptionProps): JSX.Element {
+export function QuizOption({ label, isCorrect, children, forceHighlight }: QuizOptionProps): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const isHighlighted = (isOpen && isCorrect) || (forceHighlight && isCorrect);
+  const isWrong = (isOpen && !isCorrect);
 
   return (
     <div style={{ marginBottom: '5px' }}>
@@ -44,22 +82,24 @@ export function QuizOption({ label, isCorrect, children }: QuizOptionProps): JSX
           borderRadius: '5px',
           border: '1px solid var(--ifm-color-primary)',
           cursor: 'pointer',
-          backgroundColor: isOpen 
-            ? (isCorrect ? 'rgba(40, 167, 69, 0.2)' : 'rgba(220, 53, 69, 0.2)') 
-            : 'transparent',
-          fontWeight: isOpen ? 'bold' : 'normal',
+          backgroundColor: isHighlighted 
+            ? 'rgba(40, 167, 69, 0.2)' 
+            : isWrong 
+              ? 'rgba(220, 53, 69, 0.2)' 
+              : 'transparent',
+          fontWeight: (isOpen || isHighlighted) ? 'bold' : 'normal',
           color: 'inherit'
         }}
       >
         {label}
       </button>
       
-      {isOpen && (
+      {(isOpen || (forceHighlight && isCorrect)) && (
         <div style={{
           marginTop: '8px',
           padding: '15px',
           fontSize: '0.95rem',
-          borderLeft: `4px solid ${isCorrect ? '#28a745' : '#dc3545'}`,
+          borderLeft: `4px solid ${isCorrect ? '#05c517' : '#ec0000'}`,
           backgroundColor: 'var(--ifm-color-emphasis-100)',
           borderRadius: '0 5px 5px 0',
         }}>
@@ -71,6 +111,90 @@ export function QuizOption({ label, isCorrect, children }: QuizOptionProps): JSX
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+interface QuizFilterProps {
+  children: ReactNode;
+}
+
+export function QuizFilter({ children }: QuizFilterProps): JSX.Element {
+  const [activeTopic, setActiveTopic] = useState<string>('Všechna témata');
+  const [showCorrect, setShowCorrect] = useState<boolean>(false); // Highlight State
+  
+  const childrenArray = React.Children.toArray(children).filter(child => {
+    return isValidElement(child) && child.props.topic; 
+  });
+
+  const topics = ['Všechna témata', ...new Set(childrenArray.map(child => {
+    if (isValidElement(child) && child.props.topic) {
+      return child.props.topic;
+    }
+    return null;
+  }).filter((t): t is string => !!t))];
+
+  const filteredChildren = childrenArray.filter(child => {
+    if (activeTopic === 'Všechna témata') return true;
+    return isValidElement(child) && child.props.topic === activeTopic;
+  });
+
+  return (
+    <div>
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '2rem', flexWrap: 'wrap' }}>
+        {topics.map(topic => (
+          <button
+            key={topic}
+            onClick={() => setActiveTopic(topic)}
+            style={{
+              padding: '8px 16px',
+              borderRadius: '20px',
+              border: '1px solid var(--ifm-color-primary)',
+              backgroundColor: activeTopic === topic ? 'var(--ifm-color-primary)' : 'transparent',
+              color: activeTopic === topic ? '#fff' : 'var(--ifm-color-primary)',
+              cursor: 'pointer',
+              transition: 'all 0.2s'
+            }}
+          >
+            {topic}
+          </button>
+        ))}
+      </div>
+            {/* 2. Added Toggle Button */}
+      <div style={{ marginBottom: '1rem', textAlign: 'right' }}>
+        <button 
+          onClick={() => setShowCorrect(!showCorrect)}
+          style={{
+            padding: '5px 12px',
+            fontSize: '0.8rem',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            border: '1px solid var(--ifm-color-primary)',
+            background: showCorrect ? 'var(--ifm-color-primary)' : 'transparent',
+            color: showCorrect ? 'white' : 'var(--ifm-color-primary)'
+          }}
+        >
+          {showCorrect ? 'Skrýt správné odpovědi' : 'Ukázat správné odpovědi'}
+        </button>
+      </div>
+
+      <div>
+        {/* 3. Mapping through filtered children to inject index and highlight state */}
+        {filteredChildren.length > 0 ? (
+          filteredChildren.map((child, index) => {
+            if (isValidElement(child)) {
+              return React.cloneElement(child, { 
+                ...child.props, 
+                quizNumber: index + 1,
+                highlightMode: showCorrect
+              });
+            }
+            return child;
+          })
+        ) : (
+          <p>Na toto téma žádné otázky nemáme.</p>
+        )}
+      </div>
     </div>
   );
 }
