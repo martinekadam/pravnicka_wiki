@@ -11,6 +11,7 @@ interface QuizProps {
 export function Quiz({ question, children, quizNumber, highlightMode }: QuizProps): JSX.Element {
   const childrenArray = React.Children.toArray(children);
   
+  // Logic to count correct answers remains unchanged
   const correctCount = childrenArray.reduce((acc, child) => {
     if (isValidElement(child) && child.props.isCorrect === true) {
       return acc + 1;
@@ -44,11 +45,15 @@ export function Quiz({ question, children, quizNumber, highlightMode }: QuizProp
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        {childrenArray.map(child => {
+        {childrenArray.map((child, index) => {
           if (isValidElement(child)) {
+            // Generate letter (0 = a, 1 = b, 2 = c...)
+            const letter = String.fromCharCode(97 + index); 
+            
             return React.cloneElement(child, { 
               ...child.props, 
-              forceHighlight: highlightMode 
+              forceHighlight: highlightMode, //
+              optionLabel: `${letter})`      // Passing the new auto-label
             });
           }
           return child;
@@ -56,20 +61,21 @@ export function Quiz({ question, children, quizNumber, highlightMode }: QuizProp
       </div>
     </div>
   );
-} 
+}
 
 interface QuizOptionProps {
   label: string;
   isCorrect: boolean;
   children: ReactNode;
   forceHighlight?: boolean; 
+  optionLabel?: string; // New prop for the auto-letter
 }
 
-export function QuizOption({ label, isCorrect, children, forceHighlight }: QuizOptionProps): JSX.Element {
+export function QuizOption({ label, isCorrect, children, forceHighlight, optionLabel }: QuizOptionProps): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const isHighlighted = (isOpen && isCorrect) || (forceHighlight && isCorrect);
-  const isWrong = (isOpen && !isCorrect);
+  const isHighlighted = (isOpen && isCorrect) || (forceHighlight && isCorrect); //
+  const isWrong = (isOpen && !isCorrect); //
 
   return (
     <div style={{ marginBottom: '5px' }}>
@@ -80,7 +86,7 @@ export function QuizOption({ label, isCorrect, children, forceHighlight }: QuizO
           textAlign: 'left',
           padding: '12px 15px',
           borderRadius: '5px',
-          border: '1px solid var(--ifm-color-primary)',
+          border: '1px solid var(--ifm-color-primary)', //
           cursor: 'pointer',
           backgroundColor: isHighlighted 
             ? 'rgba(40, 167, 69, 0.2)' 
@@ -91,15 +97,18 @@ export function QuizOption({ label, isCorrect, children, forceHighlight }: QuizO
           color: 'inherit'
         }}
       >
+        {/* Display the auto-generated letter followed by the text */}
+        {optionLabel && <span style={{ marginRight: '8px', opacity: 0.6 }}>{optionLabel}</span>}
         {label}
       </button>
       
+      {/* Explanation box logic remains the same */}
       {(isOpen || (forceHighlight && isCorrect)) && (
         <div style={{
           marginTop: '8px',
           padding: '15px',
           fontSize: '0.95rem',
-          borderLeft: `4px solid ${isCorrect ? '#05c517' : '#ec0000'}`,
+          borderLeft: `4px solid ${isCorrect ? '#05c517' : '#ec0000'}`, //
           backgroundColor: 'var(--ifm-color-emphasis-100)',
           borderRadius: '0 5px 5px 0',
         }}>
@@ -121,8 +130,9 @@ interface QuizFilterProps {
 
 export function QuizFilter({ children }: QuizFilterProps): JSX.Element {
   const [activeTopic, setActiveTopic] = useState<string>('Všechna témata');
-  const [showCorrect, setShowCorrect] = useState<boolean>(false); // Highlight State
+  const [showCorrect, setShowCorrect] = useState<boolean>(false);
   
+  // Existing logic: Filter out unfinished questions
   const childrenArray = React.Children.toArray(children).filter(child => {
     return isValidElement(child) && child.props.topic; 
   });
@@ -141,6 +151,7 @@ export function QuizFilter({ children }: QuizFilterProps): JSX.Element {
 
   return (
     <div>
+      {/* Topic Buttons Row */}
       <div style={{ display: 'flex', gap: '8px', marginBottom: '2rem', flexWrap: 'wrap' }}>
         {topics.map(topic => (
           <button
@@ -160,8 +171,18 @@ export function QuizFilter({ children }: QuizFilterProps): JSX.Element {
           </button>
         ))}
       </div>
-            {/* 2. Added Toggle Button */}
-      <div style={{ marginBottom: '1rem', textAlign: 'right' }}>
+
+      {/* NEW: Counter and Toggle Button on the same line */}
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        alignItems: 'center', 
+        marginBottom: '1rem' 
+      }}>
+        <div style={{ fontSize: '0.9rem', opacity: 0.7, fontWeight: 'bold' }}>
+          Počet otázek: {filteredChildren.length} {activeTopic !== 'Všechna témata' && `z ${childrenArray.length}`}
+        </div>
+
         <button 
           onClick={() => setShowCorrect(!showCorrect)}
           style={{
@@ -179,7 +200,7 @@ export function QuizFilter({ children }: QuizFilterProps): JSX.Element {
       </div>
 
       <div>
-        {/* 3. Mapping through filtered children to inject index and highlight state */}
+        {/* Mapping through filtered children */}
         {filteredChildren.length > 0 ? (
           filteredChildren.map((child, index) => {
             if (isValidElement(child)) {
