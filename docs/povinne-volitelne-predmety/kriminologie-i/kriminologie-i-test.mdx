@@ -1,0 +1,571 @@
+---
+title: Test z Kriminologie I
+sidebar_position: 1
+---
+import { Quiz, QuizOption, QuizFilter } from '@site/src/components/Quiz';
+
+export const kriminalitaData = "Kriminalita a data o ní"
+export const trestniPolitika = "Trestní politika"
+export const prevence = "Kriminologická prevence"
+export const ukladaniTrestu = "Kriminologické aspekty ukládání trestů"
+export const vezenstvi = "Vězeňství"
+export const historie = "Historie kriminologie"
+export const teorie = "Kriminologická teorie"
+
+:::info Úvod
+Test obsahuje otázky z bonusových testů na přednáškách a ukázkového testu v Moodlu.
+:::
+
+<QuizFilter>
+    <Quiz question={"V čem spočívá hlavní rozdíl mezi registrovanou a latentní kriminalitou?"} topic={kriminalitaData}>
+        <QuizOption label={"Latentní je taková kriminalita, kterou policejní složky nikdy neodhalí."} isCorrect={false}>
+        </QuizOption>
+        <QuizOption label={"Latentní kriminalita – na rozdíl od kriminality registrované – obsahuje nezjištěná, neohlášená či nezaznamenaná jednání."} isCorrect={true}>
+        </QuizOption>
+        <QuizOption label={"Registrovaná kriminalita lépe popisuje jednání, která orgány činné v trestním řízení (OČTŘ) považují za trestná."} isCorrect={false}>
+        </QuizOption>
+        <QuizOption label={"Registrovaná kriminalita obsahuje pouze ta jednání, která byla OČTŘ objasněna."} isCorrect={false}>
+        </QuizOption>
+
+    </Quiz>
+    <Quiz question={"Viktimizační výzkumy nebudou dobře fungovat: "} topic={kriminalitaData}>
+        <QuizOption label={"ptáme-li se mladých bílých mužů."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"v případě trestné činnosti bez typické oběti."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"tam, kde není jasná hranice mezi etickým pochybením, přestupkem a trestným činem."} isCorrect={false}>
+        Ne, to platí spíše pro self-reportové výzkumy. 
+        </QuizOption>
+
+        <QuizOption label={"nikdy, jedná se o zastaralou metodu, která byla nahrazena plošným sběrem statistických dat."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Co je příkladem změny ve vykazování jako vlivu na registrovanou kriminalitu?"} topic={kriminalitaData}>
+        <QuizOption label={"Nestíhání určitého jednání (např. bagatelní drogové kriminality)."} isCorrect={false}>
+            Ne, zde se jedná o změnu v umělé latenci, případně změnu v trestní politice. 
+        </QuizOption>
+
+        <QuizOption label={"Vyšší míra důvěry v policii a vyšší míra nahlašování."} isCorrect={false}>
+            Ne, zde se jedná o změnu v míře nahlašování. 
+        </QuizOption>
+
+        <QuizOption label={"Způsob zaznamenávání dílčích útoků."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"(De)kriminalizace určitých jednání."} isCorrect={false}>
+            Ne, zde se jedná o legislativní změnu. 
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Kterou poučku musíte při práci s daty vždy držet na paměti?"} topic={kriminalitaData}>
+        <QuizOption label={"Dobrý zdroj je půlka úspěchu."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Při porovnávání napříč zeměmi vždy používat absolutní čísla."} isCorrect={false}>
+            Ne, naopak při porovnávání mezi zeměmi je nutné používat relativní čísla (např. počet vězňů na 100 000 obyvatel). Země s větší populací budou mít, takřka zákonitě, absolutní čísla vyšší.
+        </QuizOption>
+
+        <QuizOption label={"I relativně malé rozdíly mohou hrát velkou roli."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Vždy pečlivě prověřit zdroj informací, jakým způsobem byly údaje sesbírány a jaké mají limitace."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Česká republika je z hlediska vězeňské populace v EU: "} topic={kriminalitaData}>
+        <QuizOption label={"spíše úspěšnou zemí s průměrnou vězeňskou populací."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"zemí, která do vězení posílá velké množství pachatelů."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"zemí, která do vězení posílá pachatele na velmi dlouho."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"zemí s nejvyšší vězeňskou populací v Evropě."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Populistická trestní politika zastává názor, že: "} topic={trestniPolitika}>
+        <QuizOption label={"je třeba zohledňovat veřejný názor při formulaci trestní politiky."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"co je populární, je podstatnější než to, co je efektivní či spravedlivé."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"reaguje na aktuální společenské problémy a kauzy."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"nepřichází s dlouhodobým řešením, ale jen s krátkodobými řešeními."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Vězeňská populace v ČR je: "} topic={trestniPolitika}>
+        <QuizOption label={"nejvyšší v Evropě."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"jedna z vyšších v Evropě."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"lehce nad evropským průměrem."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"odpovídající průměru Evropy."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Pokud bychom řekli, že zavedení domácího vězení, které mělo omezit vězeňskou populaci skrze nahrazení nepodmíněných trestů, by mělo tzv. net-widening efekt, k čemu by to vedlo?"} topic={trestniPolitika}>
+        <QuizOption label={"domácí vězení by bylo ukládáno namísto nepodmíněných trestů."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"domácí vězení by bylo ukládáno v delší výměře, než v jaké by byly uložené nepodmíněné tresty odnětí svobody."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"domácí vězení by vedlo ke snížení latentní kriminality."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"domácí vězení by bylo ukládáno namísto jiných než nepodmíněných trestů."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Reprezentantem negativního způsobu trestní moci v ČR by bylo: "} topic={trestniPolitika}>
+        <QuizOption label={"Spolek Bez Trestu, zabývající se tresty za znásilnění."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Spolek Šalamoun, zabývající se porušeními práva na spravedlivý proces."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Rubikon centrum, zabývající se špatným stavem post-penitenciární péče."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Mezinárodní vězeňské společenství, zabývající se vězeňským prostředím."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Z hlediska vertikálního se trestní moc v České republice realizuje skrze: "} topic={trestniPolitika}>
+        <QuizOption label={"zákonodárce, justici a exekutivu."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"policii, státní zastupitelství, soudy a VS ČR a PMS ČR."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"státní zastupitelství."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"soudy a do určité míry státní zastupitelství."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Příkladem viktimologické prevence je: "} topic={prevence}>
+        <QuizOption label={"nízkoprahový klub pro mladistvé."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"probační dům."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"umístění bezpečnostních fólií na okna rodinného domu."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"zvýšení dostupnosti substituční léčby."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Příkladem terciární prevence je: "} topic={prevence}>
+        <QuizOption label={"probační dům."} isCorrect={true}>
+            Ano, u terciární prevence jde totiž o zabránění opakované trestné činnosti. 
+        </QuizOption>
+
+        <QuizOption label={"dostupná substituční léčba."} isCorrect={false}>
+            Ne, to je spíše sekundární prevence, jelikož cílí na potenciální pachatele.
+        </QuizOption>
+
+        <QuizOption label={"zlepšení ekonomických podmínek."} isCorrect={false}>
+            Ne, to je spíše primární prevence, jelikož cílí na celou populaci. 
+        </QuizOption>
+
+        <QuizOption label={"častější přítomnost policie v ohrožených lokalitách."} isCorrect={false}>
+            Ne, to je spíše sekundární prevence, protože pracuje s úžeji vymezenou skupinou potenciálních obětí, či pachatelů. 
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Uvažování o tom, jak pracovat s pachateli, se v posledním století vyvíjelo následovně: "} topic={prevence}>
+        <QuizOption label={"kontinuálně se ubírá k větší práci s pachateli."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"od 90. let 20. století se s pachateli začíná pracovat."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"hlavní změna nastala po druhé světové válce, kdy se s pachateli začalo pracovat."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"v určitých érách se s pachateli pracovalo více, jindy se lidé domnívali, že to nemá cenu."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"V systému prevence chybí dle zjištění auditního orgánu: "} topic={prevence}>
+        <QuizOption label={"nastavení měřitelných cílů a kritérií úspěšnosti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"důraz na práci s oběťmi trestné činnosti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"finance, jako zásadní problém."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"systémové uchopení (celorepubliková koncepce)."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Když přemýšlíme o tom, že bychom přejali program pracující s pachateli, tak se správně máme: "} topic={prevence}>
+        <QuizOption label={"podívat na Blueprints.org a program začít aplikovat v ČR."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"zamyslet nad kontextem a přizpůsobit mu úspěšné programy."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"zamyslet nad cílem, vyvinout program a experimentálně jej otestovat."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"snažit současné programy tomuto přizpůsobit a dobře personálně zabezpečit."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Jaký vliv na recidivu má (v průměru) nepodmíněný trest odnětí svobody v porovnání s jinými tresty?"} topic={ukladaniTrestu}>
+        <QuizOption label={"Kriminogenní: Vede k vyšší míře recidivy."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Odrazující: Pachatelé se nechtějí do výkonu trestu odnětí svobody vrátit."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Reformující: Pachatelé se promění a zanechají trestné činnosti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Žádný."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Který výrok platí ohledně tvrzení „Každý případ je unikátní.“ a „Je třeba stanovit přesné výše trestů pro jednotlivá jednání.“?"} topic={ukladaniTrestu}>
+        <QuizOption label={"Je třeba si vybrat mezi jedním z těchto přístupů: Nelze je naplnit naráz."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Je třeba si vybrat mezi jedním z těchto přístupů, ale nebýt ohledně něj dogmatičtí."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Je třeba najít pozici uprostřed mezi těmito přístupy."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Tato tvrzení nám nepomáhají při diskuzi o ukládání trestů."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Ohledně opatření, která by mohla přispět ke snížení rozdílů mezi soudci při ukládání trestů v ČR, platí, že: "} topic={ukladaniTrestu}>
+        <QuizOption label={"nejsou potřeba, protože rozdíly mezi soudci jsou malé."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"další nejsou potřeba, protože dostatečný počet je již v praxi k dispozici."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"další jsou potřeba a víme, která by byla vhodná pro český systém trestání."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"další jsou potřeba, ale nevíme, která by byla vhodná pro český systém trestání."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Návrhy státních zástupců v ČR: "} topic={ukladaniTrestu}>
+        <QuizOption label={"významně neovlivňují soudce, ale pro státní zástupce jsou povinné."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"významně neovlivňují soudce a pro státní zástupce nejsou povinné."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"významně ovlivňují soudce a pro státní zástupce jsou povinné."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"významně ovlivňují soudce, ale pro státní zástupce nejsou povinné."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Ukládáte-li trest v rámci systému, který je založený na směru Limited Retributivism, jaký trest uložíte recidivistovi v porovnání s trestem, který byste uložili prvopachateli?"} topic={ukladaniTrestu}>
+        <QuizOption label={"Stejný trest: Trestní minulost nehraje roli."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Přísnější trest, ale nikoli citelněji, než odpovídá závažnosti trestné činnosti."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Trest o tolik přísnější, aby naplnil konsekvencionalistické účely trestů, zejména inkapacitaci."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Přísnější trest, ale pouze, pokud mám k dispozici programy směřující k rehabilitaci pachatele."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Trest odnětí svobody se začíná používat jako častý trest: "} topic={vezenstvi}>
+        <QuizOption label={"v Římské říši se začátkem císařství."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"v pozdějším středověku, s rozvojem feudalismu."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"koncem 18. století. v souvislosti s osvícenectvím."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"v druhé půlce 19. století v souvislosti s větším stěhováním do měst."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Co znamená princip normalizace ve vězeňství?"} topic={vezenstvi}>
+        <QuizOption label={"Stanovení standardů, aby byly stejné napříč celým systémem."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Zdůrazňování předvídatelnosti vězeňského systému s cílem předejít jedné z „prison pains“."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Život ve vězení se má co nejvíce podobat pozitivním aspektům života na svobodě."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Je to teoretický princip, který zdůrazňuje potřebu vězňů přizpůsobit se vězeňským podmínkám."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Co znamená princip normalizace ve vězeňství?"} topic={vezenstvi}>
+        <QuizOption label={"Stanovení standardů, aby byly stejné napříč celým systémem."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Zdůrazňování předvídatelnosti vězeňského systému s cílem předejít jedné z „prison pains“."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Život ve vězení se má co nejvíce podobat pozitivním aspektům života na svobodě."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Je to teoretický princip, který zdůrazňuje potřebu vězňů přizpůsobit se vězeňským podmínkám."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Co charakterizuje budovy českých věznic?"} topic={vezenstvi}>
+        <QuizOption label={"Byly stavěny jako věznice."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Byly stavěny jako kláštery či nemocnice."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Byly stavěny jako pracovní tábory či kasárny."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Byly stavěny jako soudy."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"V České republice je účel výkonu trestu odnětí svobody naplňován zejména prostřednictvím: "} topic={vezenstvi}>
+        <QuizOption label={"pořádku a kázně ve věznicích."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"programů zacházení."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"standardizovaných programů."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"postoje odsouzeného ke spáchané trestné činnosti."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Soukromé věznice v České republice: "} topic={vezenstvi}>
+        <QuizOption label={"nemohou existovat."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"neexistují, ale existovat mohou."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"existují."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"jsou zakázány, ale neoficiálně existují."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"V čem spočívá rozdíl mezi takticko-statistickou klasifikací (TSK) a paragrafy zvláštní části trestního zákoníku?"} topic={kriminalitaData}>
+        <QuizOption label={"TSK klasifikuje jednání bez ohledu na paragrafy zvláštní části."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"TSK pouze dále rozvádí jednání obsažená v paragrafech zvláštní části (blíže je definuje)."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"TSK využívá paragrafy ze zvláštní části, ale klasifikuje jednání po svém."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Žádný rozdíl neexistuje: TSK kopíruje zvláštní část trestního zákoníku."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Během 20. století se kriminologie na území dnešní České republiky: "} topic={historie}>
+        <QuizOption label={"vyvíjela kontinuálně."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"vyvíjela kontinuálně s výjimkou druhé světové války a přelomu 40. a 50. let."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"vyvíjela nárazově."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"vyvíjela primárně až po roce 1989."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Pozitivistické přístupy v kriminologii: "} topic={historie}>
+        <QuizOption label={"začaly převládat v druhé polovině 19. stol."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"patří mezi právně filozofické směry."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"neužívají statistické metody."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"se přestaly uplatňovat po první světové válce."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Podle toho, na jakou míru platnosti aspirují, rozlišujeme kriminologické teorie: "} topic={teorie}>
+        <QuizOption label={"monokauzální a multifaktorové."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"všeobecné, středního dosahu a vztahující se k dílčím fenoménům."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"oportunistické a monokauzální."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"všeobecné, multifaktorové a etiologické."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Podle „strain teorie“ Roberta K. Mertona: "} topic={teorie}>
+        <QuizOption label={"je zločinec člověk, který odmítá cíle přijímané většinovou společností."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"nemají všichni lidé k dispozici společensky schvalované prostředky k úspěchu."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"liberální společnost neurčuje lidem cíle, které by v životě měli sledovat."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"zločinnost nepatří mezi formy společenské adaptace."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Podle teorie běžných činností mezi tři základní podmínky pro spáchání trestného činu patří: "} topic={teorie}>
+        <QuizOption label={"predestinovaný pachatel, zvlášť zranitelná oběť a nepřítomnost opatrovníka."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"determinovaný cíl, nedostatek kontroly a nepřítomnost opatrovníka."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"příčetný pachatel, zranitelný cíl a nepřítomnost opatrovníka."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"motivovaný pachatel, vhodný cíl a nepřítomnost účinného opatrovníka."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+    
+    <Quiz question={"Kdy v populaci dosahuje vrcholu prevalence kriminálního chování (ve smyslu největšího podílu jedinců dopouštějících se trestné činnosti mezi všemi jedinci daného věku)?"} topic={kriminalitaData}>
+        <QuizOption label={"Mezi 15. a 19. rokem života."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Mezi 20. a 30. rokem života."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Mezi 30. a 40. rokem života."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Mezi 40. a 50. rokem života."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Narativní teorie S. Maruny poukazuje na významné rozdíly mezi jedinci, kterým se podaří opustit kriminální kariéru (desisteři), a těmi, kdo na ní setrvávají po většinu života (persisteři). Jaký z těchto rozdílů je jeví jako zcela zásadní?"} topic={teorie}>
+        <QuizOption label={"Věk prvního spáchaného deliktu."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Úroveň rozumových schopností."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Úroveň emoční a sociální inteligence."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Pocit naděje, že životní změna je možná."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Na co se hlavně zaměřovala viktimologie ve svých počátcích?"} topic={teorie}>
+        <QuizOption label={"Na posílení práv obětí v trestním řízení."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Na psychologickou péči o oběti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Na to, jak oběť přispěla ke spáchání trestného činu."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Na individuální prožívání viktimizace."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Jak může užívání návykových látek zvyšovat viktimnost?"} topic={teorie}>
+        <QuizOption label={"Nijak, drogová kriminalita je považována za trestnou činnost bez oběti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Tím, že na uživatele návykových látek se hledí jako na méně důvěryhodné oběti."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Pod vlivem návykových látek je člověk snazším cílem nebo více konfliktní."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Tím, že uživatelé návykových látek jsou často spoluzodpovědní za to, že se stanou obětmi."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Který z druhů policingu je nejvíce propojený s používáním geografického informačního systému (GIS)?"} topic={trestniPolitika}>
+        <QuizOption label={"Evidence based policing."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Hot spot policing."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"Intelligence based policing."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"Reactive policing."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Podmíněný trest odnětí svobody byl zaveden v roce 1919. Který výrok platí o jeho zavedení, vývoji a užití? Jedná se o: "} topic={trestniPolitika}>
+        <QuizOption label={"výjimečný institut, který se v důsledku promyšlených reforem proměnil v nejčastěji používanou sankci."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"výjimečný institut, který se v důsledku nepromyšlených reforem proměnil v nejčastěji používanou sankci."} isCorrect={true}>
+        </QuizOption>
+
+        <QuizOption label={"institut, zavedený jako běžná součást trestního systému, který mu začal dominovat v důsledku promyšlených reforem."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"institut, zavedený jako běžná součást trestního systému, který mu začal dominovat v důsledku nepromyšlených reforem."} isCorrect={false}>
+        </QuizOption>
+    </Quiz>
+
+    <Quiz question={"Dle výzkumu IKSP, prováděného mezi sociálními pracovníky a speciálními pedagogy, jsou nejrozšířenější a zároveň odborným působením nejlépe ovlivnitelné příčiny páchání trestné činnosti u odsouzených: "} topic={kriminalitaData}>
+        <QuizOption label={"gambling, život v sociálně vyloučené lokalitě a trestná činnost v rámci rodiny."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"slabá motivace vést řádný život, asociální přátelé a nevyhovující bydlení."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"nevyhovující bydlení, alkohol a naučená bezmocnost."} isCorrect={false}>
+        </QuizOption>
+
+        <QuizOption label={"dluhy, nedostatečná pracovní kvalifikace a nedostatečné pracovní návyky."} isCorrect={true}>
+        </QuizOption>
+    </Quiz>
+</QuizFilter>

@@ -84,7 +84,7 @@ const config: Config = {
       ],
     },
     footer: {
-      copyright: `Právnická wiki © ${new Date().getFullYear()}. Šířeno pod licencí <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs" target="_blank" rel="noopener noreferrer" style="color: var(--ifm-footer-link-color); text-decoration: underline;">CC BY-NC-SA 4.0</a>. Built with Docusaurus 🦖`,
+      copyright: `Právnická wiki © ${new Date().getFullYear()}. Šířeno pod licencí <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs" target="_blank" rel="noopener noreferrer" style="color: var(--ifm-footer-link-color); text-decoration: underline;">CC BY-NC-SA 4.0</a>. Built with Docusaurus 🦖`, 
     },
     prism: {
       theme: prismThemes.github,

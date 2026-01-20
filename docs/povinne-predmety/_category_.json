@@ -1,0 +1,9 @@
+{
+  "label": "Povinné předměty",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "povinne-predmety",
+    "description": "Rozcestník se studijními materiály k povinným předmětům."
+  }
+}

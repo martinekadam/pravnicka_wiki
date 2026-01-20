@@ -1,0 +1,1169 @@
+[
+  {
+    "code": "HMOD0001",
+    "name": "Evropské právo",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0004",
+      "HOPV0001",
+      "HOPV0002",
+      "HOPV0214",
+      "HOPV0003",
+      "HDPV0123",
+      "HDPV0124",
+      "HDPV0303",
+      "HOPV0094",
+      "HOPV0044",
+      "HOPV0108",
+      "HOPV0064",
+      "HOPV0127"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0004",
+          "HOPV0001",
+          "HOPV0002",
+          "HOPV0214",
+          "HOPV0003"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0123",
+          "HDPV0124",
+          "HDPV0303"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0002",
+    "name": "Finanční právo",
+    "minCourses": 5,
+    "courses": [
+      "HOPV0008",
+      "HOPV0009",
+      "HOPV0016",
+      "HOPV0013",
+      "HOPV0014",
+      "HOPV0250",
+      "HOPV0241",
+      "HOPV0242",
+      "HOPV0012",
+      "HOPV0007",
+      "HOPV0010",
+      "HDPV0146",
+      "HDPV0151",
+      "HDPV0304",
+      "HDPV0305",
+      "HDPV0199",
+      "HXPV0040"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 3,
+        "courses": [
+          "HOPV0014",
+          "HOPV0013",
+          "HOPV0008",
+          "HOPV0009",
+          "HOPV0016",
+          "HOPV0250",
+          "HOPV0241",
+          "HOPV0242",
+          "HOPV0012"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0146",
+          "HDPV0151",
+          "HDPV0304",
+          "HDPV0305",
+          "HDPV0199",
+          "HXPV0040"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0003",
+    "name": "Mezinárodní právo a mezinárodní vztahy",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0021",
+      "HOPV0020",
+      "HOPV0193",
+      "HOPV0192",
+      "HOPV0024",
+      "HOPV0022",
+      "HOPV0018",
+      "HOPV0023",
+      "HOPV0028",
+      "HOPV0030",
+      "HOPV0029",
+      "HOPV0019",
+      "HDPV0120",
+      "HDPV0121",
+      "HDPV0192",
+      "HDPV0122",
+      "HDPV0193",
+      "HDPV0307",
+      "HXPV0010",
+      "HXPV0011"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 3,
+        "courses": [
+          "HOPV0021",
+          "HOPV0020",
+          "HOPV0193",
+          "HOPV0192",
+          "HOPV0024",
+          "HOPV0022",
+          "HOPV0018",
+          "HOPV0023",
+          "HOPV0028",
+          "HOPV0030",
+          "HOPV0029",
+          "HOPV0019"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0120",
+          "HDPV0121",
+          "HDPV0192",
+          "HDPV0122",
+          "HDPV0193",
+          "HDPV0307",
+          "HXPV0010",
+          "HXPV0011"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0004",
+    "name": "Lidskoprávní",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0026",
+      "HOPV0027",
+      "HOPV0194",
+      "HOPV0024",
+      "HOPV0195",
+      "HDPV0157",
+      "HDPV0139",
+      "HDPV0125",
+      "HDPV0017",
+      "HDPV0307",
+      "HXPV0010",
+      "HXPV0011",
+      "HXPV0032"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 3,
+        "courses": [
+          "HOPV0026",
+          "HOPV0027",
+          "HOPV0194",
+          "HOPV0024",
+          "HOPV0195"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0125",
+          "HDPV0017",
+          "HDPV0307",
+          "HXPV0010",
+          "HXPV0011",
+          "HXPV0032"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0006",
+    "name": "Občanské právo hmotné",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0031",
+      "HOPV0035",
+      "HOPV0211",
+      "HOPV0034",
+      "HDPV0311"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 4,
+        "courses": [
+          "HOPV0031",
+          "HOPV0035",
+          "HOPV0211",
+          "HOPV0034",
+          "HDPV0311"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0007",
+    "name": "Občanské právo procesní",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0037",
+      "HOPV0036",
+      "HDPV0311",
+      "HXPV0003",
+      "HXPV0046"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0037",
+          "HOPV0036"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 2,
+        "courses": [
+          "HDPV0311",
+          "HXPV0003",
+          "HXPV0046"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0008",
+    "name": "Obchodněprávní",
+    "minCourses": 5,
+    "courses": [
+      "HOPV0040",
+      "HOPV0041",
+      "HOPV0042",
+      "HOPV0247",
+      "HDPV0105",
+      "HDPV0128",
+      "HDPV0129",
+      "HDPV0106",
+      "HDPV0183",
+      "HDPV0176",
+      "HDPV0202",
+      "HDPV0201",
+      "HDPV0308",
+      "HDPV0312",
+      "HXPV0005",
+      "HV3720",
+      "HV0022",
+      "HV3932",
+      "HV3926",
+      "HV4201",
+      "HOPV0279",
+      "HOPV0280"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 3,
+        "courses": [
+          "HOPV0040",
+          "HOPV0041",
+          "HOPV0042",
+          "HOPV0247",
+          "HV3720",
+          "HV0022",
+          "HV3932",
+          "HV3926",
+          "HV4201",
+          "HDPV0183"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0150",
+          "HDPV0128",
+          "HDPV0129",
+          "HDPV0106",
+          "HDPV0176",
+          "HDPV0202",
+          "HDPV0201",
+          "HDPV0308",
+          "HDPV0312",
+          "HXPV0005"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0009",
+    "name": "Pracovní právo",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0050",
+      "HOPV0051",
+      "HOPV0053",
+      "HOPV0058",
+      "HDPV0130",
+      "HDPV0158",
+      "HDPV0314",
+      "HV4010",
+      "HV4102"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0050",
+          "HOPV0051",
+          "HOPV0053",
+          "HOPV0058",
+          "HV4010",
+          "HV4102"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0130",
+          "HDPV0158",
+          "HDPV0314"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD00010",
+    "name": "Právo sociálního zabezpečení",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0054",
+      "HOPV0056",
+      "HOPV0059",
+      "HXPV0041",
+      "HDPV0319",
+      "HV4105",
+      "HV4106"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 4,
+        "courses": [
+          "HOPV0054",
+          "HOPV0056",
+          "HOPV0059",
+          "HV4105",
+          "HV4106",
+          "HXPV0041",
+          "HDPV0319"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD00011",
+    "name": "Právo a ekologie",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0061",
+      "HOPV0065",
+      "HOPV0063",
+      "HOPV0066",
+      "HOPV0060",
+      "HOPV0064",
+      "HOPV0062",
+      "HOPV0248",
+      "HOPV0205",
+      "HDPV0159",
+      "HDPV0318",
+      "HXPV0019",
+      "HXPV0018"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0061",
+          "HOPV0065",
+          "HOPV0063",
+          "HOPV0066",
+          "HOPV0060",
+          "HOPV0064",
+          "HOPV0062",
+          "HOPV0248",
+          "HOPV0205"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0159",
+          "HDPV0318",
+          "HXPV0019",
+          "HXPV0018"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD00012",
+    "name": "Římskoprávní",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0071",
+      "HOPV0081",
+      "HOPV0083",
+      "HOPV0082",
+      "HOPV0085",
+      "HDPV0019",
+      "HDPV0322",
+      "HV3708",
+      "HV1981"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0019",
+          "HDPV0322"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD00013",
+    "name": "Právněhistorický",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0074",
+      "HOPV0084",
+      "HOPV0086",
+      "HOPV0078",
+      "HOPV0077",
+      "HOPV0069",
+      "HOPV0087",
+      "HOPV0079",
+      "HOPV0075",
+      "HOPV0080",
+      "HDPV0316",
+      "HV0571",
+      "HV3818",
+      "HV3934",
+      "HV3605",
+      "HV3604",
+      "HV3610",
+      "HV3929",
+      "HV3826"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HOPV0074",
+          "HV0571",
+          "HOPV0078",
+          "HOPV0084",
+          "HOPV0077",
+          "HOPV0086"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0014",
+    "name": "Církevněprávní",
+    "minCourses": 5,
+    "courses": [
+      "HOPV0068",
+      "HOPV0070",
+      "HOPV0072",
+      "HOPV0073",
+      "HOPV0076",
+      "HDPV0302",
+      "HV1470",
+      "HV3606"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 5,
+        "courses": [
+          "HOPV0068",
+          "HOPV0073",
+          "HOPV0072",
+          "HOPV0076",
+          "HOPV0070"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0015",
+    "name": "Veřejnoprávní regulace a správní soudnictví",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0094",
+      "HOPV0100",
+      "HOPV0091",
+      "HOPV0092",
+      "HOPV0097",
+      "HOPV0093",
+      "HOPV0089",
+      "HOPV0088",
+      "HOPV0090",
+      "HOPV0101",
+      "HOPV0098",
+      "HOPV0099",
+      "HOPV0231",
+      "HOPV0243",
+      "HOPV0245",
+      "HOPV0244",
+      "HOPV0230",
+      "HOPV0246",
+      "HOPV0261",
+      "HDPV0138",
+      "HDPV0323",
+      "HDPV0190",
+      "HXPV0023",
+      "HXPV0034",
+      "HXPV0047"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0094",
+          "HOPV0100",
+          "HOPV0091",
+          "HOPV0092",
+          "HOPV0097",
+          "HOPV0093",
+          "HOPV0089",
+          "HOPV0088",
+          "HOPV0090",
+          "HOPV0101",
+          "HOPV0098",
+          "HOPV0099",
+          "HOPV0231",
+          "HOPV0243",
+          "HOPV0245",
+          "HOPV0244",
+          "HOPV0230",
+          "HOPV0246",
+          "HOPV0261"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0138",
+          "HDPV0323",
+          "HDPV0190",
+          "HXPV0023",
+          "HXPV0034",
+          "HXPV0047"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0016",
+    "name": "Legislativní",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0094",
+      "HOPV0001",
+      "HDPV0101",
+      "HDPV0103",
+      "HXPV0029",
+      "HXPV0023",
+      "HV3603"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HOPV0094",
+          "HOPV0001"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0101",
+          "HDPV0103"
+        ]
+      },
+      {
+        "group": "C",
+        "minCourses": 1,
+        "courses": [
+          "HV3603",
+          "HXPV0029",
+          "HXPV0023"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0017",
+    "name": "Právněfilozofický a právněteoretický",
+    "minCourses": 5,
+    "courses": [
+      "HSPV0002",
+      "HOPV0104",
+      "HOPV0105",
+      "HDPV0015",
+      "HDPV0018",
+      "HDPV0003",
+      "HDPV0147",
+      "HDPV0139",
+      "HDPV0160",
+      "HDPV0103",
+      "HDPV0317",
+      "HV3029"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HV3029"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0018",
+    "name": "Trestní právo, kriminologie a kriminalistika",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0109",
+      "HOPV0110",
+      "HOPV0114",
+      "HOPV0111",
+      "HOPV0107",
+      "HOPV0108",
+      "HOPV0112",
+      "HOPV0113",
+      "HOPV0115",
+      "HOPV0116",
+      "HOPV0117",
+      "HOPV0118",
+      "HOPV0216",
+      "HOPV0217",
+      "HOPV0235",
+      "HOPV0218",
+      "HOPV0234",
+      "HOPV0236",
+      "HOPV0277",
+      "HDPV0324",
+      "HDPV0172",
+      "HDPV0177",
+      "HDPV0178",
+      "HXPV0004",
+      "HXPV0006",
+      "HXPV0007",
+      "HXPV0042",
+      "HXPV0043",
+      "HXPV0048",
+      "HV0213"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0109",
+          "HOPV0110"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0324",
+          "HDPV0172",
+          "HDPV0177",
+          "HDPV0178",
+          "HXPV0004",
+          "HXPV0006",
+          "HXPV0007",
+          "HXPV0042",
+          "HXPV0043",
+          "HXPV0048"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0019",
+    "name": "Ústavněprávní",
+    "minCourses": 5,
+    "courses": [
+      "HOPV0122",
+      "HOPV0124",
+      "HOPV0119",
+      "HOPV0120",
+      "HOPV0123",
+      "HOPV0121",
+      "HOPV0212",
+      "HOPV0238",
+      "HOPV0239",
+      "HDPV0013",
+      "HDPV0014",
+      "HDPV0140",
+      "HDPV0325",
+      "HXPV0029",
+      "HV3935",
+      "HV2076",
+      "HV3029",
+      "HV2240",
+      "HV4207"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0122",
+          "HOPV0124",
+          "HOPV0119",
+          "HOPV0120",
+          "HOPV0123",
+          "HOPV0121",
+          "HOPV0212",
+          "HOPV0238",
+          "HOPV0239",
+          "HV2076",
+          "HV3029",
+          "HV2240",
+          "HV3935",
+          "HV4207"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0013",
+          "HDPV0014",
+          "HDPV0140",
+          "HDPV0325",
+          "HXPV0029"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0020",
+    "name": "Právo ve společenskovědním kontextu",
+    "minCourses": 4,
+    "courses": [
+      "HSPV0003",
+      "HSPV0004",
+      "HDPV0156",
+      "HSPV0001",
+      "HOPV0134",
+      "HOPV0196",
+      "HOPV0137",
+      "HOPV0199",
+      "HOPV0136",
+      "HOPV0200",
+      "HOPV0016",
+      "HOPV0135",
+      "HOPV0138",
+      "HOPV0144",
+      "HOPV0132",
+      "HOPV0133",
+      "HOPV0142",
+      "HOPV0143",
+      "HOPV0126",
+      "HOPV0129",
+      "HOPV0125",
+      "HDPV0154",
+      "HDPV0153",
+      "HDPV0155",
+      "HDPV0011",
+      "HDPV0313",
+      "HV3019",
+      "HV3090",
+      "HV2240"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HSPV0003",
+          "HSPV0001",
+          "HSPV0004",
+          "HDPV0156"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0154",
+          "HDPV0153",
+          "HDPV0155",
+          "HDPV0011",
+          "HDPV0313"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0021",
+    "name": "Právo, ekonomie a veřejná politika",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0147",
+      "HOPV0146",
+      "HDPV0145",
+      "HOPV0201",
+      "HOPV0149",
+      "HOPV0155",
+      "HOPV0151",
+      "HOPV0202",
+      "HOPV0148",
+      "HOPV0154",
+      "HOPV0145",
+      "HOPV0156",
+      "HOPV0198",
+      "HDPV0011",
+      "HDPV0320"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HOPV0146",
+          "HOPV0147",
+          "HDPV0145"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0022",
+    "name": "Finance a podnikání",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0153",
+      "HOPV0152",
+      "HOPV0164",
+      "HOPV0161",
+      "HOPV0151",
+      "HOPV0163",
+      "HOPV0160",
+      "HOPV0157",
+      "HOPV0159",
+      "HDPV0151",
+      "HDPV0145",
+      "HDPV0321"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HOPV0164",
+          "HOPV0152",
+          "HOPV0153"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0151",
+          "HDPV0145",
+          "HDPV0321"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0023",
+    "name": "Lawyering Skills",
+    "minCourses": 5,
+    "courses": [
+      "HDPV0110",
+      "HDPV0108",
+      "HDPV0115",
+      "HDPV0114",
+      "HDPV0111",
+      "HDPV0116",
+      "HDPV0118",
+      "HDPV0117",
+      "HDPV0188",
+      "HOPV0178",
+      "HOPV0179"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 0,
+        "courses": []
+      }
+    ]
+  },
+  {
+    "code": "HMOD0024",
+    "name": "Grundlagen des deutschen Rechts",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0167",
+      "HOPV0168",
+      "HOPV0169",
+      "HOPV0170",
+      "HOPV0165",
+      "HOPV0166",
+      "HV3820",
+      "HV3638",
+      "HV4013"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HOPV0167",
+          "HOPV0168",
+          "HOPV0169",
+          "HOPV0170"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0025",
+    "name": "Právo ICT",
+    "minCourses": 4,
+    "courses": [
+      "HDPV0135",
+      "HDPV0136",
+      "HOPV0112",
+      "HOPV0243",
+      "HDPV0169",
+      "HDPV0137",
+      "HDPV0170",
+      "HDPV0327",
+      "HDPV0197",
+      "HXPV0017",
+      "HDPV0207",
+      "HDPV0208"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HDPV0135",
+          "HDPV0136"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0026",
+    "name": "Street Law",
+    "minCourses": 3,
+    "courses": [
+      "HXPV0026",
+      "HXPV0027",
+      "HXPV0025",
+      "HXPV0028",
+      "HXPV0039"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HXPV0026",
+          "HXPV0027"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0027",
+    "name": "Pro bono",
+    "minCourses": 3,
+    "courses": [
+      "HXPV0022",
+      "HXPV0037",
+      "HDPV0198",
+      "HXPV0020",
+      "HXPV0019",
+      "HXPV0038"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HXPV0022",
+          "HXPV0037"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0028",
+    "name": "Právní praxe na soudech",
+    "minCourses": 4,
+    "courses": [
+      "HXPV0003",
+      "HXPV0004",
+      "HXPV0005",
+      "HXPV0034",
+      "HXPV0047",
+      "HXPV0006",
+      "HXPV0001",
+      "HXPV0002",
+      "HXPV0046"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 2,
+        "courses": [
+          "HXPV0003",
+          "HXPV0004"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0029",
+    "name": "Právo ADR",
+    "minCourses": 6,
+    "courses": [
+      "HOPV0182",
+      "HDPV0166",
+      "HDPV0133",
+      "HDPV0134",
+      "HOPV0022",
+      "HOPV0183",
+      "HDPV0163",
+      "HDPV0167",
+      "HDPV0165",
+      "HDPV0164",
+      "HDPV0128",
+      "HDPV0129",
+      "HXPV0024",
+      "HDPV0217",
+      "HDPV0218"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 1,
+        "courses": [
+          "HOPV0182",
+          "HDPV0166"
+        ]
+      },
+      {
+        "group": "B",
+        "minCourses": 1,
+        "courses": [
+          "HDPV0133",
+          "HDPV0134",
+          "HDPV0217"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0031",
+    "name": "Autorské právo a práva průmyslová",
+    "minCourses": 4,
+    "courses": [
+      "HOPV0191",
+      "HOPV0189",
+      "HOPV0190",
+      "HDPV0301"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 4,
+        "courses": [
+          "HOPV0191",
+          "HOPV0189",
+          "HOPV0190",
+          "HDPV0301"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "HMOD0032",
+    "name": "Uprchlické a migrační právo",
+    "minCourses": 5,
+    "courses": [
+      "HOPV0025",
+      "HOPV0092",
+      "HOPV0204",
+      "HOPV0253",
+      "HDPV0132",
+      "HDPV0012",
+      "HDPV0309",
+      "HXPV0050",
+      "HXPV0051",
+      "HV4314"
+    ],
+    "groups": [
+      {
+        "group": "A",
+        "minCourses": 3,
+        "courses": [
+          "HOPV0025",
+          "HOPV0092",
+          "HXPV0050"
+        ]
+      }
+    ]
+  }
+]

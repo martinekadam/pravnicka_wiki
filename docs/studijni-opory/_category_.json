@@ -1,0 +1,9 @@
+{
+  "label": "Studijní opory",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "studijni-opory",
+    "description": "Opory pro studium na právech."
+  }
+}

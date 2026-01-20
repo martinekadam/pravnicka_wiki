@@ -7,7 +7,7 @@ sidebar_position: 1
 Naše wiki slouží jako otevřený zdroj informací pro studenty a studentky Právnické fakulty Univerzity Karlovy. V tuto chvíli fungujeme ve zkušebním provozu. 
 
 :::tip 
-Vyzkoušejte si náš [**interaktivní test z římského práva**  ](./rimske-pravo/rimske-pravo-test.mdx)!   
+Vyzkoušejte si náš interaktivní [**plánovač studia**](./studijni-opory/planovac-studia.mdx) nebo ještě interaktivnější [**test z římského práva**](./povinne-predmety/rimske-pravo/rimske-pravo-test)!   
 :::
 
 Postupně sem budeme přidávat zpracované materiály k jednotlivým předmětům.

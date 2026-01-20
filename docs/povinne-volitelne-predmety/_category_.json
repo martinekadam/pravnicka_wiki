@@ -1,0 +1,9 @@
+{
+  "label": "Povinně volitelné předměty",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "povinne-volitelne-predmety",
+    "description": "Rozcestník se studijními materiály k povinně volitelným předmětům."
+  }
+}

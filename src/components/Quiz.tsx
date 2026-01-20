@@ -68,15 +68,19 @@ interface QuizOptionProps {
   isCorrect: boolean;
   children: ReactNode;
   forceHighlight?: boolean; 
-  optionLabel?: string; // New prop for the auto-letter
+  optionLabel?: string;
 }
 
 export function QuizOption({ label, isCorrect, children, forceHighlight, optionLabel }: QuizOptionProps): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  const isHighlighted = (isOpen && isCorrect) || (forceHighlight && isCorrect); //
-  const isWrong = (isOpen && !isCorrect); //
-
+  
+  // Check if there's any explanation content
+  const hasExplanation = React.Children.count(children) > 0;
+  
+  // Highlight the button regardless of explanation
+  const isHighlighted = (isOpen && isCorrect) || (forceHighlight && isCorrect);
+  const isWrong = (isOpen && !isCorrect);
+  
   return (
     <div style={{ marginBottom: '5px' }}>
       <button
@@ -86,35 +90,35 @@ export function QuizOption({ label, isCorrect, children, forceHighlight, optionL
           textAlign: 'left',
           padding: '12px 15px',
           borderRadius: '5px',
-          border: '1px solid var(--ifm-color-primary)', //
+          border: '1px solid var(--ifm-color-primary)',
           cursor: 'pointer',
           backgroundColor: isHighlighted 
-            ? 'rgba(40, 167, 69, 0.2)' 
+            ? 'rgba(40, 167, 69, 0.5)'
             : isWrong 
-              ? 'rgba(220, 53, 69, 0.2)' 
+              ? 'rgba(220, 53, 69, 0.5)'
               : 'transparent',
           fontWeight: (isOpen || isHighlighted) ? 'bold' : 'normal',
           color: 'inherit'
         }}
       >
-        {/* Display the auto-generated letter followed by the text */}
         {optionLabel && <span style={{ marginRight: '8px', opacity: 0.6 }}>{optionLabel}</span>}
         {label}
+        {/* Show emoji indicator */}
+        {isHighlighted && <span style={{ marginLeft: '8px' }}>✅</span>}
+        {isWrong && <span style={{ marginLeft: '8px' }}>❌</span>}
       </button>
       
-      {/* Explanation box logic remains the same */}
-      {(isOpen || (forceHighlight && isCorrect)) && (
+      {/* Show explanation box if there's content AND it's open/highlighted */}
+      {(isOpen || (forceHighlight && isCorrect)) && hasExplanation && (
         <div style={{
           marginTop: '8px',
           padding: '15px',
           fontSize: '0.95rem',
-          borderLeft: `4px solid ${isCorrect ? '#05c517' : '#ec0000'}`, //
+          borderLeft: `4px solid ${isCorrect ? '#05c517' : '#ec0000'}`,
           backgroundColor: 'var(--ifm-color-emphasis-100)',
           borderRadius: '0 5px 5px 0',
         }}>
-          <div style={{ marginBottom: '8px' }}>
-             <strong>{isCorrect ? '✅ Správně' : '❌ Nesprávně'}</strong>
-          </div>
+          {/* Just show the explanation content, no header */}
           <div className="quiz-explanation-content">
             {children}
           </div>
