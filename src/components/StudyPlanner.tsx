@@ -109,14 +109,14 @@ const DEGREE_REQUIREMENTS = {
   foreignLanguageRequirement: {
     required: 1,
     alternativeCourse: 'HXPV0099',
-    label: 'Předmět v cizím jazyce nebo HXPV0099',
+    label: 'Předmět v cizím jazyce nebo Zahraniční studijní pobyt (HXPV0099)',
   },
   // HPOP3101-HPOP3118 are alternative mandatory courses - need exactly 1
   alternativeMandatory: {
     startCode: 'HPOP3101',
     endCode: 'HPOP3118',
     required: 1,
-    label: 'Diplomový seminář (výběr 1 z nabídky)',
+    label: 'Diplomový seminář',
   },
 };
 
@@ -196,22 +196,29 @@ const styles = `
   --sp-primary-light: var(--ifm-color-primary-light);
   --sp-primary-lightest: var(--ifm-color-primary-lightest);
   
-  /* Semantic colors */
+  /* Semantic colors - light mode (high contrast) */
   --sp-danger: #dc2626;
   --sp-danger-hover: #b91c1c;
   --sp-success: #16a34a;
   --sp-warning: #ea580c;
   
-  /* Theme-aware grays using Infima */
-  --sp-bg: var(--ifm-background-color);
-  --sp-bg-secondary: var(--ifm-footer-background-color);
-  --sp-text: var(--ifm-font-color-base);
-  --sp-text-muted: var(--ifm-color-emphasis-700);
-  --sp-border: var(--ifm-color-emphasis-300);
+  /* Theme-aware backgrounds - light mode (more contrast) */
+  --sp-bg: #ffffff;
+  --sp-bg-secondary: #f1f5f9;
+  --sp-bg-tertiary: #e2e8f0;
+  --sp-text: #1e293b;
+  --sp-text-muted: #64748b;
+  --sp-border: #cbd5e1;
+  --sp-border-strong: #94a3b8;
   
-  /* Semester colors - subtle, theme-aware */
-  --sp-winter: #3b82f6;
-  --sp-summer: #f59e0b;
+  /* Progress bar backgrounds - light mode (visible) */
+  --sp-progress-bg: #cbd5e1;
+  
+  /* Semester colors - light mode (saturated) */
+  --sp-winter: #2563eb;
+  --sp-winter-bg: #dbeafe;
+  --sp-summer: #d97706;
+  --sp-summer-bg: #fef3c7;
   
   font-family: var(--ifm-font-family-base);
   color: var(--sp-text);
@@ -223,7 +230,18 @@ const styles = `
   --sp-danger-hover: #ef4444;
   --sp-success: #4ade80;
   --sp-warning: #fb923c;
+  --sp-bg: var(--ifm-background-color);
+  --sp-bg-secondary: rgba(255, 255, 255, 0.05);
+  --sp-bg-tertiary: rgba(255, 255, 255, 0.08);
+  --sp-text: var(--ifm-font-color-base);
+  --sp-text-muted: #a1a1aa;
   --sp-border: rgba(255, 255, 255, 0.1);
+  --sp-border-strong: rgba(255, 255, 255, 0.2);
+  --sp-progress-bg: rgba(255, 255, 255, 0.15);
+  --sp-winter: #60a5fa;
+  --sp-winter-bg: rgba(96, 165, 250, 0.15);
+  --sp-summer: #fbbf24;
+  --sp-summer-bg: rgba(251, 191, 36, 0.15);
 }
 
 .sp-header {
@@ -765,21 +783,21 @@ const styles = `
 }
 
 .sp-semester-panel-winter .sp-semester-panel-header {
-  background: rgba(59, 130, 246, 0.1);
+  background: var(--sp-winter-bg);
   color: var(--sp-winter);
 }
 
 [data-theme="dark"] .sp-semester-panel-winter .sp-semester-panel-header {
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(96, 165, 250, 0.15);
 }
 
 .sp-semester-panel-summer .sp-semester-panel-header {
-  background: rgba(245, 158, 11, 0.1);
+  background: var(--sp-summer-bg);
   color: var(--sp-summer);
 }
 
 [data-theme="dark"] .sp-semester-panel-summer .sp-semester-panel-header {
-  background: rgba(245, 158, 11, 0.2);
+  background: rgba(251, 191, 36, 0.15);
 }
 
 .sp-semester-panel-credits {
@@ -1141,6 +1159,11 @@ const styles = `
   border: 1px solid var(--sp-border);
   border-radius: var(--ifm-border-radius);
   padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .sp-dashboard-card {
+  box-shadow: none;
 }
 
 .sp-dashboard-card-full {
@@ -1177,7 +1200,7 @@ const styles = `
 
 .sp-credits-bar {
   height: 8px;
-  background: var(--sp-border);
+  background: var(--sp-progress-bg);
   border-radius: 4px;
   overflow: hidden;
   margin-top: 1rem;
@@ -1269,8 +1292,9 @@ const styles = `
 }
 
 .sp-requirement-icon-unmet {
-  background: var(--sp-border);
+  background: var(--sp-progress-bg);
   color: var(--sp-text-muted);
+  border: 1px solid var(--sp-border);
 }
 
 .sp-requirement-info {
@@ -1293,9 +1317,10 @@ const styles = `
 .sp-requirement-bar {
   width: 80px;
   height: 6px;
-  background: var(--sp-border);
+  background: var(--sp-progress-bg);
   border-radius: 3px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .sp-requirement-bar-fill {
@@ -1310,6 +1335,12 @@ const styles = `
 
 .sp-requirement-bar-fill-unmet {
   background: var(--sp-primary);
+}
+
+/* Spacer for non-expandable requirement items to align with expandable ones */
+.sp-requirement-spacer {
+  width: 16px;
+  flex-shrink: 0;
 }
 
 /* Status banner */
@@ -1378,6 +1409,9 @@ const styles = `
 .sp-mandatory-header-toggle {
   font-size: 0.75rem;
   color: var(--sp-text-muted);
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .sp-mandatory-list {
@@ -2416,7 +2450,7 @@ export default function StudyPlanner(): JSX.Element {
 
                 {/* Requirements Card */}
                 <div className="sp-dashboard-card sp-dashboard-card-full">
-                  <div className="sp-dashboard-card-title">Podmínky pro získání titulu Mgr.</div>
+                  <div className="sp-dashboard-card-title">Podmínky pro absolvování studia</div>
                   <div className="sp-requirements-list">
                     {/* Total credits requirement */}
                     <div className="sp-requirement-item">
@@ -2435,6 +2469,7 @@ export default function StudyPlanner(): JSX.Element {
                           style={{ width: `${Math.min(100, (totalCredits / DEGREE_REQUIREMENTS.totalCredits) * 100)}%` }}
                         />
                       </div>
+                      <span className="sp-requirement-spacer" />
                     </div>
 
                     {/* Mandatory courses (HPOP) requirement */}
@@ -2495,7 +2530,6 @@ export default function StudyPlanner(): JSX.Element {
                             {mandatoryProgress.alternative.completed} / {mandatoryProgress.alternative.required} předmět
                             {mandatoryProgress.alternative.completed === 0 && (
                               <span style={{ color: 'var(--sp-warning)', marginLeft: '0.5rem' }}>
-                                (vyberte 1 z {mandatoryProgress.alternative.total})
                               </span>
                             )}
                           </div>
@@ -2551,6 +2585,7 @@ export default function StudyPlanner(): JSX.Element {
                               style={{ width: `${Math.min(100, (progress.current / minCredits) * 100)}%` }}
                             />
                           </div>
+                          <span className="sp-requirement-spacer" />
                         </div>
                       );
                     })}
@@ -2566,7 +2601,6 @@ export default function StudyPlanner(): JSX.Element {
                           {foreignLanguageProgress.completed} / {foreignLanguageProgress.required} předmět
                           {foreignLanguageProgress.completed === 0 && (
                             <span style={{ color: 'var(--sp-text-muted)', marginLeft: '0.5rem' }}>
-                              (cizí jazyk nebo HXPV0099)
                             </span>
                           )}
                           {foreignLanguageProgress.completed > 0 && foreignLanguageProgress.courses.length > 0 && (
@@ -2582,6 +2616,7 @@ export default function StudyPlanner(): JSX.Element {
                           style={{ width: `${foreignLanguageProgress.met ? 100 : 0}%` }}
                         />
                       </div>
+                      <span className="sp-requirement-spacer" />
                     </div>
                   </div>
                 </div>
