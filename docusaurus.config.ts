@@ -28,7 +28,11 @@ const config: Config = {
     locales: ['cs'],
   },
 
-  plugins: ["@cmfcmf/docusaurus-search-local"],
+  plugins: [
+    "@cmfcmf/docusaurus-search-local", {
+      style: none, 
+    }
+  ],
 
   presets: [
     [
