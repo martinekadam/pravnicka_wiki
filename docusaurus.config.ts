@@ -28,6 +28,8 @@ const config: Config = {
     locales: ['cs'],
   },
 
+  plugins: ["@cmfcmf/docusaurus-search-local"],
+
   presets: [
     [
       'classic',
@@ -79,6 +81,11 @@ const config: Config = {
         {
           href: 'https://github.com/martinekadam/pravnicka_wiki',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://instagram.com/pravnicka.wiki',
+          label: 'Instagram',
           position: 'right',
         },
       ],

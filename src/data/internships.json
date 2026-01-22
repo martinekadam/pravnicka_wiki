@@ -1,0 +1,644 @@
+{
+  "internships": [
+    {
+      "id": "pravni-praxe-soudy-civilni",
+      "name": "Právní praxe na soudech – civilní úsek",
+      "description": "praxe na civilním úseku soudu",
+      "extendedDescription": "Právní praxe na soudech – civilní úsek je zaměřená na civilní řízení a probíhá v letním semestru (celkem přibližně 80 hodin, zpravidla jeden až dva dny v týdnu po dobu deseti týdnů). Cílem této praxe je doplnit a rozšířit výuku občanského práva tak, aby studenti poznali vnitřní strukturu, chod i organizaci práce příslušného soudu, ale i obsah práce konkrétního soudce tohoto soudu. Získané zkušenosti a poznatky podrobí studenti své reflexi. Obsahem praxe je absolvování vybraných úkonů ve stanovených soudních agendách pod dohledem soudce.",
+      "videoUrl": "https://www.youtube.com/watch?v=jNPSJ7tC-eA",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "letní",
+      "guarantor": "prof. Alena Macková",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-soudy-trestni",
+      "name": "Právní praxe na soudech – trestní úsek",
+      "description": "praxe na trestním úseku soudu",
+      "extendedDescription": "Právní praxe na soudech – trestní úsek je zaměřená na trestní řízení a probíhá v zimním semestru (celkem přibližně 80 hodin, zpravidla jeden až dva dny v týdnu po dobu deseti týdnů). Cílem této praxe je doplnit a rozšířit výuku trestního práva tak, aby studenti poznali vnitřní strukturu, chod i organizaci práce příslušného soudu, ale i obsah práce konkrétního soudce tohoto soudu. Získané zkušenosti a poznatky podrobí studenti své reflexi. Obsahem praxe je bsolvování vybraných úkonů ve stanovených soudních agendách pod dohledem soudce. Stáže probíhají na jednotlivých obvodních soudech v Praze.",
+      "videoUrl": "",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "zimní",
+      "guarantor": "dr. Jiří Mulák",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-soudy-obchodni",
+      "name": "Právní praxe na soudech – obchodní úsek",
+      "description": "praxe na obchodním úseku soudu",
+      "extendedDescription": "Právní praxe na soudech – obchodní úsek probíhá během letního semestru na obchodněprávním úseku Městského soudu v Praze (celkem přibližně 80 hodin, zpravidla jeden až dva dny v týdnu po dobu deseti týdnů). Cílem právní praxe je doplnit a rozšířit výuku obchodního práva tak, aby studenti poznali vnitřní strukturu, chod i organizaci práce obchodněprávního úseku Městského soudu v Praze, ale i obsah práce konkrétního soudce tohoto soudu. Studenti jsou přiděleni ke konkrétnímu soudci a pod jeho vedením praxi absolvují.",
+      "videoUrl": "",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Petr Tomášek",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-vrchni-soud",
+      "name": "Právní praxe na soudech – Vrchní soud v Praze",
+      "description": "praxe na trestním úseku Vrchního soudu v Praze",
+      "extendedDescription": "Právní praxe probíhá na Vrchním soudu v Praze, jejím obsahem jsou zejména náslechy veřejných zasedání v trestních věcech a jejich následná analýza s předsedajícími soudci. Před návštěvou zasedání se studenti seznamují s projednávanými případy studiem napadených rozsudků krajských soudů. Účelem je prohloubení znalostí trestního práva hmotného (specializace: násilná, majetková, daňová i drogová kriminalita) a také trestního práva procesního (zaměření: řízení před soudem, odvolací řízení).",
+      "videoUrl": "",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "zimní",
+      "guarantor": "dr. Jiří Mulák",
+      "credits": 4,
+      "hours": 40,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-soudy-spravni",
+      "name": "Právní praxe na soudech – správní úsek",
+      "description": "praxe na správním úseku soudu",
+      "extendedDescription": "Právní praxe na soudech – správní úsek probíhá na správním úseku Městského soudu v Praze. Cílem právní praxe je doplnit a rozšířit výuku správního práva tak, aby studenti poznali vnitřní strukturu, chod i organizaci práce správního úseku Městského soudu v Praze, ale i obsah práce konkrétního soudce tohoto soudu. Stáže probíhají zhruba deset týdnů během zimního semestru (celkem přibližně 80 hodin). Studenti jsou přiděleni ke konkrétnímu soudci a pod jeho vedením praxi absolvují.",
+      "videoUrl": "",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Jiří Rajchl",
+      "credits": 4,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-nss",
+      "name": "Právní praxe na Nejvyšším správním soudu",
+      "description": "praxe na Nejvyšším správním soudu",
+      "extendedDescription": "Právní praxe na NSS nabízí studentům možnost poznat prostředí a fungování jednoho ze tří vrcholných soudů České republiky. Na této praxi prohloubíte své znalosti z oblasti správního práva hmotného i procesního a budete mít možnost intenzivně pracovat na svých schopnostech právně psát a myslet. V rámci praxe se seznámíte s agendou NSS, porozumíte práci se spisem, připravíte koncept rozhodnutí a získáte spoustu dalších cenných zkušeností. Před praxí je vhodné absolvovat předmět Správní právo III, výhodou je absolvování dovednostního předmětu zaměřeného na právní psaní.",
+      "videoUrl": "https://www.youtube.com/watch?v=pkFS9tJVMwA",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Kristina Zbíralová",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "letni-praxe-soudy-1",
+      "name": "Letní právní praxe na soudech I",
+      "description": "praxe na soudu dle výběru studenta",
+      "extendedDescription": "Letní praxi na okresních soudech, výjimečně na soudech vyšší instance, mohou studenti vykonat v průběhu července a srpna. Praxe musí být dohodnuta studujícím osobně s příslušným soudem, a to podle jeho možností a zájmu. Fakulta praxi nikterak nezajišťuje, ani se soudy neuzavírá smluvní vztah. Přesný obsah praxe stanoví příslušný soud. Předpokládá se, že studenti v průběhu praxe stráví cca 50 hodin (tj. dva pracovní týdny) na soudu nebo činností pro něj.",
+      "videoUrl": "https://www.youtube.com/watch?v=pwODu8tQmQk&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=6",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Kristina Zbíralová",
+      "credits": 4,
+      "hours": 50,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "letni-praxe-soudy-2",
+      "name": "Letní právní praxe na soudech II",
+      "description": "praxe na soudu dle výběru studenta",
+      "extendedDescription": "Letní praxi na okresních soudech, výjimečně na soudech vyšší instance, mohou studenti vykonat v průběhu července a srpna. Praxe musí být dohodnuta studujícím osobně s příslušným soudem, a to podle jeho možností a zájmu. Fakulta praxi nikterak nezajišťuje, ani se soudy neuzavírá smluvní vztah. Přesný obsah praxe stanoví příslušný soud. Předpokládá se, že studenti v průběhu praxe stráví cca 50 hodin (tj. dva pracovní týdny) na soudu nebo činností pro něj.",
+      "videoUrl": "https://www.youtube.com/watch?v=pwODu8tQmQk&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=6",
+      "legalProfession": [
+        "soudce"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Kristina Zbíralová",
+      "credits": 4,
+      "hours": 50,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-statni-zastupitelstvi",
+      "name": "Právní praxe na státním zastupitelství",
+      "description": "praxe na obvodních / okresních státních zastupitelstvích v působnosti Vrchního státního zastupitelství v Praze",
+      "extendedDescription": "Studenti vykonávají praxi v rozsahu přibližně 60 hodin na obvodním / okresním státním zastupitelství v obvodu Vrchního státního zastupitelství v Praze nebo na analytickém a netrestním úseku Vrchního státního zastupitelství v Praze. Studentům poskytuje praxe možnost účastnit se během časově omezené doby činnosti státního zastupitelství, pozorovat jeho chod a konzultovat s jeho zaměstnanci. Po dobu stáže mohou studenti sledovat a následně analyzovat, jak jsou obecná právní pravidla naplňována v praxi (zejména ustanovení trestního řádu) a co obnáší fungování státního zastupitelství. Student má vždy přiděleného konkrétního státního zástupce (mentora), který mu skrze konzultace v průběhu stáže přiblíží práci instituce.",
+      "videoUrl": "",
+      "legalProfession": [
+        "státní zástupce"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Dalibor Šelleng",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-advokatni-kancelare",
+      "name": "Právní praxe v advokátních kancelářích",
+      "description": "praxe ve vybrané advokátní kanceláři",
+      "extendedDescription": "Studenti se v průběhu odborné praxe zapojují do běžného chodu advokátní kanceláře. Podílejí se zejména na přípravě rešerší právní úpravy včetně judikatury, přípravě různých podání na soudy či jiné instituce a na přípravě jednání s klienty a jednání na soudech či u jiných institucí. V rámci praxe se budou studenti v kanceláři věnovat převážně odborné právní činnosti.",
+      "videoUrl": "https://www.youtube.com/watch?v=4dKhRgvckB8&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=9",
+      "legalProfession": [
+        "advokát"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Kateřina Janderová",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-trestni-advokacie",
+      "name": "Právní praxe v trestněprávních advokátních kancelářích",
+      "description": "praxe v advokátní kanceláři, která se specializuje na trestní právo",
+      "extendedDescription": "Praxe slouží k získání praktických a dborných zkušeností s činností v prostředí advokátních kanceláří se zaměřením na trestní právo. Předmět je uskutečňován ve spolupráci s Unii obhájců České republiky, z. s., resp. s advokátními kancelářemi, které jsou jejími členy. Studenti se v průběhu odborné praxe zapojují do běžného chodu advokátní kanceláře. Podílejí se zejména na přípravě rešerší právní úpravy včetně judikatury, přípravě různých podání na soudy či jiné instituce (státní zastupitelství, policejní orgán) a na přípravě jednání s klienty a jednání na soudech či u jiných institucí.",
+      "videoUrl": "",
+      "legalProfession": [
+        "advokát"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Jiří Mulák",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "praxe-pravo-eu",
+      "name": "Praxe v právu EU",
+      "description": "praxe na MZV ČR, v kanceláři vládního zmocněnce pro zastupování ČR před SDEU nebo v oficiálních programech stáží EU",
+      "extendedDescription": "Praxe v právu EU zajišťuje plnění praxí u zasmluvněných pracovišť v oboru práva Evropské unie, kterými je Ministerstvo zahraničních věcí a Kancelář vládního zmocněnce pro zastupování ČR před Soudním dvorem Evropské unie. Praxi je možné dále vykonat během oficiálních stáží Evropské unie, kterými je Bleubook Traineeship, Schuman Traineeship a stáže na SDEU, pokud náplní stáže je zcela nebo převážně právní agenda.",
+      "videoUrl": "",
+      "legalProfession": [
+        "advokát",
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Říha",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "praxe-elektronicka-poradna",
+      "name": "Praxe v elektronické právní poradně",
+      "description": "příprava odpovědí na dotazy v elektronické právní poradně za supervize advokátů a fakultních vyučujících",
+      "extendedDescription": "Praxe je realizována v rámci projektu První právní pomoc (PPP) ve spolupráci s Právnickým akademickým spolkem Juristi. Studenti se v rámci praxe zapojí do řešení dotazů, se kterými se na PPP obracejí tazatelé. \n\n Studenti jsou nejprve formou seminářů seznámeni s metodikou komunikace s klienty – právními laiky, analýzou skutkového stavu a s přípravou srozumitelných právních rozborů každodenních situací. Hlavní část výuky spočívá v samotném zapojení studentů do řešení dotazů zaslaných tazateli. Na každém případu pracují postupně dva studenti (první a druhý řešitel), kteří sledují pevně vymezený proces zpracování přijatého dotazu. Společný výstup obou řešitelů před odesláním tazateli zkontroluje a kriticky zhodnotí supervizor. Tyto případy bude mít za semestr každý student na starosti nejméně čtyři, a to jak v pozici prvního, tak v pozici druhého řešitele.",
+      "videoUrl": "https://www.youtube.com/watch?v=RYjxrT41oRA&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=10",
+      "legalProfession": [
+        "advokát",
+        "právník v neziskovém sektoru"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Tomáš Horáček",
+      "credits": 6,
+      "hours": 107,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "praxe-poradna-magistrat",
+      "name": "Praxe v právní poradně Magistrátu hlavního města Prahy",
+      "description": "právní poradenství obyvatelům hlavního města Prahy",
+      "extendedDescription": "Praxe nabízí studentům možnost zapojit se do činnosti právní poradny pro obyvatele hlavního města Prahy. Tato poradna vznikla na konci roku 2014 a jedná se o poradnu bezplatnou, přičemž její provoz zajišťují pod dohledem právníků magistrátu studenti naší fakulty. Na dotazy Pražanů odpovídá v poradně pětice studentů, kteří pracují společně v týmu.",
+      "videoUrl": "",
+      "legalProfession": [
+        "advokát",
+        "právník v neziskovém sektoru"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Urban",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-urady-praha",
+      "name": "Právní praxe na úřadech městských částí v Praze či Magistrátu HMP",
+      "description": "praxe v právní poradně Magistrátu hlavního města Prahy / na Úřadu městské části Praha 4",
+      "extendedDescription": "Praxi lze alternativně absolvovat u jednoho z poskytovatelů praxe, kterými jsou Magistrát hlavního města Prahy a Úřad městské části Praha 4. \n\n Právní praxe na úřadech městských částí v Praze či na Magistrátu hlavního města Prahy spočívá v ozkoušení si některých oblastí činnosti územní samosprávné korporace, a to jak v oblasti samostatné působnosti (zejm. otázka nároků MČ vycházejících z nájemních a jiných soukromoprávních vztahů a agenda právní poradny), tak i oblasti přenesené působnosti (zejm. přestupková agenda). V rámci jednotlivých agend se studenti komplexně seznámí s konkrétními případy a návrhy jejich řešení, přičemž na obou pracovištích je možné se zapojit do činnosti různých odborů.",
+      "videoUrl": "https://www.youtube.com/watch?v=anxKCjDqU2E&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=5",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Viktor Derka",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-legislativni-utvary",
+      "name": "Právní praxe na legislativních útvarech",
+      "description": "praxe na legislativním odboru MŠMT",
+      "extendedDescription": "Cílem předmětu je umožnit co nejširší spoluúčast studentů na jednotlivých etapách legislativního procesu probíhajících v rámci daného ústředního správního úřadu. Studenti budou přímo zapojeni do běžného provozu legislativního útvaru a bude jim umožněno aplikovat teoretické znalosti tvorby právních předpisů.Praxe se vykonává například na Ministerstvu školství mládeže a tělovýchovy.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Ing. Josef Staša",
+      "credits": 6,
+      "hours": 107,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-mzv-1",
+      "name": "Právní praxe na Ministerstvu zahraničních věcí 1",
+      "description": "praxe na MZV – Mezinárodněprávní odbor / Odbor lidských práv a transformační politiky (případně Odbor OSN a Odbor multilaterálních ekonomických vztahů)",
+      "extendedDescription": "Praxe probíhá ve spolupráci s Ministerstvem zahraničních věcí. Obsahem právní praxe je zejména asistence pracovníkům odboru, seznámení se s činností příslušných právních útvarů MZV, příprava podkladů pro jednání, zpracovávání analýz, zápisů z jednání, zpracovávání a vyhotovování diplomatické a,úřední korespondence, participace na jednáních a akcích určených příslušnou odpovědnou osobou podle jejích pokynů a na dalších činnostech souvisejících s prací a zabezpečením činnosti odboru.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "zimní",
+      "guarantor": "dr. Eliška Flídrová",
+      "credits": 8,
+      "hours": 104,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-mzv-2",
+      "name": "Právní praxe na Ministerstvu zahraničních věcí 2",
+      "description": "praxe na MZV – Mezinárodněprávní odbor / Odbor lidských práv a transformační politiky (případně Odbor OSN a Odbor multilaterálních ekonomických vztahů)",
+      "extendedDescription": "Praxe probíhá ve spolupráci s Ministerstvem zahraničních věcí. Obsahem právní praxe je zejména asistence pracovníkům odboru, seznámení se s činností příslušných právních útvarů MZV, příprava podkladů pro jednání, zpracovávání analýz, zápisů z jednání, zpracovávání a vyhotovování diplomatické a,úřední korespondence, participace na jednáních a akcích určených příslušnou odpovědnou osobou podle jejích pokynů a na dalších činnostech souvisejících s prací a zabezpečením činnosti odboru.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Eliška Flídrová",
+      "credits": 8,
+      "hours": 104,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-mo",
+      "name": "Právní praxe na Ministerstvu obrany",
+      "description": "praxe na MO – Legislativní a právní odbor",
+      "extendedDescription": "Praxe spočívá v zapojení studentů do činnosti Legislativního a právního odboru Ministerstva obrany s tím, že v průběhu samotné praxe studenti vystřídají různé úseky tohoto odboru, případně se domluví na zaměření na jeden konkrétní úsek. Praxe probíhá v rozsahu alespoň 80 hodin po dobu jednoho semestru. Student se musí zúčastnit celé praxe v předepsaném časovém rozsahu. Odevzdá potvrzení o jejím splnění a,absolvuje závěrečné setkání s vyučujícím. Praxe je cílena na studenty čtvrtého a vyššího ročníku, podmínkou k výkonu praxe je občanství ČR z důvodu stupně utajení „vyhrazené“ . Předchozí splnění PVP Právo a bezpečnost státu je výhodou.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "doc. Jan Kudrna",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-ministerstva",
+      "name": "Právní praxe na ministerstvech",
+      "description": "praxe ve vybraném útvaru ministerstva",
+      "extendedDescription": "https://www.youtube.com/watch?v=THAOz3g2G5E&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=4",
+      "videoUrl": "Praxe je vykonávána na Ministerstvu spravedlnosti, Ministerstvu průmyslu a obchodu, Sekci pro státní službu Ministerstva vnitra, či jiném dohodnutém ústředním správním úřadu. n/ Student se v průběhu praxe zapojí do činností vykonávaných na zapojeném útvaru ministerstva. Zapojené útvary ministerstev se v každém semestru mění. Cílem praxe je ukázat studentům, jak různorodými problémy se ministerstva zabývají. Studenti si v rámci této praxe zlepší své dovednosti v oblasti právního psaní; získají dovednost identifikovat a analyzovat právní problémy v konkrétních praktických situacích, kterými se úřad obvykle zabývá, a navrhovat jejich řešení; budou pracovat na své dovednosti vyhledat, utřídit, analyzovat a interpretovat relevantní právní normy, soudní rozhodnutí a další informace a posílí dovednost vhodně právní argumenty formulovat a prezentovat.",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Viktor Derka",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-zivotni-prostredi",
+      "name": "Právní praxe na orgánech veřejné správy ochrany životního prostředí",
+      "description": "praxe např. na MZ, MŽP či SÚJB",
+      "extendedDescription": "Studenti získají praktické zkušenosti s výkonem státní správy ochrany životního prostředí, zemědělství a dalších souvisejících činností. Předmět je realizován ve spolupráci se správními úřady, které vykonávají státní správu s přímou vazbou na problematiku ochrany životního prostředí. Obsahem praxe je seznámení se s organizací a zaměřením příslušného pracoviště, s okruhem správních a dalších činností, popřípadě participace na vybraných úkolech pod vedením zaměstnance úřadu. Vzhledem k rozdílnému zaměření jednotlivých úřadů je praxe po obsahové stránce koncipována individuálně, a to i s ohledem na aktuální agendu.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Sobotka",
+      "credits": 4,
+      "hours": 40,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-uzsvm",
+      "name": "Právní praxe na Úřadu pro zastupování státu ve věcech majetkových",
+      "description": "praxe na pražském pracovišti ÚZSVM – odbor Majetkové metodiky a oddělení Metodiky právního jednání",
+      "extendedDescription": "Právní praxe navazuje na výuku občanského a obchodního práva a je realizována ve spolupráci s Úřadem pro zastupování státu ve věcech majetkových (Územní pracoviště v hlavním městě Praze). Obsahem právní praxe je absolvování vybraných úkonů ve stanovených agendách úřadu pod dohledem konkrétního pracovníka úřadu (tutora), který studenty prostřednictvím konzultací v průběhu právní praxe vede. Právní praxe probíhá zpravidla v průběhu tří měsíců při minimálním rozsahu 80 hodin, a to na odboru Majetkové metodiky (oddělení Majetkové metodiky, oddělení Podpory realizací, oddělení Metodiky právního auditu) a samostatném oddělení Metodiky právního jednání.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Petr Tomášek",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-klinika-uprchlici-1",
+      "name": "Právní klinika a právní praxe v oblasti uprchlického a migračního práva I",
+      "description": "praxe na právní klinice, ministerstvu vnitra, v advokátní kanceláři či v kanceláři UNHCR v Praze zaměřená na uprchlické a migrační právo",
+      "extendedDescription": "Cílem předmětu je prohloubení teoretických znalostí z oblasti azylového a uprchlického práva, resp. migračního práva, a získání zkušeností a dovedností u klíčových poskytovatelů právních služeb v oblasti uprchlictví a migrace. V rámci přihlašování, které probíhá v rámci online formuláře si studenti volí preferenci poskytovatele praxe. \n\n Mezi možné poskytovatele patří: \n\n - právní klinika (ve spolupráci s nevládními organizacemi): studenti se setkávají s reálnými klienty. \n\n - advokátní kanceláře specializující se na uprchlické a cizinecké právo. \n\n - Ministerstvo vnitra. \n\n - pražská kancelář Úřadu Vysokého komisaře OSN pro uprchlíky. \n\n Praxi jako takové předchází intenzivní půldenní bloková výuka zaměřená na budování dovedností nezbytných pro absolvování právní kliniky. Mezi tyto dovednosti patří nácvik pohovoru, jednání s klienty, otázky bezpečnosti a práce s informacemi o zemi původu. Oblast teoretických znalostí, které student získá, je vymezena cizineckým a azylovým právem. Zkušenosti se vztahují jak k praktické zkušenosti s aplikací této oblasti práva, tak i s chodem poskytovatele praxe. Studenti se zapojují do chodu poskytovatele, podílejí se pod dohledem mentorů – právníků dané organizace – na práci s klienty (u nevládních organizací), na rešerších zákonné úpravy i judikatury, na přípravě podání k soudům či jiným institucím, připravují podklady pro jednání se správním orgánem. K poskytovateli praxe dochází jeden den v týdnu.",
+      "videoUrl": "",
+      "legalProfession": [
+        "advokát",
+        "právník v neziskovém sektoru",
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Věra Honusková",
+      "credits": 8,
+      "hours": 120,
+      "recommendedYear": "Vhodné po absolvování předmětu Migrační právo, Azylové a uprchlické právo"
+    },
+    {
+      "id": "pravni-klinika-uprchlici-2",
+      "name": "Právní klinika a právní praxe v oblasti uprchlického a migračního práva II",
+      "description": "praxe na právní klinice, ministerstvu vnitra, v advokátní kanceláři či v kanceláři UNHCR v Praze zaměřená na uprchlické a migrační právo",
+      "extendedDescription": "Cílem předmětu je prohloubení teoretických znalostí z oblasti azylového a uprchlického práva, resp. migračního práva, a získání zkušeností a dovedností u klíčových poskytovatelů právních služeb v oblasti uprchlictví a migrace. V rámci přihlašování, které probíhá v rámci online formuláře si studenti volí preferenci poskytovatele praxe. \n\n Mezi možné poskytovatele patří: \n\n - právní klinika (ve spolupráci s nevládními organizacemi): studenti se setkávají s reálnými klienty. \n\n - advokátní kanceláře specializující se na uprchlické a cizinecké právo. \n\n - Ministerstvo vnitra. \n\n - pražská kancelář Úřadu Vysokého komisaře OSN pro uprchlíky. \n\n Praxi jako takové předchází intenzivní půldenní bloková výuka zaměřená na budování dovedností nezbytných pro absolvování právní kliniky. Mezi tyto dovednosti patří nácvik pohovoru, jednání s klienty, otázky bezpečnosti a práce s informacemi o zemi původu. Oblast teoretických znalostí, které student získá, je vymezena cizineckým a azylovým právem. Zkušenosti se vztahují jak k praktické zkušenosti s aplikací této oblasti práva, tak i s chodem poskytovatele praxe. Studenti se zapojují do chodu poskytovatele, podílejí se pod dohledem mentorů – právníků dané organizace – na práci s klienty (u nevládních organizací), na rešerších zákonné úpravy i judikatury, na přípravě podání k soudům či jiným institucím, připravují podklady pro jednání se správním orgánem. K poskytovateli praxe dochází jeden den v týdnu.",
+      "videoUrl": "",
+      "legalProfession": [
+        "advokát",
+        "právník v neziskovém sektoru",
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Věra Honusková",
+      "credits": 8,
+      "hours": 120,
+      "recommendedYear": "Vhodné po absolvování předmětu Migrační právo, Azylové a uprchlické právo"
+    },
+    {
+      "id": "pravni-praxe-neziskovky-zp",
+      "name": "Právní praxe v neziskových organizacích ochrany životního prostředí",
+      "description": "praxe např. v Českém svazu ochránců přírody, Hnutí Duha, Frank Bold a dalších",
+      "extendedDescription": "Cílem předmětu je nabídnout studentům alternativní možnosti seznámit se s právem životního prostředí v praxi, vyzkoušet si aplikaci dosažených teoretických znalostí na konkrétních případech řešených v nevládní neziskové organizaci působící v ochraně životního prostředí (zejména konkrétní případy řešené ve správním řízení), případně se podílet prostřednictvím práce v nevládních neziskových organizacích na sledování přípravy nové environmentální legislativy. \n\n Zaměření nevládních organizací, se kterými fakulta spolupracuje v současné době: \n\n - praktické případy ve správním řízení, pozemkový spolek – Česká společnost ornitologická, Český svaz ochránců přírody; \n\n - praktické případy ve správním a soudním řízení – Hnutí Duha, Frank Bold; \n\n - sledování legislativního vývoje v Parlamentu – Zelený kruh.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník v neziskovém sektoru"
+      ],
+      "semester": "oba",
+      "guarantor": "doc. Vojtěch Stejskal",
+      "credits": 4,
+      "hours": 30,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "ochrana-lidskych-prav-2",
+      "name": "Ochrana lidských práv v teorii i praxi II",
+      "description": "spolupráce např. s Veřejným ochráncem práv, Kanceláří vládního zmocněnce pro zastupování ČR před ESLP, Úřadem vlády, Transparency International",
+      "extendedDescription": "Ochrana lidských práv v teorii i praxi nabízí studentům možnost propojit teoretické znalosti s praxí. Předmět rozvíjí schopnosti právo nalézt, interpretovat a aplikovat na určitý případ. Student se bude postupně podílet na právních rozborech, naučí se základy komunikace s klientem a základní přístupy k řešení právních problémů. Praktická část ve druhém semestru probíhá pod vedením a supervizí pracovníků spolupracujících institucí, zejména Kanceláře veřejného ochránce práv a Kanceláře vládního zmocněnce pro zastupování ČR před ESLP, dále pak v sekci lidských práv Úřadu vlády a Transparency International. Studenti se seznámí s problémy ochrany lidských práv a budou se moci aktivně účastnit řešení konkrétních případů.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník v neziskovém sektoru",
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "letní",
+      "guarantor": "doc. Pavel Ondřejek",
+      "credits": 4,
+      "hours": 40,
+      "recommendedYear": "Nutné absolvování předmětu Ochrana lidských práv v teorii a praxi I, vhodné od 2. a vyššího ročníku"
+    },
+    {
+      "id": "pravni-praxe-ochrana-lp",
+      "name": "Právní praxe v oblasti ochrany lidských práv",
+      "description": "praxe u vybrané státní instituce, Ústavního soudu či neziskové organizace zabývající se ochranou lidských práv",
+      "extendedDescription": "Předmět Právní praxe v oblasti ochrany lidských práv nabízí studentům možnost absolvovat stáž u vybrané státní instituce či neziskové organizace zabývající se ochranou lidských práv a tím prohlubovat své znalosti a dovednosti v této oblasti. Studenti mohou využít zprostředkování stáže prostřednictvím Katedry právních dovedností, nebo mohou navrhnout též absolvování stáže vlastní (je nutné volbu předem zkonzultovat). Stáž bude probíhat v rozsahu minimálně 60 hodin dle domluvy studenta a příslušné instituce.",
+      "videoUrl": "https://www.youtube.com/watch?v=3qM79ViLmgE&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=11",
+      "legalProfession": [
+        "právník v neziskovém sektoru",
+        "právník státní správy a samosprávy",
+        "soudce"
+      ],
+      "semester": "oba",
+      "guarantor": "Mgr. Eliška Mainclová",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-sport",
+      "name": "Právní praxe ve sportovních asociacích",
+      "description": "praxe ve sportovních klubech, ČOV, FAČR a dalších",
+      "extendedDescription": "Cílem předmětu je nabídnout studentům možnost získat praktické zkušenosti v organizacích (z povahy věci především spolcích) zabývajících se oblastí sportu, a to především v jejich právních odděleních. Student tak bude moci poznat problematiku sportovního práva v jeho šíři. Organizace, které pro stáž přicházejí v úvahu, jsou sportovní kluby, národní asociace (Český olympijský výbor, Česká unie sportu, Fotbalová asociace ČR, Český svaz ledního hokeje apod.) i asociace sdružující zástupce jednotlivých zájmových skupin ve sportu (Česká asociace fotbalových hráčů, Ligová fotbalová asociace apod.). Konkrétní obsahová náplň stáže se může dílčím způsobem lišit u různých participujících subjektů.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník v neziskovém sektoru"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. David Kohout",
+      "credits": 6,
+      "hours": 107,
+      "recommendedYear": "Vhodné po absolvování předmětu Sportovní právo"
+    },
+    {
+      "id": "pravni-praxe-finance",
+      "name": "Právní praxe ve finančním sektoru",
+      "description": "praxe v institucích z finančního sektoru na Ministerstvu financí, v České národní bance a v České asociaci pojišťoven",
+      "extendedDescription": "V rámci předmětu Právní praxe ve finančním sektoru studenti vykonají praxi na některém z oddělení Ministerstva financí, v České asociaci pojišťoven či v České národní bance.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Roman Vybíral",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-socialni-zabezpeceni",
+      "name": "Právní praxe v oblasti práva sociálního zabezpečení",
+      "description": "praxe např. na Ministerstvu zdravotnictví, generálním ředitelství Úřadu práce, ústředí Všeobecné zdrav. pojišťovny, České správě sociálního zabezpečení",
+      "extendedDescription": "Praxi je možné absolvovat na organizačních jednotkách České správy sociálního zabezpečení, Ministerstvu zdravotnictví, generálním ředitelství Úřadu práce České republiky nebo ústředí Všeobecné zdravotní pojišťovny České republiky. V rámci předmětu se studenti zapojí do výkonu běžných pracovních agend právní povahy uvedených institucí.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Patrik Solis",
+      "credits": 4,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-pms",
+      "name": "Právní praxe v Probační a mediační službě",
+      "description": "praxe na vybraném středisku Probační a mediační služby",
+      "extendedDescription": "Praxe je realizována ve spolupráci s Probační a mediační službou a probíhá na vybraném středisku. V rámci předmětu se studenti seznamují s praktickou aplikací právní úpravy alternativního řešení trestních věcí, tzn. přípravou ukládání a zajištěním výkonu alternativních trestů, odklonů v trestním řízení a dalšími činnostmi dle zákona o Probační a mediační službě, příslušných ustanovení trestního zákoníku, trestního řádu a zákona o obětech trestných činů. Prostřednictvím praxe získávají přehled o probačních a mediačních činnostech, sledují a následně analyzují, jak jsou obecná právní pravidla naplňována v praxi.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Jiří Mulák",
+      "credits": 4,
+      "hours": 40,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-policie",
+      "name": "Právní praxe u policejního orgánu",
+      "description": "praxe na některém z oddělení Služby kriminální policie a vyšetřování Obvodního ředitelství Praha 4",
+      "extendedDescription": "Předmět je realizován ve spolupráci s Policií České republiky. Studenti vykonávají tříměsíční stáž (účast v rozsahu přibližně 80 hodin) na některém z oddělení Služby kriminální policie a vyšetřování Obvodního ředitelství Praha IV. Studentům praxe poskytuje možnost účastnit se během časově omezené doby činnosti příslušníků policejního orgánu, pozorovat jeho chod a konzultovat s jeho zaměstnanci.",
+      "videoUrl": "https://www.youtube.com/watch?v=Oq1fjy9a6jI&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=12",
+      "legalProfession": [
+        "vyšetřovatel"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Jiří Mulák",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "3. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-zdravotnictvi",
+      "name": "Právní praxe v oblasti zdravotnického práva",
+      "description": "praxe na Oddělení podpory práv pacientů Ministerstva zdravotnictví / v ÚVN – Vojenské fakultní nemocnici Praha (právní odbor) / v Nemocnici Na Homolce (právní odbor)",
+      "extendedDescription": "Tuto praxi mohou studenti absolvovat v Ústřední vojenské nemocnici či v Nemocnici Na Homolce na právním oddělení nebo na Ministerstvu zdravotnictví v oddělení podpory práv pacientů. Praxi je možné zapsat i opakovaně a to s výkonem praxe u jiného poskytovatele. \n\n V rámci praxe na MZ se budou studenti věnovat tématu zapojení pacientů (pacientských organizací) ve zdravotnictví. Budou se zabývat jeho podpůrnými faktory, jako je vzdělávání a informování pacientů, financování pacientských organizací, a to např. v oblasti duševního zdraví, úhrady zdravotní péče (vč. inovativní léčby a zdravotnických prostředků), zdravotně-sociálního pomezí, kvality poskytované péče apod. Studenti budou dále zodpovídat dotazy pacientů zaslané ministerstvu a budou se moci věnovat dílčím agendám oddělení, jako jsou lidská práva či zdravotní gramotnost. \n\n V rámci praxe v nemocnici se studenti zapojí do činnosti právního odboru. Setkat se zde bude možné s opravdu širokým okruhem témat jako je vyřizování stížností, vymáhání pohledávek, zpracování znaleckých posudků, zadávání veřejných zakázek a další. Konkrétní náplň praxe závisí i na ročníku studia, přičemž pro zápis této praxe je vyžadováno absolvování předmětu Zdravotnické právo II..",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "doc. Petr Šustek",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "Nutné absolvování předmětu Zdravotnické právo II"
+    },
+    {
+      "id": "pravni-praxe-sukl",
+      "name": "Právní praxe ve Státním ústavu pro kontrolu léčiv",
+      "description": "SÚKL",
+      "extendedDescription": "Praxe spočívá v zapojení studentů do činnosti Státního úřadu pro kontrolu léčiv s tím, že v průběhu samotné praxe bude student zapojen zejména do činnosti úřadu na úseku správního trestání v oblasti farmaceutického trhu. Praxe probíhá v rozsahu alespoň 80 hodin po dobu jednoho semestru.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "oba",
+      "guarantor": "doc. Jan Kudrna",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "parlament-cr",
+      "name": "Parlament ČR – teorie a praxe",
+      "description": "praxe v Parlamentu ČR",
+      "extendedDescription": "V rámci praxe v Parlamentu ČR se studenti zapojí do činnosti obou komor Parlamentu ČR. Naučí se připravovat a formulovat právní listiny, analyzovat právní problémy a navrhovat jejich řešení. Na práci studentů bude dohlížet tutor z řad zaměstnanců dané komory.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy a samosprávy"
+      ],
+      "semester": "letní",
+      "guarantor": "dr. Jindřiška Syllová",
+      "credits": 4,
+      "hours": 30,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "praxe-notarske-urady",
+      "name": "Praxe na notářských úřadech",
+      "description": "praxe ve vybraných notářských úřadech",
+      "extendedDescription": "Studenti díky této praxi získají představu o vnitřní struktuře, chodu, organizaci práce notářského úřadu a obsahu práce notáře a dalších pracovníků notářského úřadu. Studenti získají dovednost orientovat se v činnosti a v dokumentaci vedené notářským úřadem a znalosti o informačních systémech využívaných v notářství, budou mít možnost se seznámit s listinnou agendou notářství, s agendou osvědčování, s notářskými úschovami a podrobněji s agendou řízení o pozůstalosti.",
+      "videoUrl": "https://www.youtube.com/watch?v=uE3xx83BIyI&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=2",
+      "legalProfession": [
+        "notář"
+      ],
+      "semester": "oba",
+      "guarantor": "prof. Alena Macková",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "street-law-1",
+      "name": "Právní praxe na středních školách I (Street Law)",
+      "description": "výuka práva na vybrané střední škole",
+      "extendedDescription": "V rámci Právní praxe na středních školách I (Street Law) si studenti sami vyzkouší zapojení do výuky práva na vybraných středních školách a zároveň je jim na fakultě v teoretické podobě přiblížena problematika základů didaktiky práva. Předmět tím umožňuje studentům práv dobře vnímat propojení mezi právní teorií a praxí, kriticky přemýšlet, kultivovaně diskutovat, spolupracovat v malých týmech a vysvětlovat právní otázky laikům. Studenti pracují zpravidla ve dvojicích a jejich úkolem je vyučovat vybrané kapitoly z hlavních právních odvětví a přibližovat středoškolským studentům fungování základních právních institutů a institucí. Praxe trvá od 4 do 7 týdnů (v závislosti na počtu týdenně vyučovaných hodin) a zpravidla končí simulovaným soudním jednáním, které studenti práv chystají pro středoškolské studenty. Právní praxe probíhá dle domluvy s konkrétní školou.",
+      "videoUrl": "https://www.youtube.com/watch?v=0umBkn-xbrY&list=PLaAC9FU2V9TR470Gfh8ZfzW6oe4tf-4Lp&index=1",
+      "legalProfession": [
+        "právník-pedagog"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Urban",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "street-law-2",
+      "name": "Právní praxe na středních školách II (Street Law)",
+      "description": "dlouhodobá výuka práva na vybrané střední škole",
+      "extendedDescription": "Předmět je určen těm absolventům předmětu Právní praxe na středních školách I (Street Law), kteří mají i nadále zájem rozšiřovat své didaktické a právní znalosti a dovednosti skrz výuku práva na vybraných středních školách. Budou, oproti předchozímu předmětu, pracovat již daleko samostatněji, budou mít odpovědnost za vystavění a odučení celých tematických celků a v neposlední řadě se bude jejich praxe na středních školách skládat z daleko většího počtu hodin. Plánovaná délka této praxe je minimálně čtyři měsíce. Právní praxe probíhá dle domluvy s konkrétní školou.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník-pedagog"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Urban",
+      "credits": 6,
+      "hours": 95,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "street-law-pokrocile",
+      "name": "Street Law pro pokročilé",
+      "description": "organizace středoškolských simulovaných soudů a další vzdělávací aktivity",
+      "extendedDescription": "Praxe navazuje na Právní praxi na středních školách I (Street Law), v rámci které si studenti osvojili základy právní didaktiky a získali zkušenosti s výukou práva na konkrétní střední škole. Předmět je určen těm studentům, kteří mají i nadále zájem rozšiřovat své didaktické a odborné znalosti a dovednosti prostřednictvím výuky práva. Úkolem studentů v tomto předmětu je podílet se na zvyšování právní gramotnosti tím, že se zapojí do aktivit programu Street Law v rozsahu 80 hodin.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník-pedagog"
+      ],
+      "semester": "oba",
+      "guarantor": "dr. Michal Urban",
+      "credits": 4,
+      "hours": 40,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "street-law-moot-court",
+      "name": "Mezinárodní středoškolský moot court (Street Law)",
+      "description": "koučování týmů středoškolských studentů v moot courtové soutěži",
+      "extendedDescription": "Praxe navazuje na Právní praxi na středních školách I (Street Law), v rámci které si studenti osvojili základy právní didaktiky a získali zkušenosti s výukou práva na konkrétní střední škole. Předmět je určen těm studentům, kteří mají i nadále zájem rozšiřovat své didaktické a odborné znalosti a dovednosti prostřednictvím výuky práva, a to konkrétně formou koučování týmů středoškolských studentů v moot courtové soutěži. V této soutěži se utkají středoškolští studenti v simulovaném soudním procesu před Evropským soudem pro lidská práva či Ústavním soudem. Středoškolští studenti vytváří týmy, které pod vedením kouče (studenta právnické fakulty) zastupují jednu stranu sporu a připravují písemné podání, následně se zúčastní ústního kola.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník-pedagog"
+      ],
+      "semester": "oba",
+      "guarantor": "Mgr. Zuzana Vanýsková",
+      "credits": 4,
+      "hours": 70,
+      "recommendedYear": "2. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-nbu",
+      "name": "Právní praxe na Národním bezpečnostním úřadu",
+      "description": "praxe na různých úsecích NBÚ",
+      "extendedDescription": "Praxe spočívá v zapojení studenta do činnosti NBÚ. V průběhu samotné praxe student vystřídá různé úseky úřadu nebo se může domluvit na zaměření pouze na jeden konkrétní úsek. Praxe je z bezpečnostních důvodů určena pouze studentům s českým občanstvím a její absolvování je doporučeno od 8. semestru studia. Na praxi jsou studenti seznámeni s fungováním NBÚ a mají prostor vyzkoušet si v praxi své znalosti v mnoha oborech práva i způsobech jejich aplikace.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "doc. Jan Kudrna",
+      "credits": 6,
+      "hours": 80,
+      "recommendedYear": "4. a vyšší"
+    },
+    {
+      "id": "pravni-praxe-vscr",
+      "name": "Právní praxe u Vězeňské služby ČR",
+      "description": "praxe u VS ČR jakožto správního orgánu",
+      "extendedDescription": "Právní praxe u Vězeňské služby ČR jakožto správního orgánu je určena studentům, kteří za sebou mají již alespoň jeden předmět kurzu správního práva. Praxe nabízí možnost nahlédnout do fungování VS ČR napříč jejími úseky a podílet se na přípravě rozhodnutí, podkladových aktů, apod. Náplň praxe může zahrnovat věci služebního poměru příslušníků bezpečnostních sborů, posudkové činnosti VS ČR i agendu výkonu trestu odnětí svobody a další.",
+      "videoUrl": "",
+      "legalProfession": [
+        "právník státní správy"
+      ],
+      "semester": "oba",
+      "guarantor": "Mgr. Eliška Mainclová",
+      "credits": 6,
+      "hours": 60,
+      "recommendedYear": "3. a vyšší"
+    }
+  ]
+}

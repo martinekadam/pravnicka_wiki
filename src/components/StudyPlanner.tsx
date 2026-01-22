@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import coursesData from './courses.json';
-import modulesData from './modules.json';
+import coursesData from '../data/courses.json';
+import modulesData from '../data/modules.json';
 
 // Types
 interface Course {
