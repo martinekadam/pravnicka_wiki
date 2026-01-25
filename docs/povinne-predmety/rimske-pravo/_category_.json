@@ -1,10 +1,10 @@
 {
   "label": "Římské právo",
   "description": "Studijní materiály k předmětům Římské právo a základy novodobého práva soukromého I a Římské právo a základy novodobého práva soukromého II.",
-  "position": 2,
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "slug": "rimske-pravo",
+    "slug": "povinne-predmety/rimske-pravo",
     "description": "Studijní materiály k předmětům Římské právo a základy novodobého práva soukromého I a Římské právo a základy novodobého práva soukromého II."
   }
 }
