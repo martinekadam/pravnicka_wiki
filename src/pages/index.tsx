@@ -12,16 +12,55 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Právnická wiki</h1>
-        <p className="hero__subtitle">Otevřený zdroj informací Právnické fakulty Univerzity Karlovy.</p>
+        <p className="hero__subtitle">Otevřený zdroj informací z Právnické fakulty Univerzity Karlovy.</p>
+        <p className={styles.heroDescription}>
+          Poznámky, testy a nástroje na jednom místě.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
             to="/docs/intro">
-            Na wiki →
+            Prozkoumat wiki
+          </Link>
+          <Link
+            className={clsx('button button--secondary button--lg', styles.buttonSecondary)}
+            to="/docs/studijni-opory/planovac-studia">
+            Plánovač studia
           </Link>
         </div>
       </div>
     </header>
+  );
+}
+
+
+function HomepageQuickLinks(): JSX.Element {
+  return (
+    <section className={clsx('container margin-vert--lg', styles.quickLinks)}>
+      <div className="row">
+        <div className="col col--8 col--offset-2">
+          <h2 className="text--center margin-bottom--lg">Rychlé odkazy</h2>
+          <div className={styles.linkGrid}>
+            <Link to="/docs/povinne-predmety/rimske-pravo" className={styles.quickLinkCard}>
+              <h3>⚖️ Povinné předměty</h3>
+              <p>Materiály k povinným předmětům</p>
+            </Link>
+            <Link to="/docs/povinne-volitelne-predmety/kriminologie-i" className={styles.quickLinkCard}>
+              <h3>📖 Povinně volitelné</h3>
+              <p>Materiály k pévépéčkům</p>
+            </Link>
+            <Link to="/docs/studijni-opory/pravni-praxe" className={styles.quickLinkCard}>
+              <h3>💼 Právní praxe</h3>
+              <p>Přehled právních praxí nabízených fakultou</p>
+            </Link>
+            <Link to="/docs/studijni-opory/planovac-studia" className={styles.quickLinkCard}>
+              <h3>📅 Plánovač studia</h3>
+              <p>Naplánujte si studium</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -32,22 +71,7 @@ export default function Home(): JSX.Element {
       description="Open source wiki pro (budoucí) právníky a právničky.">
       <HomepageHeader />
       <main>
-        <section className="container margin-vert--xl">
-          <div className="row">
-            <div className="col col--8 col--offset-2 text--center">
-              <h2>O projektu</h2>
-              <p>
-                Naše wiki je prostor pro efektivní sdílení informací mezi studujícími. 
-
-                Cílem je poskytovat přístupné a přesné informace jak o studiu obecně, tak o obsahu jednotlivých předmětů na Právnické fakultě Univerzity Karlovy. 
-              </p>
-              <hr />
-              <p className="margin-top--md">
-                <i>In wiki veritas.</i>
-              </p>
-            </div>
-          </div>
-        </section>
+        <HomepageQuickLinks />
       </main>
     </Layout>
   );

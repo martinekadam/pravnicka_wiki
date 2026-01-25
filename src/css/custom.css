@@ -8,8 +8,8 @@
 
 /* Light mode */
 :root {
-  --ifm-background-color: #fff9eb;
-  --ifm-font-color-base: #303030;
+  --ifm-background-color: #FAFAFA;
+  --ifm-font-color-base: #050505;
 
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-navbar-height: 4rem;
@@ -22,7 +22,7 @@
   --ifm-color-primary-lighter: #3310a1;
   --ifm-color-primary-lightest: #3912b6;
 
-  --ifm-footer-background-color: #fff2d2;
+  --ifm-footer-background-color: #ededed; /* 5% darker than background color */
   --ifm-footer-link-color: var(--ifm-font-color-base);
 
   --ifm-color-emphasis-100: var(--ifm-background-color);
@@ -39,21 +39,22 @@
 /* Dark mode */
 [data-theme="dark"] {
   
-  --ifm-background-color: #303030;
-  --ifm-font-color-base: #fff9eb;
+  --ifm-background-color: #111111;
+  --ifm-font-color-base: #FAFAFA;
 
   --ifm-navbar-background-color: var(--ifm-background-color);
   --ifm-navbar-height: 4rem;
 
-  --ifm-color-primary: #e6c84d;
-  --ifm-color-primary-dark: #e2c032;
-  --ifm-color-primary-darker: #e0bc25;
-  --ifm-color-primary-darkest: #bc9d1a;
-  --ifm-color-primary-light: #ead068;
-  --ifm-color-primary-lighter: #ecd475;
-  --ifm-color-primary-lightest: #f1e19e;
+  --ifm-color-primary: #eca400;
+  --ifm-color-primary-dark: #d49400;
+  --ifm-color-primary-darker: #c98b00;
+  --ifm-color-primary-darkest: #a57300;
+  --ifm-color-primary-light: #ffb305;
+  --ifm-color-primary-lighter: #ffb610;
+  --ifm-color-primary-lightest: #ffc134;
+  --ifm-background-color: #1c1c1c;
 
-  --ifm-footer-background-color: #3e3e3e;
+  --ifm-footer-background-color: #101010; /* 5% darker than background color */
   --ifm-footer-link-color: var(--ifm-font-color-base);
 
   --ifm-color-emphasis-100: var(--ifm-background-color);
@@ -78,3 +79,4 @@ h6 {
   font-weight: 700;
   font-style: italic;
 }
+

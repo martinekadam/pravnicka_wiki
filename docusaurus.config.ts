@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Právnická wiki',
   tagline: 'Otevřený zdroj informací pro studující Právnické fakulty UK.',
-  favicon: 'img/logo-light-mode.svg',
+  favicon: 'img/logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -27,12 +27,6 @@ const config: Config = {
     defaultLocale: 'cs',
     locales: ['cs'],
   },
-
-  plugins: [
-    "@cmfcmf/docusaurus-search-local", {
-      style: none, 
-    }
-  ],
 
   presets: [
     [
@@ -71,8 +65,7 @@ const config: Config = {
       title: 'Právnická wiki',
       logo: {
         alt: 'Právnická wiki logo',
-        src: 'img/logo-light-mode.svg',
-        srcDark: 'img/logo-dark-mode.svg'
+        src: 'img/logo.svg',
       },
       items: [
         {
