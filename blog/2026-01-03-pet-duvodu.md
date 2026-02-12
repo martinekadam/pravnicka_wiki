@@ -19,7 +19,7 @@ Právnická wiki je zatím v testovacím provozu a spousta obsahu v ní ještě 
 1. **Propojení informací:** Wiki formát umožňuje dynamicky propojovat a vyhledávat materiály napříč celým webem. Už žádná samostatné soubory, jen jeden moderní web. 
 1. **Přístupnost:** Víme, že každý studuje jinak. Proto na wiki ladíme věci jako tmavý režim, kontrastní barvy a písmo podle preferencí uživatelů, což jsou vychytávky, které při dlouhých nocích nad skripty pomáhají.
 1. **Snadnější orientace:** Drive je skvělý archiv, ale občas je těžké se v té struktuře složek a kopií neztratit. Wiki se snažíme stavět tak, aby vše bylo na pár kliknutí a co nejrychlejší.
-1. **Otevřenost a kontinuita:** V minulosti vzniklo několik podobných projektů, které bohužel utichly s odchodem jejich autorů*autorek z fakulty. Naším cílem je vytvořit otevřený systém, který bude moci snadno spravovat a doplňovat kdokoliv další.
+1. **Otevřenost a kontinuita:** V minulosti vzniklo několik podobných projektů, které bohužel utichly s odchodem jejich autorů*autorek z fakulty. Naším cílem je vytvořit otevřený systém, který bude moci snadno spravovat a doplňovat kdokoliv další, kdo nastoupí na fakultu dávno po nás.
 
 Líbí se vám, co děláme? Sledujte nás na [Instagramu](https://instagram.com/pravnicka.wiki).  
 Chtěli byste se zapojit? Napište nám na info@pravnicka.wiki. 

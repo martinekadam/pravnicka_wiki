@@ -1,0 +1,10 @@
+{
+  "label": "Teorie práva",
+  "description": "Studijní materiály k předmětům Teorie práva I. a Teorie práva II.",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "povinne-predmety/teorie-prava",
+    "description": "Studijní materiály k předmětům Teorie práva I. a Teorie práva II."
+  }
+}

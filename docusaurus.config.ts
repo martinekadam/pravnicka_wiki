@@ -34,8 +34,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/martinekadam/pravnicka_wiki/tree/main/',
         },
         blog: {
           showReadingTime: true,
