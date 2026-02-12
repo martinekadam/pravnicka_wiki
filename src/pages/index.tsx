@@ -12,7 +12,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">Právnická wiki</h1>
-        <p className="hero__subtitle">Otevřený zdroj studijních materiálů Právnické fakulty Univerzity Karlovy.</p>
+        <p className="hero__subtitle">Otevřený zdroj studijních materiálů z Právnické fakulty Univerzity Karlovy.</p>
         <p className={styles.heroDescription}>
           Zkouškové otázky, testy a interaktivní nástroje na jednom místě.
         </p>
