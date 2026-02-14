@@ -1,0 +1,424 @@
+{
+  "zimniSemestr": [
+    {
+      "kod": "HPOP3044",
+      "nazev": "Státověda",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjsDTEN0LyoUdqvbgnE1yGB"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOg99BJO3hUW7uDVpmlTzbuP"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3050",
+      "nazev": "Vývoj velkých právních systémů",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiSyMRwne6oYDNj4qtEThdK"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhPnBSsB4CycNsBr_2SpLyZ"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3051",
+      "nazev": "Teorie práva I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjNY7Hw-knqfzq0-M0X4Dbf"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOj8O1scoKc92Ps6POomth1x"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3055",
+      "nazev": "Historické základy českého práva I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOj-9mix_ni8RqorHSxkmIKC"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOg5Vl0jxWpVWYEeKAjJtSKn"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3063",
+      "nazev": "Politologie",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjDyB5_ycctXOSQ5R5KRw6n"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhxekAV7nIzbu5tdu3PLo4G"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3002",
+      "nazev": "Občanské právo hmotné II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOisgSQormSbKppRRF8Ht-tx"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjOeabLKEzXmv8Su9lCE7nv"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3031",
+      "nazev": "Trestní právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOh5p0iiU7mwjXIdQbDYNnJN"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgFWUa9mhzbnh-4_FAos8gE"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3042",
+      "nazev": "Ústavní právo II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiepJB9yRabA4tf7o0n3qci"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiF_xhp6bFuJxe3hGXy4BTq"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3045",
+      "nazev": "Mezinárodní právo veřejné I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjnkJl7k10dbhSJVyd8Zgqy"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgTnCVzfNRybQJdKYzHMRM8"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3061",
+      "nazev": "Právo a ekonomie I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOh2RscN3tsRe_97M3snWXmz"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOi9eQYvMHEqWd1xpVxOuzWk"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3004",
+      "nazev": "Občanské právo hmotné IV",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgK8-6vj5_EaMPmOgdOKWC0"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3007",
+      "nazev": "Občanské právo procesní I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgThZphAgfM0Z5ArvAOrsht"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3017",
+      "nazev": "Pracovní právo II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOg9lwIHwvWwfX9OKuHphYCA"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3022",
+      "nazev": "Správní právo II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiTZfegrvT8l5tOd_7NqJ6Q"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3033",
+      "nazev": "Trestní právo III",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOimUGz8b0xgnJj94OVUQ2yW"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3048",
+      "nazev": "Evropské právo II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiNd7mD9IU-HxhztMrRjbEG"
+        }
+      ]
+    }
+  ],
+  "letniSemestr": [
+    {
+      "kod": "HPOP3011",
+      "nazev": "Obchodní právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgRT27G2yzdGZ59n3t-_t3b"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3001",
+      "nazev": "Občanské právo hmotné I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhMhfymm28bcY1jlJXyTVPq"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjd2iuoi7VYfJrQg75SIqV0"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3041",
+      "nazev": "Ústavní právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOimiDRCYLmxOZh0KcNocz-E"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjHCmpp901XBq146avQB4YJ"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3052",
+      "nazev": "Teorie práva II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiADPunyVku3OtvPDgKxP6N"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://moodle.prf.cuni.cz/course/view.php?id=20226"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3056",
+      "nazev": "Historické základy českého práva II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOguo1bb9EKt9iqjcwkNDgux"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgukV4Tm49LHLhon-Wl8LY5"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3003",
+      "nazev": "Občanské právo hmotné III",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgVihdiZG5x7Hrvp_vG4EQ9"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOg7cpafCCKDT_R158Spueat"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3016",
+      "nazev": "Pracovní právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhQ7T9YbwkOyNVkaK30akmI"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiObJ2Q3MfANQzQkyYrNA31"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3021",
+      "nazev": "Správní právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjusLsKEngjKynQ8p7nMuKd"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgGofT07jHLuM3rbcHqCraF"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3032",
+      "nazev": "Trestní právo II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjbLvX_MEm1y4xXd8nmGlHd"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiXyQDs-e86U4_wafprSiO_"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3043",
+      "nazev": "Ústavní právo III",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiGPeb3LTot4sZvN8hVWRng"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiixNcEWZ2GBxWT9sU1EDHX"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3046",
+      "nazev": "Mezinárodní právo veřejné II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOgC1GIPof3LMhGdZH48TTqm"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOj-piyltihy3B7p8xQJC-K7"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3047",
+      "nazev": "Evropské právo I",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOitEu7bVELodx7Cff8I3T1G"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOihT5IxZvLs6kVMdhj6sonD"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3062",
+      "nazev": "Právo a ekonomie II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjCo5cAHeTvNQkHMG8hERmi"
+        },
+        {
+          "rok": "2024/2025",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOh9nsRLVuMQ0g3HlFVOwNnE"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3005",
+      "nazev": "Občanské právo hmotné V",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhH3L7_NB0eTD7yLkEYNNxm"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3008",
+      "nazev": "Občanské právo procesní II",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOjJ6dBHgvR_qGI0iBtVuCBi"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3023",
+      "nazev": "Správní právo III",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOhwZa0Q8Js_PJKjPqiZYLi"
+        }
+      ]
+    },
+    {
+      "kod": "HPOP3034",
+      "nazev": "Trestní právo IV",
+      "odkazy": [
+        {
+          "rok": "2025/2026",
+          "odkaz": "https://www.youtube.com/playlist?list=PLmFzCahphdOiEHVf4mkDshWtvF64kXlrJ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+---
+title: Nahrávky přednášek
+slug: nahravky-prednasek
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import RecordedLecturesTable from '@site/src/components/RecordingsTable';
+import rimskeData from "@site/src/data/nahravky-rimske-pravo.json";
+
+<RecordedLecturesTable
+  courses={[
+    {
+      label: 'Římské právo',
+      data: rimskeData,
+      parts: [
+        { key: 'rimskeI', label: 'Římské právo I' },
+        { key: 'rimskeII', label: 'Římské právo II' },
+      ],
+      extrasKey: 'doplnkove',
+    },
+  ]}
+/>

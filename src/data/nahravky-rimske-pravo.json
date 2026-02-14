@@ -1,0 +1,84 @@
+{
+  "rimskeI": [
+    { "tema": "Prameny práva a státní zřízení I", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=U8JYhx_yfZo" }
+    ]},
+    { "tema": "Prameny práva a státní zřízení II", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=GcTTknedxMI" }
+    ]},
+    { "tema": "Právo osob I", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=MIl9N6Ae3GA" }
+    ]},
+    { "tema": "Právo osob II", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=sQURQvOPylQ" }
+    ]}, 
+    { "tema": "Věcná práva I", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/vsa6rN2hz9M" }
+    ]}, 
+    { "tema": "Věcná práva II", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/7Agp2JQo3TM" }
+    ]}, 
+    { "tema": "Věcná práva III", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/yoe-KrRtQGc" }
+    ]}, 
+    { "tema": "Věcná práva IV", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/0XMBeIc3G8A" }
+    ]}, 
+    { "tema": "Věcná práva V", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/LVwwOA4f3Dk" }
+    ]},
+    { "tema": "Obecné nauky I", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=of4Ue68nTwY" }
+    ]},
+    { "tema": "Obecné nauky II", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=B1tPoyam6X0" }
+    ]},
+    { "tema": "Obecné nauky III", "odkazy": [
+      { "rok": "2020/2021", "odkaz": "https://www.youtube.com/watch?v=lEFh3l7mzkI" }
+    ]}
+  ],
+  "rimskeII": [
+    { "tema": "Přednáška 1", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/LSTF7ANhScQ" }
+    ]},
+    { "tema": "Přednáška 2", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/jat521o59Uk" }
+    ]},
+    { "tema": "Přednáška 3", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/Ngf-JxEnDac" }
+    ]},
+    { "tema": "Přednáška 4", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/jp2HQor2gh8" }
+    ]},
+    {  "tema": "Přednáška 5", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/HSNCjvrXehw" }
+    ]},
+    {  "tema": "Přednáška 6", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/RXIhZKLundU" }
+    ]},
+    {  "tema": "Přednáška 7", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/T89-kCjg5zc" }
+    ]},
+    {  "tema": "Přednáška 8", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/IZxM2fBQF6w" }
+    ]},
+    {  "tema": "Přednáška 9", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/ZJ5ACzhSNgk" }
+    ]},
+    {  "tema": "Přednáška 10", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/AVEarmpGenE" }
+    ]},
+    {  "tema": "Přednáška 11", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/l2QEGZ2pLVk" }
+    ]},
+    {  "tema": "Přednáška 12", "odkazy": [
+      { "rok": "2022/2023", "odkaz": "https://www.youtube.com/live/yAD-o2GEv7Q" }
+    ]}
+  ],
+  "doplnkove": [
+    { "tema": "Principy služebností", "odkaz": "https://www.youtube.com/watch?v=tGFJ1QaXruA" },
+    { "tema": "Ochrana věcných práv", "odkaz": "https://www.youtube.com/watch?v=hNFPiWrSJvs" },
+    { "tema": "Dědické právo", "odkaz": "https://www.youtube.com/watch?v=UvsvDYcaeX0" },
+    { "tema": "Recepce římského práva", "odkaz": "https://www.youtube.com/live/420QQD9z2yE" }
+  ]
+}
